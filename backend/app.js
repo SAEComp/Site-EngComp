@@ -7,6 +7,10 @@ router.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
+router.get('/authentication', (req, res) => {
+  res.send('Hello World!')
+})
+
 app.use(express.json())
 app.use(router)
 
