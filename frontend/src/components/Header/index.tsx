@@ -1,18 +1,34 @@
-import React from "react";
-import { Container, NavBar, NavBarItem } from './styles';
+import React from 'react';
+import {HeaderTopic, HeaderText, HeaderGradient, HeaderTextTitle, TextDiv, ArrowDiv} from "./styles"
+import {FaCaretDown} from 'react-icons/fa';
 
-const Header:React.FC = () =>{
-        return(
-            <Container>
-                <span className="Logo">EngComp USP</span>
-                <NavBar>
-                    <NavBarItem>Página 1</NavBarItem>
-                    <NavBarItem>Página 2</NavBarItem>
-                    <NavBarItem>Página 3</NavBarItem>
-                    <NavBarItem>Página 4</NavBarItem>
-                </NavBar>
-            </Container>
-        );
+interface Props{
+  title:string;
+  text:string;
 }
 
-export default Header;
+const Header:React.FC<Props> = ({title, text}) =>{
+    return(
+      <HeaderTopic>
+        <HeaderGradient>
+
+            <TextDiv>
+            <HeaderTextTitle>
+                    {title}
+            </HeaderTextTitle>
+
+                <HeaderText>
+                   {text}
+                </HeaderText>
+            </TextDiv>
+        
+        </HeaderGradient>
+        <ArrowDiv>
+            <a href = "#"><FaCaretDown className="arrow"/></a>
+        </ArrowDiv>
+      </HeaderTopic>
+      
+    );
+  }
+  
+  export default Header;

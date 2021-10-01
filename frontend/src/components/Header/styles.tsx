@@ -1,52 +1,83 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import img from '../../assets/img/background1.jpg';
 
-export const Container = styled.div`
+const rotate = keyframes`
+  0%{
+      transform:translateY(0px);
+  }
 
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
+  60%{
+    transform:translateY(0px);
+  }
 
-    padding:30px;
-
-    background:#536FC4;
-    color:#fff;
-
-    span{
-        display:block;
-        margin-right:60px;
-
-        font-size:32pt;
-        font-weight: lighter;
-    }
-
+  70%{
+    transform:translateY(10px);
+  }
+  80%{
+    transform:translateY(0px);
+  }
+  90%{
+    transform:translateY(10px);
+  }
+  100%{
+    transform:translateY(0px);
+  }
 `;
 
-export const NavBar = styled.ul`
+export const HeaderTopic = styled.div`
+    width : 100%;
+    height: 100vh;
+    background-image: url(${img});
+    background-position: fixed;
+    background-attachment: fixed;
+    position:relative;
+`;
+export const HeaderTextTitle = styled.div`
+    
+    width: 70%;
+    margin-bottom: 20px;
+    font-size: 60px;
+    color: #00EFFF;
 
-    display:flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    list-style:none;
+   
+`;
+export const HeaderText = styled.div`
+    color: white;
+    font-size: 25px;
+    font-family: "Oxygen";
+   
 `;
 
-export const NavBarItem = styled.li`
+export const HeaderGradient = styled.div`
+    background-image: linear-gradient(to right,rgb(0,4,40) 20%, transparent);
+    width: 100%;
+    height: 100%;
+`;
 
-    cursor:pointer;
+export const TextDiv = styled.div`
+    margin-left: 160px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+`;
 
-    font-size: 1.2rem;
-    font-weight: lighter;
-    text-transform:uppercase;
 
-    padding:10px 8px;
+export const ArrowDiv = styled.div`
+    width:100%;
 
-    transition: color 0.2s;
+    position:absolute;
+    bottom:0;
 
-    & + li {
-        margin-left:90px;
+    display:flex;
+    justify-content: center;
+
+    font-size: 7rem;
+
+    .arrow{
+        color:white;
+        animation:${rotate} 2s infinite;
     }
 
-    &:hover{
-        color:#333;
-    }
 `;
