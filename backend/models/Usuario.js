@@ -7,20 +7,16 @@ class Usuario extends Model {
                 type: DataTypes.STRING,
                 primaryKey: true
             },
-            nome:{
+            name:{
                 type:DataTypes.STRING,
                 allowNull: false,
             },
-            sobrenome: {
+            lastName: {
                 type:DataTypes.STRING,
                 allowNull: false,
             },
-            apelido: DataTypes.STRING,
-            nusp:{
-                type:DataTypes.INTEGER,
-                allowNull: false,
-            },
-            nascimento:{
+            nickname: DataTypes.STRING,
+            birthday:{
                 type:DataTypes.DATEONLY,
                 allowNull: false,
             },
@@ -30,6 +26,10 @@ class Usuario extends Model {
                     isEmail: true
                 },
                 unique: true,
+                allowNull: false
+            },
+            verified:{
+                type: DataTypes.BOOLEAN,
                 allowNull: false
             }
         },
