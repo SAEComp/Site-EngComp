@@ -2,6 +2,7 @@ import styled from "styled-components";
 import dark from "../../themes/dark";
 
 export const WhatIsDiv = styled.div`
+    scroll-snap-align: center;
     height:100vh;
     background:${dark.text};
     color:${dark.background};

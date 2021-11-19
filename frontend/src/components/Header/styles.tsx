@@ -31,6 +31,7 @@ export const HeaderTopic = styled.div`
     background-position: fixed;
     background-attachment: fixed;
     position:relative;
+    scroll-snap-align: center;
 `;
 export const HeaderTextTitle = styled.div`
     

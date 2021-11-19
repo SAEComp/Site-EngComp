@@ -5,6 +5,7 @@ export const Container = styled.div`
     width: 100vw;
     height: 100vh;
     padding:100px 160px;
+    scroll-snap-align: center;
     background-image: linear-gradient(to right, #03194C, #003CC5);
 `;
 

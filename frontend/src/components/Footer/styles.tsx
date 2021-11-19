@@ -5,6 +5,7 @@ export const FooterContainer = styled.div`
 
     background-color: ${dark.background};
     color: ${dark.text};
+    scroll-snap-align: center;
 
     padding:30px 160px;
 
