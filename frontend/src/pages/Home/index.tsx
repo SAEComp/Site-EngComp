@@ -7,7 +7,7 @@ import WhatIs from "../../components/WhatIs";
 import Extras from "../../components/Extra";
 import Footer from "../../components/Footer";
 
-const Home:React.FC = ()=>{
+const Home = ()=>{
     return(
        <Container>
           <NavBar />

@@ -7,7 +7,7 @@ import WhatIs from "../../components/WhatIs";
 import Extras from "../../components/Extra";
 import Footer from "../../components/Footer";
 
-const Home:React.FC = ()=>{
+const ManualBixo = ()=>{
     return(
        <Container>
           <NavBar />
@@ -28,4 +28,4 @@ const Home:React.FC = ()=>{
     )
 }
 
-export default Home;
+export default ManualBixo;
