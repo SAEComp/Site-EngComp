@@ -7,7 +7,7 @@ import WhatIs from "../../components/WhatIs";
 import Extras from "../../components/Extra";
 import Footer from "../../components/Footer";
 
-const Home = ()=>{
+const Home:React.FC = ()=>{
     return(
        <Container>
           <NavBar />
@@ -25,7 +25,7 @@ const Home = ()=>{
             <Footer />
           </Wrapper>
        </Container>
-    )
+    );
 }
 
 export default Home;
