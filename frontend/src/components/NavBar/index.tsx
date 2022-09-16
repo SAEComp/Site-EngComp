@@ -12,7 +12,7 @@ const NavBar:React.FC = () =>{
                         <NavItem><a href="/Extracurriculares">Extracurriculares</a></NavItem>
                         <NavItem><a href="/Enfases">Enfases</a></NavItem>
                         <NavItem><a href="/Notas-Corte">Notas</a></NavItem>
-                        <NavItem> <Link to="/Manual-Bixo/index.html">Components</Link></NavItem>
+                        <NavItem><a href="/Manual-Bixo">Manual do Bixo</a></NavItem>
                    </NavList>
                    <LoginDiv>É aluno? <OrangePinkButton text="Login"/></LoginDiv>
            </NavBarContainer>
