@@ -13,7 +13,7 @@ const Equivalencias = ()=>{
           <NavBar />
           <Wrapper>
             <Header 
-            title="EQUIVALENCIAS"
+            title="EQUIVALENCIASSS"
             text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nam recusandae velit sapiente perferendis repudiandae eum provident aut! Nobis quas magnam reprehenderit accusantium dolorum quia eos necessitatibus fugit non fuga!
             "
             />
