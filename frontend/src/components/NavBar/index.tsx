@@ -8,8 +8,10 @@ const NavBar:React.FC = () =>{
                    <LogoDiv><a href="#">ENG<span>COMP</span></a></LogoDiv>
                    <NavList>
                         <NavItem><a href="#">O Curso</a></NavItem>
-                        <NavItem><a href="#">Extracurriculares</a></NavItem>
-                        <NavItem><a href="#">Carreira</a></NavItem>
+                        <NavItem><a href="/Extracurriculares">Extracurriculares</a></NavItem>
+                        <NavItem><a href="/Enfases">Enfases</a></NavItem>
+                        <NavItem><a href="/Notas-Corte">Notas</a></NavItem>
+                        <NavItem><a href="/Manual-Bixo">Manual Do Bixo</a></NavItem>
                    </NavList>
                    <LoginDiv>É aluno? <OrangePinkButton text="Login"/></LoginDiv>
            </NavBarContainer>
