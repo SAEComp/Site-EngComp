@@ -1,33 +1,35 @@
-# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+name: Firebase Web CI
 
-name: Build and Deploy
-on:
-  push:
-    branches:
-      - master
+on: push
 
 jobs:
-  deploy:
-    name: Deploy
+  Build_Deploy_Web:
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x]
+
     steps:
-      - name: Install Node
+      ## Checkout current branch
+      - uses: actions/checkout@v1
+
+      ## Setup node
+      - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
-          node-version: '10.x'
+          node-version: ${{ matrix.node-version }}
 
-      - name: Install Yarn
-        run: curl -o- -L https://yarnpkg.com/install.sh | bash
-
-      - name: Checkout Repo
-        uses: actions/checkout@master
-      
-      - name: Install Functions Dependencies
-        working-directory: functions
-        run: yarn
-
-      - name: Deploy to Firebase
-        run: npx firebase-tools deploy --token $FIREBASE_TOKEN
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+      ## Install dependencies
+      - name: yarn install
+        run: |
+          yarn
+      ## Test
+      - name: Run tests
+        run: |
+          CI=true yarn test
+      ## Build & Deploy
+      - name: Build & Deploy
+        run: |
+          yarn build
+          firebase deploy --only hosting --token ${{ SECRETS.FIREBASE_TOKEN }} 
