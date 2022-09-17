@@ -49,8 +49,8 @@ export const LogoDiv = styled.a`
 
     border-radius:20px;
     box-shadow:
-        6px 6px 20px rgba(0,0,0,0.15),
-        -6px -6px 16px rgba(255,255,255,0.05);
+        6px 6px 20px hsla(0, 0%, 0%, 0.15),
+        -6px -6px 16px rgba(184, 9, 243, 0.05);
 
     cursor:pointer;
     transition:box-shadow 0.3s, transform 0.3s;
@@ -60,10 +60,10 @@ export const LogoDiv = styled.a`
     }
 
     &:hover{
-        transform:scale(1.01);
-        box-shadow:
-        10px 10px 20px rgba(0,0,0,0.2),
-        -6px -6px 16px rgba(255,255,255,0.05);
+        transform:scale(1.04);
+
+        box-shadow: rgb(238, 9, 121, 0.5) 0px 22px 70px 4px;
+        
         
     }
 
@@ -91,10 +91,11 @@ export const Button = styled.button`
     background-color: transparent;
     cursor:pointer;
 
-    transition:text-shadow 0.2s;
+    transition:box-shadow 0.8s;
 
     &:hover{
-        text-shadow:0px 0px 10px #EE097977;
+        color: white;
+        box-shadow: inset 700px 0px 300px #EE0979;
     }
     
 `;

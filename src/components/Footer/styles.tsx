@@ -2,11 +2,13 @@ import styled from "styled-components";
 import dark from "../../themes/dark";
 
 export const FooterContainer = styled.div`
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: ${dark.background};
     color: ${dark.text};
     scroll-snap-align: center;
-
     padding:30px 160px;
 
     h1{
@@ -20,12 +22,8 @@ export const FooterContainer = styled.div`
     }
 
     div{
-        margin-top:15px;
-        width:10%;
-
+        margin-top: 10px;
         display:flex;
-        justify-content: flex-start;
-        align-items: flex-start;
 
         a{
             text-decoration:none;

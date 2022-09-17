@@ -44,8 +44,9 @@ export const NavItem = styled.div`
         color:${dark.text};
 
         transition:text-shadow 0.3s;
-
+        transition: color 0.3s;
         &:hover{
+            color: rgb(238, 9, 121);
             text-shadow:0px 0px 25px white;
         }
     }
