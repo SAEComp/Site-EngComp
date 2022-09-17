@@ -5,9 +5,11 @@ import {FaCaretDown} from 'react-icons/fa';
 interface Props{
   title:string;
   text:string;
+  url: string;
 }
 
-const Header:React.FC<Props> = ({title, text}) =>{
+
+const Header:React.FC<Props> = ({title, text, url}) =>{
     return(
       <HeaderTopic>
         <HeaderGradient>

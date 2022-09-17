@@ -1,6 +1,8 @@
 import styled, { keyframes } from 'styled-components';
 import img from '../../assets/img/background1.jpg';
 
+
+
 const rotate = keyframes`
   0%{
       transform:translateY(0px);
