@@ -14,7 +14,7 @@ const Extracurriculares = ()=>{
           <Wrapper>
             <Header 
             title="EXTRACURRICULARES"
-            text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nam recusandae velit sapiente perferendis repudiandae eum provident aut! Nobis quas magnam reprehenderit accusantium dolorum quia eos necessitatibus fugit non fuga!"
+            text="Lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nam recusandae velit sapiente perferendis repudiandae eum provident aut! Nobis quas magnam reprehenderit accusantium dolorum quia eos necessitatibus fugit non fuga!"
             url = "../../assets/img/background1.jpg"
             />
             <WhatIs />
