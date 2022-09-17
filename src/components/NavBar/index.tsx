@@ -7,7 +7,7 @@ const NavBar:React.FC = () =>{
         return(
            <NavBarContainer>
                    <LogoDiv><a href="#">ENG<span>COMP</span></a></LogoDiv>
-                   <NavList>
+                   <NavList> 
                         <NavItem><a href="#">O Curso</a></NavItem>
                         <NavItem><a href="/Extracurriculares">Extracurriculares</a></NavItem>
                         <NavItem><a href="/Enfases">Enfases</a></NavItem>

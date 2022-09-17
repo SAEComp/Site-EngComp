@@ -34,10 +34,12 @@ export const NavList = styled.div`
 `;
 
 export const NavItem = styled.div`
+border: 1px solid red;
+    width: 10vw;
     font-weight: lighter;
-    min-width: 3em;
     display: flex;
     align-items: center;
+    justify-content: center;
     a{
         text-decoration: none;
         color:${dark.text};
