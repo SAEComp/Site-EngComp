@@ -29,15 +29,14 @@ export const NavBarContainer = styled.div`
 
 export const NavList = styled.div`
     display:flex;
-    align-items: center;
+    //align-items: center;
     justify-content: space-around;
 `;
 
 export const NavItem = styled.div`
     font-weight: lighter;
-    height:80px;
-
-    display:flex;
+    min-width: 3em;
+    display: flex;
     align-items: center;
     a{
         text-decoration: none;
