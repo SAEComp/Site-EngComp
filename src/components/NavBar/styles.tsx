@@ -96,7 +96,7 @@ export const LoginDiv = styled.div`
         border:none;
         border-radius:15px; */
 
-        font-size:1em;
+        font-size:0.7rem;
 
 
 
