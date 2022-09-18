@@ -7,7 +7,6 @@ export const NavBarContainer = styled.div`
     z-index:1;
     width:100%;
     height:80px;
-
     z-index:1;
 
     padding: 0 160px;
@@ -39,6 +38,7 @@ export const NavItem = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1rem;
     a{
         text-decoration: none;
         color:${dark.text};
@@ -89,7 +89,8 @@ export const LoginDiv = styled.div`
         width:100px;
         height:40px;
         margin-left:20px;
-        font-size:0.5rem;
+        font-size: 2em;
+        
         /* padding:5px 10px;
         color:white;
         background:linear-gradient(45deg,#EE0979,#FF6A00);
