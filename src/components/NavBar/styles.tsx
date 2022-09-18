@@ -34,7 +34,6 @@ export const NavList = styled.div`
 `;
 
 export const NavItem = styled.div`
-border: 1px solid red;
     width: 10vw;
     font-weight: lighter;
     display: flex;
