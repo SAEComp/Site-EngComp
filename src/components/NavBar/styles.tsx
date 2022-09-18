@@ -38,7 +38,7 @@ export const NavItem = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     a{
         text-decoration: none;
         color:${dark.text};
