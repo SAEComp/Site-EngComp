@@ -38,7 +38,7 @@ export const NavItem = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 0.5rem;
     a{
         text-decoration: none;
         color:${dark.text};
@@ -89,7 +89,7 @@ export const LoginDiv = styled.div`
         width:100px;
         height:40px;
         margin-left:20px;
-        font-size: 2em;
+        font-size: 1rem;
         
         /* padding:5px 10px;
         color:white;
