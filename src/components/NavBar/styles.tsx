@@ -56,7 +56,7 @@ export const LogoDiv = styled.div`
     display:flex;
     align-items:center;
 
-    font-size:38px;
+    font-size:2.5rem;
 
     cursor:pointer;
     transition:transform 0.2s;
@@ -86,9 +86,9 @@ export const LoginDiv = styled.div`
 
     button{
 
-        width:100px;
-        height:40px;
-        margin-left:20px;
+        width:6.25rem;
+        height:2.5rem;
+        margin-left:1.25rem;
 
         /* padding:5px 10px;
         color:white;
@@ -96,7 +96,7 @@ export const LoginDiv = styled.div`
         border:none;
         border-radius:15px; */
 
-        font-size:18px;
+        font-size:1rem;
 
 
 
