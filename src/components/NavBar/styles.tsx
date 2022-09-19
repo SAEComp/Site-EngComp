@@ -7,7 +7,6 @@ export const NavBarContainer = styled.div`
     z-index:1;
     width:100%;
     height:80px;
-
     z-index:1;
 
     padding: 0 160px;
@@ -39,6 +38,7 @@ export const NavItem = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 0.9rem;
     a{
         text-decoration: none;
         color:${dark.text};
@@ -56,8 +56,8 @@ export const LogoDiv = styled.div`
     display:flex;
     align-items:center;
 
-    font-size:2.5rem;
 
+    font-size:2.5rem;
     cursor:pointer;
     transition:transform 0.2s;
 
@@ -83,21 +83,22 @@ export const LoginDiv = styled.div`
     display:flex;
     align-items:center;
     justify-content: flex-end;
-
+    font-size: 0.7rem;
     button{
+
 
         width:6.25rem;
         height:2.5rem;
         margin-left:1.25rem;
+
+
 
         /* padding:5px 10px;
         color:white;
         background:linear-gradient(45deg,#EE0979,#FF6A00);
         border:none;
         border-radius:15px; */
-
         font-size:1rem;
-
 
 
 
