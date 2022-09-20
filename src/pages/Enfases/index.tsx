@@ -11,7 +11,7 @@ import CardExtra from "../../components/Card";
 const Enfases = ()=>{
     return(
        <Container> 
-          <NavBar />
+          <NavBar/>
           <Wrapper>
             <Header 
             title="ENFASES"

@@ -10,7 +10,7 @@ import Footer from "../../components/Footer";
 const Notas = ()=>{
     return(
        <Container>
-          <NavBar />
+          <NavBar/>
           <Wrapper>
             <Header 
             title="NOTAS DE CORTE"

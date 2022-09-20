@@ -10,7 +10,7 @@ import Footer from "../../components/Footer";
 const Equivalencias = ()=>{
     return(
        <Container>
-          <NavBar />
+          <NavBar/>
           <Wrapper>
             <Header 
             title="EQUIVALENCIASSS"

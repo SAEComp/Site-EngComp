@@ -10,7 +10,7 @@ import Footer from "../../components/Footer";
 const FAQ = ()=>{
     return(
        <Container>
-          <NavBar />
+          <NavBar/>
           <Wrapper>
             <Header 
             title="TUTORIAIS/FAQ"

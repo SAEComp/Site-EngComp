@@ -1,6 +1,11 @@
 import styled from 'styled-components';
 import dark from '../../themes/dark';
-export const NavBarContainer = styled.div`
+
+interface Props {
+    scrollY: number;
+  }
+export const NavBarContainer = styled.div<Props>`
+
     position:fixed;
     top:0;
     z-index:1;
@@ -9,13 +14,13 @@ export const NavBarContainer = styled.div`
     z-index:1;
 
     padding: 0 160px;
-    background:rgba(0,0,0,0.2);
-
+    background-color: ${({ scrollY }) => (scrollY > document.documentElement.clientHeight ? "rgba(0,0,0,0.8)" : "rgba(0,0,0,0.2)")};
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     color:${dark.text};
 
     display:flex;
     justify-content: center;
-
+    transition: background-color 0.3s ease-in-out;
     >div{
         width:100%;
         height:80px;
@@ -26,6 +31,10 @@ export const NavBarContainer = styled.div`
 `;
 
 export const NavList = styled.div`
+@media (max-width: 1080px) {
+    display: none;
+    justify-content: center;
+  }
     display:flex;
     //align-items: center;
     justify-content: space-around;
@@ -82,13 +91,13 @@ export const LoginDiv = styled.div`
     display:flex;
     align-items:center;
     justify-content: flex-end;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     button{
 
 
         width:6.25rem;
         height:2.5rem;
-        margin-left:1.25rem;
+        margin-left:1rem;
 
 
 

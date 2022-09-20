@@ -27,7 +27,7 @@ const rotate = keyframes`
   }
 `;
 
-export const HeaderTopic = styled.section`
+export const HeaderTopic = styled.div`
     width : 100%;
     height: 100vh;
     background-size: cover;

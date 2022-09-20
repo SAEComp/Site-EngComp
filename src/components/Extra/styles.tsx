@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
-    width: 100vw;
+    max-width: 100vw;
     height: 100vh;
-    padding:100px 160px;
+    padding:6.25rem 10rem;
     scroll-snap-align: center;
     background-image: linear-gradient(to right, #03194C, #003CC5);
 `;
@@ -12,7 +12,7 @@ export const Container = styled.div`
 
 export const TitleTex = styled.div`
     font-family: "Ubuntu";
-    font-size: 36pt;
+    font-size: 2.25rem;
     color: #EE0979;
 `;
 
@@ -24,15 +24,15 @@ export const NormalText = styled.div`
 `;
 
 export const TextDiv = styled.div`
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
 `;
 
 export const ExtrasLogos = styled.div`
-    margin-top:60px;
-    width:100%;
+    margin-top:4.5rem;
+    max-width:100%;
 
     display:flex;
     justify-content:center;
@@ -43,8 +43,8 @@ export const LogoDiv = styled.a`
     justify-content: center;
     align-items: center;
 
-    padding:45px;
-    width:450px !important;
+    padding:1rem;
+    width: 25vw;
     text-align:center;
 
     border-radius:20px;

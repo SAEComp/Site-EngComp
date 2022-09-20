@@ -10,12 +10,12 @@ import Footer from "../../components/Footer";
 const Extracurriculares = ()=>{
     return(
        <Container>
-          <NavBar />
+          <NavBar/>
           <Wrapper>
             <Header 
             title="EXTRACURRICULARES"
             text="Lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nam recusandae velit sapiente perferendis repudiandae eum provident aut! Nobis quas magnam reprehenderit accusantium dolorum quia eos necessitatibus fugit non fuga!"
-            url = "../../assets/img/background1.jpg"
+            url = "img1"
             />
             <WhatIs />
             <Extras 
