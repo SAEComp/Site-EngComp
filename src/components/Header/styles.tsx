@@ -1,5 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import img from '../../assets/img/background1.jpg';
+import img2 from '../../assets/img/background1.jpg';
 
 
 
@@ -26,10 +27,11 @@ const rotate = keyframes`
   }
 `;
 
-export const HeaderTopic = styled.div`
+export const HeaderTopic = styled.section`
     width : 100%;
     height: 100vh;
-    background-image: url(${img});
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: fixed;
     background-attachment: fixed;
     position:relative;

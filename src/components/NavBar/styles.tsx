@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import dark from '../../themes/dark';
-
 export const NavBarContainer = styled.div`
     position:fixed;
     top:0;
@@ -83,7 +82,7 @@ export const LoginDiv = styled.div`
     display:flex;
     align-items:center;
     justify-content: flex-end;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     button{
 
 
