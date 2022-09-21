@@ -11,9 +11,8 @@ export const NavBarContainer = styled.div<Props>`
     z-index:1;
     width:100%;
     height:80px;
-    z-index:1;
 
-    padding: 0 160px;
+    padding: 0 10rem;
     background-color: ${({ scrollY }) => (scrollY > document.documentElement.clientHeight ? "rgba(0,0,0,0.8)" : "rgba(0,0,0,0.2)")};
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     color:${dark.text};

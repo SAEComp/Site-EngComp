@@ -7,9 +7,9 @@ import OrangePinkButton from "../Button";
 const WhatIs:React.FC = ()=>{
     return(
         <WhatIsDiv>
-            <h1>O QUE É ENGENHARIA DE COMPUTAÇÃO?</h1>
+            <h1>O QUE É {'\n'}ENGENHARIA DE COMPUTAÇÃO?</h1>
             <Grid>
-                <div>
+                <div className="explanation">
 
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu rutrum ex. Praesent at bibendum eros. Cras auctor, est ac dictum pulvinar, lorem urna molestie purus, nec vulputate neque mi sit amet nisl. Curabitur convallis velit feugiat mauris feugiat egestas at interdum ante. In iaculis viverra placerat. Donec tempus felis eget turpis tincidunt volutpat. Quisque elementum vel velit viverra scelerisque. 
@@ -22,7 +22,7 @@ const WhatIs:React.FC = ()=>{
                         <OrangePinkButton text="VEJA A GRADE DO CURSO"/>
                     </div>
                 </div>
-                <div>
+                <div className="LogoDiv">
                     <CPUSvg  className="svg-logo"/>
                 </div>
             </Grid> 

@@ -32,24 +32,31 @@ export const HeaderTopic = styled.div`
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: fixed;
+    background-position: center;
     background-attachment: fixed;
     position:relative;
     scroll-snap-align: center;
 `;
 export const HeaderTextTitle = styled.div`
     
-    width: 70%;
-    margin-bottom: 20px;
-    font-size: 60px;
+    max-width: 70vh;
+    margin-bottom: 1rem;
+    font-size: 4rem;
     color: #00EFFF;
+    @media (max-width: 1080px) {
+      font-size: 2rem;
+    }
 
    
 `;
 export const HeaderText = styled.div`
+    max-width: 60vw;
     color: white;
-    font-size: 25px;
+    font-size: 1.5rem;
     font-family: "Oxygen";
+    @media (max-width: 1080px) {
+      font-size: 1.1rem;
+    }
    
 `;
 
@@ -60,12 +67,17 @@ export const HeaderGradient = styled.div`
 `;
 
 export const TextDiv = styled.div`
-    margin-left: 160px;
-    width: 50%;
+    margin-left: 10rem;
+    max-width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    @media(max-width: 1080px){
+      margin: 0 auto;
+      max-width: 80%;
+      justify-content: center;
+    }
 `;
 
 

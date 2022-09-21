@@ -78,13 +78,14 @@ export const LogoDiv = styled.a`
 `;
 
 export const Button = styled.button`
-    margin:80px auto;
-    padding:20px 40px;
+    max-width: 30vw;
+    margin:5rem auto;
+    padding:1.25rem 2.5rem;
 
     border:1px solid #EE0979;
-    border-radius:15px;
+    border-radius:1rem;
 
-    font-size:4rem;
+    font-size: 1.5rem;
     font-weight: normal;
     color:#EE0979;
 
@@ -95,7 +96,7 @@ export const Button = styled.button`
 
     &:hover{
         color: white;
-        box-shadow: inset 700px 0px 300px #EE0979;
+        box-shadow: inset 44rem 0px 20rem #EE0979;
     }
     
 `;
