@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {ArrowDiv, Container, TextDiv, TitleTex, NormalText, ExtrasLogos, LogoDiv,Button} from "./styles"
 import {FaCaretRight} from 'react-icons/fa';
 import saecomp from "../../assets/img/saecomp.png";
@@ -9,8 +9,8 @@ interface Props{
     title:string;
     text:string;
   }
-
 const Extras:React.FC<Props> = ({title, text}) =>{
+    
     return(
         <Container>
             <TextDiv>
@@ -34,11 +34,12 @@ const Extras:React.FC<Props> = ({title, text}) =>{
                         <img src={senc} alt="saecomp"/>
                     </LogoDiv>
                 </ExtrasLogos>
-                <ArrowDiv>
-                        <a href = "#"><FaCaretRight className="arrow"/></a>
-                    </ArrowDiv>
+                <ArrowDiv><FaCaretRight href = "#" className='arrow' />
+                <NormalText>Arrasta pro lado!</NormalText>
+                </ArrowDiv>
                 <Button>E MUITAS OUTRAS</Button>
             </TextDiv>
+            
         </Container>
     )
 }

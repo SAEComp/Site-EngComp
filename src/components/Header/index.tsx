@@ -13,14 +13,12 @@ interface Props{
 const Header:React.FC<Props> = ({title, text, url}) =>{
   let img;
   if(url == 'img2'){
-     console.log('EntrouA')
      img = img2;
   }
   else{
-    console.log('EntrouB')
      img = img1
   }
-  
+    
     return(
       <HeaderTopic style={{  
         backgroundImage: `url("${img}")` }}>

@@ -4,7 +4,7 @@ export const Container = styled.div`
     max-width: 100vw;
     height: 100vh;
     padding-left: 10rem;
-    scroll-snap-align: center;
+    //scroll-snap-align: center;
     
     background-image: linear-gradient(to right, #03194C, #003CC5);
     @media(max-width: 1080px){
@@ -40,15 +40,17 @@ export const TextDiv = styled.div`
     max-width: 80vw;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 `;
 
 export const ExtrasLogos = styled.div`
     margin-top:4.5rem;
-    overflow-x: auto;
+    overflow-x: scroll;
     display:flex;
     @media(max-width: 1080px){
         justify-content: flex-start;
     }
+
 `;
 
 export const LogoDiv = styled.a`
@@ -65,12 +67,12 @@ export const LogoDiv = styled.a`
     text-align:center;
 
     @media(max-width:1080px){
-        padding:1rem;
+        padding:2rem 6rem;
         margin-left: 1rem;
         border: 1px solid red;
-        justify-content: flex-start;
+        justify-content: center;
         img, .Ada{
-        height: 3vh;
+        height: 4vh;
     }
     }
 
@@ -106,7 +108,7 @@ export const Button = styled.button`
     margin:2rem auto;
     padding:1.25rem 2.5rem;
     @media(max-width: 1080px){
-        max-width: 70vw;
+        max-width: 80vw;
         align-self: center;
         font-size: 2rem;
     }
@@ -156,6 +158,8 @@ const rotate = keyframes`
 export const ArrowDiv = styled.div`
     margin: 0 auto;
     font-size: 7rem;
+    display: flex;
+    align-items: center;
     .arrow{
         color:white;
         animation:${rotate} 2s infinite;

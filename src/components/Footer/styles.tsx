@@ -9,20 +9,21 @@ export const FooterContainer = styled.div`
     background-color: ${dark.background};
     color: ${dark.text};
     scroll-snap-align: center;
-    padding:30px 160px;
-
+    padding-top:2rem;
+    padding-bottom:2rem;
+    width: 100vw;
     h1{
-        font-size:16pt;
+        font-size:1rem;
         font-weight:bold;
     }
 
     h2{
-        font-size:14pt;
+        font-size:0.8rem;
         font-weight:normal; 
     }
 
     div{
-        margin-top: 10px;
+        margin-top: 0.6rem;
         display:flex;
 
         a{
@@ -36,12 +37,12 @@ export const FooterContainer = styled.div`
             /* border:1px solid white; */
 
             & + a{
-                margin-left:20px;
+                margin-left:1.25rem;
             }
 
             .svg{
-                height:24px;
-                width:24px;
+                height:1.5rem;
+                width:1.5rem;
                 
                 transition:color 0.3s;
 
