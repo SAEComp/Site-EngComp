@@ -1,51 +1,78 @@
-import styled from "styled-components";
-
+import styled, { keyframes } from 'styled-components';
 
 export const Container = styled.div`
     max-width: 100vw;
     height: 100vh;
-    padding:6.25rem 10rem;
+    padding-left: 10rem;
     scroll-snap-align: center;
+    
     background-image: linear-gradient(to right, #03194C, #003CC5);
+    @media(max-width: 1080px){
+        padding-left: 10vw;
+    }
 `;
 
 
 export const TitleTex = styled.div`
+    
+    margin-top: 10vw;
     font-family: "Ubuntu";
     font-size: 2.25rem;
     color: #EE0979;
+    @media(max-width: 1080px){
+        font-size: 2rem;
+    }
 `;
 
 export const NormalText = styled.div`
+
     font-family: "Oxygen";  
-    margin-top:40px;
-    font-size: 13pt;
+    margin-top: 1rem;
+    font-size: 1.5rem;
     color: white;
+    @media(max-width: 1080px){
+        font-size: 1.1rem;
+    }
 `;
 
 export const TextDiv = styled.div`
-    max-width: 100%;
-    height: 100%;
+    
+    max-width: 80vw;
     display: flex;
     flex-direction: column;
 `;
 
 export const ExtrasLogos = styled.div`
     margin-top:4.5rem;
-    max-width:100%;
-
+    overflow-x: auto;
     display:flex;
-    justify-content:center;
+    @media(max-width: 1080px){
+        justify-content: flex-start;
+    }
 `;
 
 export const LogoDiv = styled.a`
     display:flex;
-    justify-content: center;
-    align-items: center;
+    min-width: 40vw;
+    padding:3vh 5vh;
+    margin: 3vw;
 
-    padding:1rem;
-    width: 25vw;
+    img, .Ada{
+        margin: 0 auto;
+        height: 6vh;
+    }
+
     text-align:center;
+
+    @media(max-width:1080px){
+        padding:1rem;
+        margin-left: 1rem;
+        border: 1px solid red;
+        justify-content: flex-start;
+        img, .Ada{
+        height: 3vh;
+    }
+    }
 
     border-radius:20px;
     box-shadow:
@@ -55,9 +82,6 @@ export const LogoDiv = styled.a`
     cursor:pointer;
     transition:box-shadow 0.3s, transform 0.3s;
 
-    &.centered{
-        margin:0 40px;
-    }
 
     &:hover{
         transform:scale(1.04);
@@ -79,9 +103,13 @@ export const LogoDiv = styled.a`
 
 export const Button = styled.button`
     max-width: 30vw;
-    margin:5rem auto;
+    margin:2rem auto;
     padding:1.25rem 2.5rem;
-
+    @media(max-width: 1080px){
+        max-width: 70vw;
+        align-self: center;
+        font-size: 2rem;
+    }
     border:1px solid #EE0979;
     border-radius:1rem;
 
@@ -101,3 +129,41 @@ export const Button = styled.button`
     
 `;
 
+
+const rotate = keyframes`
+0%{
+    transform:translateY(0px);
+}
+
+60%{
+  transform:translateY(0px);
+}
+
+70%{
+  transform:translateY(10px);
+}
+80%{
+  transform:translateY(0px);
+}
+90%{
+  transform:translateY(10px);
+}
+100%{
+  transform:translateY(0px);
+}
+`;
+
+export const ArrowDiv = styled.div`
+    margin: 0 auto;
+    font-size: 7rem;
+    .arrow{
+        color:white;
+        animation:${rotate} 2s infinite;
+        transition: color 0.3s ease-in;
+        &:hover{
+          color: rgb(238, 9, 121, 0.8);
+        }
+    }
+
+
+`;

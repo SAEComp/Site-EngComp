@@ -95,6 +95,11 @@ export const ArrowDiv = styled.div`
     .arrow{
         color:white;
         animation:${rotate} 2s infinite;
+        transition: color 0.3s ease-in;
+        &:hover{
+          color: rgb(238, 9, 121, 0.8);
+        }
     }
+
 
 `;

@@ -1,6 +1,6 @@
 import React from 'react';
-import {Container, TextDiv, TitleTex, NormalText, ExtrasLogos, LogoDiv,Button} from "./styles"
-
+import {ArrowDiv, Container, TextDiv, TitleTex, NormalText, ExtrasLogos, LogoDiv,Button} from "./styles"
+import {FaCaretRight} from 'react-icons/fa';
 import saecomp from "../../assets/img/saecomp.png";
 import ada from "../../assets/img/ada.png";
 import senc from "../../assets/svg/senc.svg";
@@ -22,16 +22,21 @@ const Extras:React.FC<Props> = ({title, text}) =>{
                 </NormalText>
                 <ExtrasLogos>
                     <LogoDiv href="#">
-                        
-                        <img src={saecomp} alt="saecomp" height="100px"/>
+                        <img src={ada} alt="saecomp" className='Ada'/>
                     </LogoDiv>
                     <LogoDiv className="centered" href="#">
-                        <img src={ada} alt="saecomp" height="100px"/>
+                        <img src={saecomp} alt="saecomp"/>
+                    </LogoDiv>
+                    <LogoDiv href="#">
+                        <img src={senc} alt="saecomp"/>
                     </LogoDiv>
                     <LogoDiv href="#">
                         <img src={senc} alt="saecomp"/>
                     </LogoDiv>
                 </ExtrasLogos>
+                <ArrowDiv>
+                        <a href = "#"><FaCaretRight className="arrow"/></a>
+                    </ArrowDiv>
                 <Button>E MUITAS OUTRAS</Button>
             </TextDiv>
         </Container>

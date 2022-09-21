@@ -91,6 +91,9 @@ export const LoginDiv = styled.div`
     align-items:center;
     justify-content: flex-end;
     font-size: 0.7rem;
+    @media(max-width: 1080px){
+            display: none;
+        }
     button{
 
 
@@ -106,7 +109,7 @@ export const LoginDiv = styled.div`
         border:none;
         border-radius:15px; */
         font-size:1rem;
-
+       
 
 
     }

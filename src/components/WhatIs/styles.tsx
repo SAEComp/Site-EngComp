@@ -5,7 +5,7 @@ export const WhatIsDiv = styled.div`
     
     background:${dark.text};
     color:${dark.background};
-    padding:10vh 10vw;
+    padding: 4vh 3vw;
     
     h1{
         margin-bottom:2.5rem;
@@ -14,7 +14,8 @@ export const WhatIsDiv = styled.div`
         font-size:2rem;
     }
     @media(max-width: 1080px){
-        padding:5vh 7vw;
+        min-height: 100vh;
+        padding-left: 10vw;
     }
 `;
 
@@ -25,13 +26,14 @@ export const Grid = styled.div`
     grid-gap:1.25rem;
     position: relative;
     @media(max-width: 1080px){
+            
             grid-template-columns:none;
             grid-gap:none;
             display: flex;
             flex-direction: column;
             align-items: center;
             .svg-logo{
-                height: 20vh;
+                height: 100%;
             }
      
         }
@@ -43,6 +45,9 @@ export const Grid = styled.div`
             font-size:1.3rem;
             text-align: justify;
             margin-bottom:1.25rem;
+            @media(max-width: 1080px){
+                font-size: 1.1rem;
+            }
         }
 
         >div {
