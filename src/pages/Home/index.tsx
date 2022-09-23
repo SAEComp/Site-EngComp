@@ -14,7 +14,7 @@ const Home:React.FC = ()=>{
           <NavBar/>
           <Wrapper>
             <Header 
-            title="ENGENHARIA DE COMPUTAÇÃO"
+            title="ENGENHARIAAA DE COMPUTAÇÃO"
             text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nam recusandae velit sapiente perferendis repudiandae eum provident aut! Nobis quas magnam reprehenderit accusantium dolorum quia eos necessitatibus fugit non fuga!
             "
             url = "img2"

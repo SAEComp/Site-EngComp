@@ -5,8 +5,9 @@ export const WhatIsDiv = styled.div`
     
     background:${dark.text};
     color:${dark.background};
-    padding: 4vh 3vw;
-    
+    padding-left: 10vw;
+    padding-top: 10vh;
+    padding-bottom: 10vw;
     h1{
         margin-bottom:2.5rem;
         color:#003CC5;
@@ -15,7 +16,7 @@ export const WhatIsDiv = styled.div`
     }
     @media(max-width: 1080px){
         min-height: 100vh;
-        padding-left: 10vw;
+        
     }
 `;
 
