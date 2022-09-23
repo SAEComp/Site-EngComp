@@ -8,6 +8,7 @@ import Equivalencias from "./pages/Equivalências";
 import Extracurriculares from "./pages/Extracurriculares";
 import Manual from "./pages/Manual-Bixo";
 import FAQ from "./pages/Tutoriais-FAQ";
+import SAEcomp from "./pages/SAEComp";
 
 const _Routes = () => {
    return(
@@ -19,6 +20,7 @@ const _Routes = () => {
                 <Route element = { <Equivalencias/> }  path="/Equivalencias"  />
                 <Route element = { <Extracurriculares/> }  path="/Extracurriculares"  />
                 <Route element = { <Manual/> }  path="/Manual-Bixo"  />
+                <Route element = { <SAEcomp/> }  path="/SAEComp"  />
                 <Route element = { <FAQ/> }  path="/FAQ"  />
             </Routes>
             
