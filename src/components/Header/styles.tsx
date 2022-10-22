@@ -1,6 +1,4 @@
 import styled, { keyframes } from 'styled-components';
-import img from '../../assets/img/background1.jpg';
-import img2 from '../../assets/img/background1.jpg';
 
 
 

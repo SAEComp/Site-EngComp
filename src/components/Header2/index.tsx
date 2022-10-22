@@ -1,7 +1,5 @@
 import React from 'react';
 import {HeaderTopic, TextDiv, HeaderTextTitle, HeaderText, HeaderImg} from './styles'
-import img1 from '../../assets/img/white-background.jpg';
-import img2 from '../../assets/img/logo_saecomp_extenso_verde_transparente 1.jpg'
 
 interface Props{
     title:string;
