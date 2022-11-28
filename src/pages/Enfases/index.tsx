@@ -1,5 +1,6 @@
 import React from "react";
 import {Container, Wrapper} from './styles';
+
 import NavBar from "../../components/NavBar";
 import Header from "../../components/Header";
 import WhatIs from "../../components/WhatIs";
@@ -12,7 +13,7 @@ const Enfases = ()=>{
        <Container> 
           <NavBar/>
           <Wrapper>
-          <Header 
+            <Header 
             title="ENFASES"
             text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nam recusandae velit sapiente perferendis repudiandae eum provident aut! Nobis quas magnam reprehenderit accusantium dolorum quia eos necessitatibus fugit non fuga!"
             url = "../../assets/img/background1.jpg"

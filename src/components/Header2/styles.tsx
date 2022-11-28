@@ -1,17 +1,19 @@
 import styled from 'styled-components';
 
 export const HeaderTopic = styled.div`
+    margin-top: 16rem;
     width : 100%;
-    height: 100vh;
-    background-size: cover;
+    height: 85vh;
+    background-size: 50%;
     background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    position:relative;
+    background-position: center top;
+    background-attachment: scroll;
+    position: relative;
     scroll-snap-align: center;
 `;
 
 export const TextDiv = styled.div`
+    margin-top: 10rem;
     margin-left: 10rem;
     max-width: 100%;
     height: 50%;
@@ -26,6 +28,7 @@ export const TextDiv = styled.div`
 `;
 
 export const HeaderTextTitle = styled.div`
+    margin-top: 28rem;
     max-width: 100vh;
     margin-bottom: 1rem;
     font-size: 3rem;
