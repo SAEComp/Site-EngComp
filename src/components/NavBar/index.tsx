@@ -27,7 +27,7 @@ const NavBar:React.FC = ()=>{
                              <NavItem><a href="/">Home</a></NavItem>
                              <NavItem><a href="/Extracurriculares">Extras</a></NavItem>
                              <NavItem><a href="/SAEComp">SAEComp</a></NavItem>
-                             <NavItem><a href="/Enfases">Enfases</a></NavItem>
+                             <NavItem><a href="/Enfases">Ênfases</a></NavItem>
                              <NavItem><a href="/Notas-Corte">Notas</a></NavItem>
                              <NavItem><a href="/Manual-Bixo">Manual do Bixo</a></NavItem>
                         </NavList>
