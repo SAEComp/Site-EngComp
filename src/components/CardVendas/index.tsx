@@ -1,6 +1,6 @@
 import React from "react";
 //import{Image} from "react-native"
-import {VendasTopic, VendasImg, ComprarButtonDiv} from "./styles"
+import {VendasTopic, VendasImg, ComprarButtonDiv, DivBlock} from "./styles"
 import ComprarButton from "../../components/ComprarButton"
 import img1 from "../../assets/img/sueter_branco_frente.png"
 import img2 from "../../assets/img/sueter_preto_frente.png"
@@ -30,12 +30,16 @@ const CardVendas:React.FC<Props> = ({url})=>{
         img = img5;
     }
     return(
+        <DivBlock>
         <VendasTopic>
+            
             <VendasImg style={{backgroundImage: `url("${img}")` }}/>
             <ComprarButtonDiv>
                 <ComprarButton text = "COMPRAR"/>
             </ComprarButtonDiv>
+            
         </VendasTopic>
+        </DivBlock>
     );
 }
 

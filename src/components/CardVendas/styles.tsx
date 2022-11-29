@@ -1,19 +1,29 @@
 import styled from 'styled-components';
 
 export const VendasTopic = styled.div`
-    display: inline-block;
-    margin-left: 10rem;
-    width : 20%;
-    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width : 20vw;
+    height: 50vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     position: relative;
     scroll-snap-align: center;
+    
+`;
+export const DivBlock = styled.div`
+    display: inline-block;
+    margin: 1em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
 `;
 
 export const VendasImg = styled.div`
+    margin-top: .8em;
+    border-radius: 10px;
     width : 90%;
     height: 42vh;
     background-size: 100%;
@@ -28,7 +38,6 @@ export const ComprarButtonDiv = styled.div`
     align-items:center;
     justify-content: flex-start;
     margin-top: 0rem;
-    margin-left: 5rem;
     @media(max-width: 1080px){
             display: flex;
         }

@@ -48,14 +48,3 @@ export const HeaderText = styled.div`
     }  
 `;
 
-export const HeaderImg = styled.div`
-  max-height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  img{
-    margin-top: 25vh;
-    width: 50vw;
-    height: 22vh;
-  }
-`;
