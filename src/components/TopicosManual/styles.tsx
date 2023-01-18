@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import dark from "../../themes/dark";
 
 export const ContentSection = styled.section`
     display: flex;
@@ -15,12 +14,21 @@ export const Container = styled.div`
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+
+    .textCenter{
+        text-align: center;
+    }
 `
 export const TitleCont = styled.div`
     font-size: 3rem;
     margin-bottom: 1.5rem;
     display: inline;
 
+`
+export const SubtitleCont = styled.div`
+     font-weight: 500;
+     display: inline;
+    
 `
 export const NumberCont = styled.div`
     color: #00a8b1;
@@ -34,10 +42,15 @@ export const TextCont = styled.div`
     font-weight: 300;
     margin-bottom: 3rem;
     margin-top: 0;
+    line-height: 1.5;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 `
 export const LineThrough = styled.div`
     text-decoration: line-through;
     display: inline;
+`
+export const TextSocial = styled.b`
+    font-size: 1.25rem;
 `
 export const SocialDiv = styled.a`
     
