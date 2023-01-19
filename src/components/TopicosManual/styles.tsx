@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 export const ContentSection = styled.section`
     display: flex;
     flex-direction: column;
@@ -63,4 +62,40 @@ export const SocialDiv = styled.a`
         }
     
 
+`
+
+export const ulMap = styled.ul`
+    list-style: none;
+    display:flex;
+    justify-content: space-around;
+`
+export const liMap = styled.li`
+    margin: 1em;
+`
+export const ContentSection2 = styled.section`
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+    background-color: #1D809F;
+    color: #fff;
+`
+export const DivApp = styled.div`
+    text-align: center;
+    min-height: 1px;
+    flex: 0 0 50%;
+    width: 50%;
+`
+export const UlApp = styled.ul`
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+`
+export const ImgApp = styled.img`
+    margin-bottom: .5rem;
+    margin: auto;
+    display : table;
+    width: 100px;
+`
+export const TextFaded = styled.p`
+    color: rgba(255, 255, 255, 0.7);
+  
 `
