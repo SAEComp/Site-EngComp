@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 export const ContentSection = styled.section`
     display: flex;
     flex-direction: column;
@@ -7,12 +8,24 @@ export const ContentSection = styled.section`
     padding-top: 7.5rem;
     padding-bottom: 7.5rem;
 `
+export const ContentSection2 = styled.section`
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+    background-color: #f8f9fa;
+`
+export const ContentSection3 = styled.section`
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+    background-color: #1D809F;
+    color: #fff;
+`
 export const Container = styled.div`
     width: 60%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    padding-bottom:3rem;
 
     .textCenter{
         text-align: center;
@@ -21,20 +34,11 @@ export const Container = styled.div`
 export const TitleCont = styled.div`
     font-size: 3rem;
     margin-bottom: 1.5rem;
-    display: inline;
-
+    display: inline-block
 `
-export const SubtitleCont = styled.div`
-     font-weight: 500;
-     display: inline;
-    
-`
-export const NumberCont = styled.div`
-    color: #00a8b1;
-    font-weight: 900;
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
-    display: inline;
+export const SubtitleCont = styled.h2`
+    font-weight: 500;
+    margin-bottom: .5rem;    
 `
 export const TextCont = styled.div`
     font-size: 1.25rem;
@@ -44,39 +48,31 @@ export const TextCont = styled.div`
     line-height: 1.5;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 `
-export const LineThrough = styled.div`
-    text-decoration: line-through;
+export const NumberCont = styled.div`
+    color: #00a8b1;
+    font-weight: 900;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
     display: inline;
+`
+export const LinkSocial = styled.a`
+    color: #f7b120;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.25rem;
+    &:hover{
+    color: #dc9c18;
+    }
 `
 export const TextSocial = styled.b`
     font-size: 1.25rem;
 `
-export const SocialDiv = styled.a`
-    
-        color: #f7b120;
-        font-weight: 600;
-        text-decoration: none;
-        font-size: 1.25rem;
-        &:hover{
-            color: #dc9c18;
-        }
-    
-
+export const LineThrough = styled.div`
+    text-decoration: line-through;
+    display: inline;
 `
-
-export const ulMap = styled.ul`
-    list-style: none;
-    display:flex;
-    justify-content: space-around;
-`
-export const liMap = styled.li`
-    margin: 1em;
-`
-export const ContentSection2 = styled.section`
-    padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
-    background-color: #1D809F;
-    color: #fff;
+export const TextFaded = styled.p`
+    color: rgba(255, 255, 255, 0.7);
 `
 export const DivApp = styled.div`
     text-align: center;
@@ -94,8 +90,4 @@ export const ImgApp = styled.img`
     margin: auto;
     display : table;
     width: 100px;
-`
-export const TextFaded = styled.p`
-    color: rgba(255, 255, 255, 0.7);
-  
 `
