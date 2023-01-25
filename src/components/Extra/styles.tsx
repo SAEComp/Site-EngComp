@@ -55,7 +55,7 @@ export const ExtrasLogos = styled.div`
 
 export const LogoDiv = styled.a`
     display:flex;
-    min-width: 40vw;
+    min-width: 20vw;
     padding:3vh 5vh;
     margin: 3vw;
 
@@ -102,11 +102,16 @@ export const LogoDiv = styled.a`
 
     }
 `;
+export const Centered = styled.div`
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+`;
 export const Button = styled.button`
     max-width: 30vw;
-    margin:2rem auto;
-    padding:1.25rem 2.5rem;
+    padding:1rem 2.5rem;
     @media(max-width: 1080px){
         max-width: 80vw;
         align-self: center;
@@ -126,7 +131,7 @@ export const Button = styled.button`
 
     &:hover{
         color: white;
-        box-shadow: inset 44rem 0px 20rem #EE0979;
+        box-shadow: inset 10rem 1rem 10rem 1rem #EE0979;
     }
     
 `;

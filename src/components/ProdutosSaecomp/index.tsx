@@ -3,7 +3,11 @@ import React from "react";
 import CardVendas from "../../components/CardVendas";
 import {VendasDiv, VendasText} from "./styles";
 
+
+
+
 const ProdutosSaecomp = (props:any) =>{
+
     return(
         <VendasDiv>
             <VendasText> VENDAS </VendasText>
@@ -20,9 +24,10 @@ const ProdutosSaecomp = (props:any) =>{
             url = "img4">
             </CardVendas>
             <CardVendas
-            url = "img5">
+            url = "img5"> 
             </CardVendas>
         </VendasDiv>
+        
     );
 }
 

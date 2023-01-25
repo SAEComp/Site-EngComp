@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
-import {ArrowDiv, Container, TextDiv, TitleTex, NormalText, ExtrasLogos, LogoDiv,Button} from "./styles"
-import {FaCaretRight} from 'react-icons/fa';
+import {ArrowDiv, Container, TextDiv, TitleTex, NormalText, ExtrasLogos, LogoDiv,Button, Centered} from "./styles"
+import {FaCaretDown} from 'react-icons/fa';
 import saecomp from "../../assets/img/saecomp.png";
 import ada from "../../assets/img/ada.png";
 import senc from "../../assets/svg/senc.svg";
@@ -30,14 +30,14 @@ const Extras:React.FC<Props> = ({title, text}) =>{
                     <LogoDiv href="#">
                         <img src={senc} alt="saecomp"/>
                     </LogoDiv>
-                    <LogoDiv href="#">
-                        <img src={senc} alt="saecomp"/>
-                    </LogoDiv>
                 </ExtrasLogos>
-                <ArrowDiv><FaCaretRight href = "#" className='arrow' />
-                <NormalText>Arrasta pro lado!</NormalText>
+                <ArrowDiv><FaCaretDown href = "#" className='arrow' />
+                <NormalText>Quer saber mais? Tem muitas outras!</NormalText>
                 </ArrowDiv>
-                <Button>E MUITAS OUTRAS</Button>
+                <Centered>
+                <Button>Manual do Bixo</Button>
+                </Centered>
+                
             </TextDiv>
             
         </Container>

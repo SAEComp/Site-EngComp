@@ -5,7 +5,7 @@ export const WhatIsDiv = styled.div`
     
     background:${dark.text};
     color:${dark.background};
-    padding-left: 10vw;
+    padding-left: 10rem;
     padding-top: 10vh;
     padding-bottom: 10vw;
     h1{

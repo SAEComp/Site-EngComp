@@ -25,7 +25,6 @@ const NavBar:React.FC = ()=>{
                         <LogoDiv><a href="#">ENG<span>COMP</span></a></LogoDiv>
                         <NavList> 
                              <NavItem><a href="/">Home</a></NavItem>
-                             <NavItem><a href="/Extracurriculares">Extras</a></NavItem>
                              <NavItem><a href="/SAEComp">SAEComp</a></NavItem>
                              <NavItem><a href="/Enfases">Ênfases</a></NavItem>
                              <NavItem><a href="/Notas-Corte">Notas</a></NavItem>

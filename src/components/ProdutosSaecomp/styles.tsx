@@ -14,7 +14,6 @@ export const VendasDiv = styled.div`
 
 export const VendasText = styled.div`
   margin-bottom: 4rem;
-  margin-left: 5rem;
   font-family: "Ubuntu";
   font-size: 3rem;
   font-weight: bold;
