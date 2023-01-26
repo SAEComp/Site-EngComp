@@ -41,7 +41,7 @@ export const SubtitleCont = styled.h2`
     margin-bottom: .5rem;    
 `
 export const TextCont = styled.div`
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     font-weight: 300;
     margin-bottom: 3rem;
     margin-top: 0;
