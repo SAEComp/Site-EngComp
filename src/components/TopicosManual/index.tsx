@@ -50,7 +50,7 @@ const TopicosManual:React.FC = ()=>{
         <div>
             <ContentSection2>
                 <Container id = "t1">
-                    <Title text = "Bem-vindo à Engenharia de Computação" number = "1"></Title>
+                    <Title text = "Bem-vindo à Engenharia de Computação!" number = "1"></Title>
                     <Text>A transição do <LineThrough>maternal</LineThrough> ensino médio/cursinho para a universidade é algo que assusta muitos calouros, e é algo bem comum. No entanto, vocês verão que <LineThrough>nunca</LineThrough> em pouco tempo estarão acostumados com a vida universitária. O campus de São Carlos é um ambiente agradável e de fácil locomoção. A cidade oferece uma vasta gama de lojas e serviços ao universitário e o pessoal da universidade é amigável e está sempre disposto a auxiliar o próximo.  Seja lá quais forem suas dúvidas e preocupações, nós da <b>SAEComp</b> estaremos sempre presentes e prontos para auxiliar em qualquer situação. Este manual busca sanar dúvidas frequentes e fornecer dicas úteis aos calouros do curso através de textos informais e objetivos, evitando uma leitura cansativa ou o bombardeamento de informações, então só vai e leia essa budega!  Não se preocupe, bixo/bixete! Sinta-se orgulhoso por ter entrado na USP e aproveite os melhores anos que você terá na sua vida!</Text>
                 </Container>
 
