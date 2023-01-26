@@ -1,11 +1,12 @@
 import React from "react";
-import { WhatIsDiv, Grid } from "./styles";
+import { WhatIsDiv, Grid, Container } from "./styles";
 
 import {ReactComponent as CPUSvg} from "../../assets/svg/cpu.svg";
 import OrangePinkButton from "../Button";
 
 const WhatIs:React.FC = ()=>{
     return(
+        <Container>
         <WhatIsDiv>
             <h1>O QUE É {'\n'}ENGENHARIA DE COMPUTAÇÃO?</h1>
             <Grid>
@@ -27,6 +28,7 @@ const WhatIs:React.FC = ()=>{
                 </div>
             </Grid> 
         </WhatIsDiv>
+        </Container>
     );
 }
 

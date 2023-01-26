@@ -1,11 +1,9 @@
 import styled from "styled-components";
 import dark from "../../themes/dark";
 
-export const WhatIsDiv = styled.div`
-    
+export const Container = styled.div`
     background:${dark.text};
     color:${dark.background};
-    padding-left: 10rem;
     padding-top: 10vh;
     padding-bottom: 10vw;
     h1{
@@ -14,9 +12,20 @@ export const WhatIsDiv = styled.div`
 
         font-size:2rem;
     }
+`;
+export const WhatIsDiv = styled.div`
+    
+   
+
+    margin-left: 10rem;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     @media(max-width: 1080px){
-        min-height: 100vh;
-        
+      margin: 0 auto;
+      max-width: 80%;
     }
 `;
 

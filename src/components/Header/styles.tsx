@@ -76,7 +76,6 @@ export const TextDiv = styled.div`
     @media(max-width: 1080px){
       margin: 0 auto;
       max-width: 80%;
-      justify-content: center;
     }
 `;
 

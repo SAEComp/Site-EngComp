@@ -11,3 +11,16 @@ export const Wrapper = styled.div`
     scroll-behavior: smooth;
 `;
 
+export const Centered = styled.div`
+    width: 100%;
+    
+
+`;
+export const HeaderBixo = styled.div`
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right,rgb(0,4,40) 20%, transparent);
+`;

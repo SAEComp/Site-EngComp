@@ -1,31 +1,29 @@
 import React from "react";
-import {Container, Wrapper} from './styles';
-
+import {Container, Wrapper, HeaderBixo, Centered} from './styles';
+import { Button } from "../../components/Button/styles";
 import NavBar from "../../components/NavBar";
-import Header from "../../components/Header";
 import TopicosManual from "../../components/TopicosManual";
 import Extras from "../../components/Extra";
 import Footer from "../../components/Footer";
-import img from '../../assets/img/background1.jpg';
+import logo from "../../assets/img/header_023.png";
 
 const Manual = ()=>{
     return(
        <Container>
           <NavBar/>
-          <Wrapper>
-            <Header 
-            title="MANUAL DO BIXO"
-            text="Parabéns bixo/bixete pela grande conquista e seja bem vindo à Universidade de São Paulo, a melhor universidade da América Latina! Confira dicas importantes para essa nova fase.
-            "
-            url = "img1"
-            />
+            <HeaderBixo>
+               <img src={logo} style={{width: "30vw"}} alt="Perry 023"/>
+               <a href="SAEComp"><Button style={{padding: "2rem"}}>O que fazer para não ser um bixo burro?</Button></a>
+            
+         
+            </HeaderBixo>
             <TopicosManual />
             <Extras 
             title = "EXTRACURRICULARES" 
             text = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nam recusandae velit sapiente perferendis repudiandae eum provident aut! Nobis quas magnam reprehenderit accusantium dolorum quia eos necessitatibus fugit non fuga!"
             />
             <Footer />
-          </Wrapper>
+
        </Container>
     )
 }
