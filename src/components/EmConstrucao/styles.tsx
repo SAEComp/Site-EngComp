@@ -6,15 +6,12 @@ export const ContentSection=styled.section`
     padding-bottom: 7.5rem;
 `
 export const Card=styled.div`
-    border-radius: 20px;
-    -webkit-box-shadow: 22px 33px 59px -25px rgba(82,82,82,0.89);
--moz-box-shadow: 22px 33px 59px -25px rgba(82,82,82,0.89);
-box-shadow: 22px 33px 59px -25px rgba(82,82,82,0.89);
+
     padding-top: 3rem;
     padding-bottom: 3rem;
     margin: auto;
     width: 800px;
-    background-color:#f5f5f5;
+    background-color:#FFFFFF;
     `
 export const Title = styled.p`    
     font-family: fantasy;

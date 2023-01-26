@@ -12,10 +12,10 @@ const EmConstrucao:React.FC =()=>{
                 <Card>
                     <Title>EM</Title>
                     <Title>DESENVOLVIMENTO!</Title>
-                    <img style ={{margin:'auto', width:'450px', }}src ={manutencao}/>
-                    <img style ={{margin:'auto', width:'450px', }}src ={barra}/>
-                    <Text>Essa página está quase pronta, volte em breve!</Text>
-                    <Text>Enquanto isso, visite nossas redes sociais:</Text>
+                    <img style ={{margin:'auto', width:'450px' }}src ={manutencao}/>
+                    <img style ={{margin:'auto', width:'450px' }}src ={barra}/>
+                    <Text>Essa página está quase pronta. Volte em breve!</Text>
+                    <Text>Enquanto isso, visite as redes sociais da SAEComp:</Text>
                 <Row>
                     <a href = "https://www.instagram.com/saecomp.ec">
                         <SocialImg src = {Insta}/>
