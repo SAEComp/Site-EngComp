@@ -9,7 +9,7 @@ export const ComprarButton = styled.button`
     transition: box-shadow 0.5s;
 
     &:hover{
-        box-shadow:inset 22.5rem 0 0 black;
+        box-shadow:inset 10rem 0 0 10rem black;
         color:#00c774;
     }
 `;

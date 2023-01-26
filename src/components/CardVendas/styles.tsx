@@ -38,9 +38,7 @@ export const ComprarButtonDiv = styled.div`
     align-items:center;
     justify-content: flex-start;
     margin-top: 0rem;
-    @media(max-width: 1080px){
-            display: flex;
-        }
+
     button{
         width:10rem;
         height:3rem;
