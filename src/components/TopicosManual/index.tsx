@@ -23,6 +23,18 @@ type SubtitleProps= {
     number: string;
 }
 
+const ulmapa = {
+    listStyleType: "none",
+    display: "flex",
+    justifyContent: "space-around",
+    paddingBottom: "2rem"
+
+};
+
+const mapa ={
+    boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+};
+
 const Title = ({text, number}: TitleProps) =>{
     return <div><NumberCont>{number}. </NumberCont><TitleCont>{text}</TitleCont></div>
 }
@@ -91,7 +103,21 @@ const TopicosManual:React.FC = ()=>{
                     <Title text = "O campus" number = "6"></Title>           
                     <Subtitle number = "6.1" text = "Campus 1 e 2"></Subtitle>
                     <Text>O campus de São Carlos é dividido em 2 áreas: a central apelidada de “campus 1” e <LineThrough>o novo Iraque</LineThrough> a nova área afastada do centro da cidade apelidada de “campus 2”. Nos seguintes mapas é possível localizar diversos prédios que você passará bastante tempo de sua vida sofrendo.<br></br><br></br> <b>Ao escolher sua moradia, SEMPRE escolha perto do Campus 1. É onde está localizado grande parte do comércio, bancos, hospitais e todo o resto! Como você poderá observar nos mapas o Campus 2 é um pouco deserto. A USP disponibiliza ônibus gratuito para o campus 2. </b></Text>
-                    
+                        <ul style={ulmapa}>
+                            <div style={mapa}>
+                                <li>
+                                    <div className="gmap_canvas"><iframe width="400" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Av.%20Trab.%20S%C3%A3o%20Carlense,%20400%20-%20Parque%20Arnold%20Schimidt,%20S%C3%A3o%20Carlos%20-%20SP,%2013566-590&t=&z=17&ie=UTF8&iwloc=&output=embed"></iframe></div>
+                                </li>
+                            </div>
+                            <div style={mapa}>
+                                <li className="mapa" >
+                                    <div className="gmap_canvas"><iframe width="400" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Av.%20Jo%C3%A3o%20Dagnone,%201100%20-%20Santa%20Angelina,%20S%C3%A3o%20Carlos%20-%20SP,%2013563-120&t=&z=17&ie=UTF8&iwloc=&output=embed"></iframe> </div>
+                                </li>
+                            </div>
+                        </ul>
+
+
+
                     <Subtitle number="6.2" text="Bandejão"></Subtitle>
                     <Text>Bandejão! Nosso querido restaurante universitário, de onde você tirará forças para se manter em pé durante o dia inteiro de aula. Por apenas R$2,00 você poderá se servir de arroz, feijão, saladas diversas, pão, uma mistura, uma segunda opção de mistura e <a style = {{textDecoration: 'none', color: '#212529'}} target="_blank" href="http://www.staggeringbeauty.com/">sobremesa</a>. No Campus 1, fica dentro do CAASO, e no campus 2, é localizado perto da biblioteca.<br></br> Mais informações no <LinkSocial  target="_blank" href="http://www.puspsc.usp.br/cardapio/">site da prefeitura do campus de São Carlos</LinkSocial>.</Text>
                     <Subtitle number = "6.3" text = "Ônibus C2"></Subtitle>
