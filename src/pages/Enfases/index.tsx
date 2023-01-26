@@ -7,7 +7,6 @@ import WhatIs from "../../components/WhatIs";
 import Extras from "../../components/Extra";
 import Footer from "../../components/Footer";
 import CardExtra from "../../components/Card";
-import EmConstrucao from "../../components/EmConstrucao";
 
 
 const Enfases = ()=>{
@@ -16,7 +15,16 @@ const Enfases = ()=>{
             <NavBar/>
           <Wrapper>
 
-            <EmConstrucao />
+          <Header 
+            title="ÊNFASES"
+            text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nam recusandae velit sapiente perferendis repudiandae eum provident aut! Nobis quas magnam reprehenderit accusantium dolorum quia eos necessitatibus fugit non fuga!"
+            url = "../../assets/img/background1.jpg"
+            />
+            <WhatIs />
+            <Extras 
+            title = "EXTRACURRICULARES" 
+            text = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nam recusandae velit sapiente perferendis repudiandae eum provident aut! Nobis quas magnam reprehenderit accusantium dolorum quia eos necessitatibus fugit non fuga!"
+            />
            
             <Footer />
           </Wrapper>
