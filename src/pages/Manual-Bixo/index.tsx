@@ -8,12 +8,16 @@ import Footer from "../../components/Footer";
 import logo from "../../assets/img/header_023.png";
 
 const Manual = ()=>{
+   let clientH = document.documentElement.clientHeight;
+   const scrollbar = () => {
+      window.scrollTo({top: clientH, behavior: 'smooth'});
+    }
     return(
        <Container>
           <NavBar/>
             <HeaderBixo>
                <img src={logo} style={{width: "30vw"}} alt="Perry 023"/>
-               <a href="SAEComp"><Button style={{padding: "2rem"}}>O que fazer para não ser um bixo burro?</Button></a>
+               <Button style={{padding: "2rem"}} onClick = {scrollbar}>O que fazer para não ser um bixo burro?</Button>
             
          
             </HeaderBixo>

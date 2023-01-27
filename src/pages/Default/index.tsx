@@ -4,11 +4,14 @@ import Insta from "../../assets/img/Insta.png"
 import Face from "../../assets/img/Face.png"
 import manutencao from "../../assets/img/manutencao.png"
 import {ContentSection, Title, Text, Card, Row, SocialImg} from "./styles";
-
+import NavBar from "../../components/NavBar";
+import Footer from "../../components/Footer";
 const Default:React.FC =()=>{
     return(
         <div>
+            <NavBar/>
             <ContentSection>
+                
                 <Card>
                     <Title>EM</Title>
                     <Title>DESENVOLVIMENTO!</Title>
@@ -26,7 +29,7 @@ const Default:React.FC =()=>{
                     </Row>
                 </Card>
             </ContentSection>
-            
+            <Footer/>
         </div>
     )
 }

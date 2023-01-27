@@ -9,7 +9,7 @@ import Extracurriculares from "./pages/Extracurriculares";
 import Manual from "./pages/Manual-Bixo";
 import FAQ from "./pages/Tutoriais-FAQ";
 import SAEcomp from "./pages/SAEComp";
-
+import Default from "./pages/Default";
 const _Routes = () => {
    return(
        <BrowserRouter>
@@ -22,6 +22,7 @@ const _Routes = () => {
                 <Route element = { <Manual/> }  path="/Manual-Bixo"  />
                 <Route element = { <SAEcomp/> }  path="/SAEComp"  />
                 <Route element = { <FAQ/> }  path="/FAQ"  />
+                <Route element = { <Default/> }  path="/Default"  />
             </Routes>
             
        </BrowserRouter>

@@ -2,15 +2,17 @@ import styled from "styled-components";
 
 export const ContentSection=styled.section`
     text-align:center;
-    padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
+    padding-top: 6.5rem;
+    max-height: 100vh;
+    margin-bottom: 10rem;
 `
 export const Card=styled.div`
-
-    padding-top: 3rem;
     padding-bottom: 3rem;
     margin: auto;
-    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     background-color:#FFFFFF;
     `
 export const Title = styled.p`    
