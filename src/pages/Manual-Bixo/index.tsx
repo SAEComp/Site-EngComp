@@ -14,8 +14,6 @@ const Manual = ()=>{
             <HeaderBixo>
                <img src={logo} style={{width: "30vw"}} alt="Perry 023"/>
                <a href="SAEComp"><Button style={{padding: "2rem"}}>O que fazer para não ser um bixo burro?</Button></a>
-            
-         
             </HeaderBixo>
             <TopicosManual />
             <Extras 
