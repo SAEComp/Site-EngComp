@@ -27,7 +27,7 @@ const SAEcomp = ()=>{
           <Wrapper>
             <Header2
             title="CONHEÇA A SECRETARIA ACADÊMICA"
-            text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nam recusandae velit sapiente perferendis repudiandae eum provident aut! Nobis quas magnam reprehenderit accusantium dolorum quia eos necessitatibus fugit non fuga!
+            text="Oferecemos suporte acadêmico e representatividade frente aos órgãos da Universidade de São Paulo para todos os alunos de graduação do curso de Engenharia de Computação. Nossa organização é composta somente por alunos de graduação do curso de Engenharia de Computação, dessa forma, estamos inseridos no ambiente e no grupo que queremos impactar, alcançando nossos objetivos a partir da integração das turmas e dos indivíduos.
             "
             url = "../../assets/img/background1.jpg"
             />

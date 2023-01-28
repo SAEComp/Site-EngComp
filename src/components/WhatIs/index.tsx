@@ -21,7 +21,7 @@ const WhatIs:React.FC = ()=>{
                     No caso da USP de São Carlos, o curso é uma parceria entre a Escola de Engenharia de São Carlos (EESC) e o Instituto de Ciências Matemáticas e de Computação (ICMC), com duração de cinco anos. 
                     </p>
                     <div> 
-                        <OrangePinkButton text="VEJA A GRADE DO CURSO"/>
+                        <a href="https://uspdigital.usp.br/jupiterweb/listarGradeCurricular?codcg=97&codcur=97001&codhab=0&tipo=N"><OrangePinkButton text="VEJA A GRADE DO CURSO"/> </a>
                     </div>
                 </div>
                 <div className="LogoDiv">
