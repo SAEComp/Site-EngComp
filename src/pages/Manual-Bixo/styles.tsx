@@ -22,5 +22,5 @@ export const HeaderBixo = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: linear-gradient(to right,rgb(0,4,40) 20%, transparent);
+    background-color: rgb(0,4,40);
 `;

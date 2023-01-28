@@ -15,14 +15,13 @@ const Home:React.FC = ()=>{
           <Wrapper>
             <Header 
             title="ENGENHARIA DE COMPUTAÇÃO"
-            text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nam recusandae velit sapiente perferendis repudiandae eum provident aut! Nobis quas magnam reprehenderit accusantium dolorum quia eos necessitatibus fugit non fuga!
-            "
+            text="A Engenharia da Computação tem como objetivo principal o desenvolvimento de hardware, que é a parte física dos equipamentos e seus periféricos. No entanto, nessa profissão também existe a interface com o software, que são os sistemas, programas e redes computacionais. Neste site você conhecerá tudo sobre o curso na USP em São Carlos."
             url = "img2"
             />
             <WhatIs />
             <Extras 
             title = "EXTRACURRICULARES" 
-            text = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nam recusandae velit sapiente perferendis repudiandae eum provident aut! Nobis quas magnam reprehenderit accusantium dolorum quia eos necessitatibus fugit non fuga!"
+            text = "Umas das melhores oportunidades que se tem na universidade são as extras curriculares. Além de gerar muito aprendizado, também são ótimas para socializar. Dentre as diversas, estas foram responsáveis pelo desenvolvimento do site, mas você pode conferir as demais pelo seu manual!"
             />
             <Footer />
           </Wrapper>

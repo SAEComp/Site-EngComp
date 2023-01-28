@@ -26,8 +26,8 @@ const NavBar:React.FC = ()=>{
                         <NavList> 
                              <NavItem><a href="/">Home</a></NavItem>
                              <NavItem><a href="/SAEComp">SAEComp</a></NavItem>
-                             <NavItem><a href="/Enfases">Ênfases</a></NavItem>
-                             <NavItem><a href="/Notas-Corte">Notas</a></NavItem>
+                             <NavItem><a href="/Default">Ênfases</a></NavItem>
+                             <NavItem><a href="/Default">Notas</a></NavItem>
                              <NavItem><a href="/Manual-Bixo">Manual do Bixo</a></NavItem>
                         </NavList>
                         <LoginDiv>Aluno? <OrangePinkButton text="Login"/></LoginDiv>
