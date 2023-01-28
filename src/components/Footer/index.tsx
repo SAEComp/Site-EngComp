@@ -13,9 +13,9 @@ const Footer = ()=>{
             <h2>USP - São Carlos</h2>
             
             <div>
-                <a href="#"><FaFacebook className="svg"/></a>
-                <a href="#"><FaTwitter className="svg"/></a>
-                <a href="#"><FaInstagram className="svg"/></a>
+                <a href="https://www.facebook.com/saecomp"><FaFacebook className="svg"/></a>
+                <a href="https://twitter.com/saecompusp?s=20"><FaTwitter className="svg"/></a>
+                <a href="https://www.instagram.com/saecomp.ec"><FaInstagram className="svg"/></a>
             </div>
         </FooterContainer>
     );

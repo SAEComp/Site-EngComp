@@ -21,7 +21,7 @@ const Home:React.FC = ()=>{
             <WhatIs />
             <Extras 
             title = "EXTRACURRICULARES" 
-            text = "O curso de Engenharia de Computação da USP São Carlos possui diversas extracurriculares atreladas a ele, dentre elas estão a ADA, SaeComp e a SenC."
+            text = "Umas das melhores oportunidades que se tem na universidade são as extras curriculares. Além de gerar muito aprendizado, também são ótimas para socializar. Dentre as diversas, estas foram responsáveis pelo desenvolvimento do site, mas você pode conferir as demais pelo seu manual!"
             />
             <Footer />
           </Wrapper>

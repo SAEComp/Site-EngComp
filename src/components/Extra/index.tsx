@@ -21,13 +21,13 @@ const Extras:React.FC<Props> = ({title, text}) =>{
                     {text}
                 </NormalText>
                 <ExtrasLogos>
-                    <LogoDiv href="#">
+                    <LogoDiv href="https://www.instagram.com/ada_usp/" target="_blank" rel="noopener noreferrer">
                         <img src={ada} alt="saecomp" className='Ada'/>
                     </LogoDiv>
-                    <LogoDiv className="centered" href="#">
+                    <LogoDiv className="centered" href="https://www.instagram.com/saecomp.ec/"target="_blank" rel="noopener noreferrer">
                         <img src={saecomp} alt="saecomp"/>
                     </LogoDiv>
-                    <LogoDiv href="#">
+                    <LogoDiv href="https://www.instagram.com/senc.usp/" target="_blank" rel="noopener noreferrer">
                         <img src={senc} alt="saecomp"/>
                     </LogoDiv>
                 </ExtrasLogos>
@@ -35,7 +35,7 @@ const Extras:React.FC<Props> = ({title, text}) =>{
                 <NormalText>Quer saber mais? Tem muitas outras!</NormalText>
                 </ArrowDiv>
                 <Centered>
-                <Button>Manual do Bixo</Button>
+                <a href="/Manual-Bixo"><Button>Manual do Bixo</Button></a>
                 </Centered>
                 
             </TextDiv>

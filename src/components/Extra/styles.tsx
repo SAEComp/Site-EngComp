@@ -2,7 +2,7 @@ import styled, { keyframes } from 'styled-components';
 
 export const Container = styled.div`
     max-width: 100vw;
-    height: 100vh;
+    height: 105vh;
     padding-left: 10rem;
     //scroll-snap-align: center;
     
