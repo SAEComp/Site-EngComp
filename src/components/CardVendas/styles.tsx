@@ -12,6 +12,7 @@ export const VendasTopic = styled.div`
     background-attachment: fixed;
     position: relative;
     scroll-snap-align: center;
+    a: link {text-decoration: none;}
     
 `;
 export const DivBlock = styled.div`
