@@ -1,11 +1,11 @@
 import React from "react";
-import {DivFlex, DivText, Text, Title, ImgExtra, DivTeste} from './styles';
+import {DivFlex, DivText, Text, Title, ImgExtra} from './styles';
 import img1 from '../../assets/img/extra/img1.png';
 import img2 from '../../assets/img/extra/img2.png';
 import img3 from '../../assets/img/extra/img3.png';
 import img4 from '../../assets/img/extra/img4.png';
 import img5 from '../../assets/img/extra/img5.jpg';
-import img6 from '../../assets/img/extra/img6.jpeg';
+import img6 from '../../assets/img/extra/img6.png';
 import img7 from '../../assets/img/extra/img7.png';
 import img8 from '../../assets/img/extra/img8.png';
 import img9 from '../../assets/img/extra/img9.png';
@@ -112,8 +112,8 @@ const CardExtras:React.FC<Props> = ({title, text, url}) =>{
     }
     
     return(
-        <DivFlex style = {{marginBottom: '1rem'}}>
-            <DivTeste><ImgExtra style = {{width:'100%'}} src = {img}/></DivTeste>
+        <DivFlex style = {{marginBottom: '2rem'}}>
+           <ImgExtra style = {{width:'100%'}} src = {img}/>
            
             <DivText>
                 <div style= {{marginBottom: '1rem'}}><Title>{title}</Title></div>
