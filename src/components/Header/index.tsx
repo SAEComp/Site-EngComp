@@ -3,6 +3,7 @@ import {HeaderTopic, HeaderText, HeaderGradient, HeaderTextTitle, TextDiv, Arrow
 import {FaCaretDown} from 'react-icons/fa';
 import img1 from '../../assets/img/background1.jpg';
 import img2 from '../../assets/img/background2.jpg'
+
 interface Props{
   title:string;
   text:string;
