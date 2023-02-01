@@ -27,4 +27,5 @@ export const ImgExtra = styled.img`
     max-width: 20%!important;
     margin: 0 auto 30px;
     width: auto !important;
+    padding-right: 10px;
 `

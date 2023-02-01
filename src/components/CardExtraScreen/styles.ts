@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-export const SubtitleCont = styled.h2`
-    font-weight: 500;
-    margin-bottom: 3rem; 
-    font-size: 2rem;
+export const SubtitleCont = styled.h1`
+    font-weight: 700 !important;
+    font-size: 3rem;
+    margin-bottom: 4rem;
 `
 export const ContentSection = styled.section`
     display: flex;

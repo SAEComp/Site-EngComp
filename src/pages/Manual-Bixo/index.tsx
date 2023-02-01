@@ -4,6 +4,7 @@ import { Button } from "../../components/Button/styles";
 import NavBar from "../../components/NavBar";
 import TopicosManual from "../../components/TopicosManual";
 import CardExtraScreen from "../../components/CardExtraScreen";
+import Perry from "../../components/Perry";
 import Footer from "../../components/Footer";
 import logo from "../../assets/img/header_023.png";
 import { Card } from "../Default/styles";
@@ -15,17 +16,15 @@ const Manual = ()=>{
     }
     return(
        <Container>
-          <NavBar/>
+
+            <NavBar/>
             <HeaderBixo>
                <img src={logo} style={{width: "30vw"}} alt="Perry 023"/>
                <Button style={{padding: "2rem"}} onClick = {scrollbar}>O que fazer para não ser um bixo burro?</Button>
-            
-         
             </HeaderBixo>
             <TopicosManual />
-
-           <CardExtraScreen/>
-            
+            <Perry />
+            <CardExtraScreen />
             <Footer />
 
        </Container>
