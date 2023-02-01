@@ -14,29 +14,35 @@ interface Props{
 
 const CardVendas:React.FC<Props> = ({url})=>{
     let img;
+    let link;
     if(url == "img1"){
         img = img1;
+        link = 'https://beuni.com.br/plataforma/';
     }
     else if(url == "img2"){
         img = img2;
+        link = 'https://beuni.com.br/plataforma/';
     }
     else if(url == "img3"){
         img = img3;
+        link = 'https://beuni.com.br/plataforma/';
     }
     else if(url == "img4"){
         img = img4;
+        link = 'https://beuni.com.br/plataforma/';
     }
     else if(url == "img5"){
         img = img5;
+        link ="#"
     }
     return(
         <DivBlock>
         <VendasTopic>
             
             <VendasImg style={{backgroundImage: `url("${img}")` }}/>
-            <ComprarButtonDiv>
+            <a href={link} target= "_blank"><ComprarButtonDiv> 
                 <ComprarButton text = "COMPRAR"/>
-            </ComprarButtonDiv>
+            </ComprarButtonDiv></a>
             
         </VendasTopic>
         </DivBlock>

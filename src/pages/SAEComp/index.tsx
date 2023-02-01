@@ -39,9 +39,9 @@ const SAEcomp = ()=>{
          
             <ProjetosEmAcao>
            
-               <Projeto title = "Projeto 1" text = "Texto 1"/>
-               <Projeto title = "Projeto 2" text = "Texto 2"/>
-               <Projeto title = "Projeto 3" text = "Texto 3"/>
+               <Projeto title = "Drive da Eng Comp" text = "Drive que reúne materiais, provas antigas e trabalhos disponibilizados pelos veteranos  das matérias que compõem a grade do curso."/>
+               <Projeto title = "Kit Bixo" text = "Um conjunto de artigos elaborados especialmente para você começar o curso vestindo as cores de seu curso."/>
+               <Projeto title = "Portfólio de IC's" text = "Um documento com todas as oportunidades de Iniciação Científica oferecidas por professores de diversos professores da USP."/>
             </ProjetosEmAcao>
            
             </Centered>
@@ -53,15 +53,15 @@ const SAEcomp = ()=>{
             <DualGrid>
                
                <div>
-                  <ContactDir text = "AA" type = "Email"/>
-                  <ContactDir text = "AA" type = "Telefone"/>
-                  <ContactDir text = "AA" type = "Endereço"/>
+                  <ContactDir text = "saecomp.ec@gmail.com" type = "Email"/>
+                  <ContactDir text = "(16) 99738-1861" type = "Telefone"/>
+                  <ContactDir text = "Sala 8-001 | Prédio da Eng Comp - USP Campus 2. São Carlos, Brasil" type = "Endereço"/>
                </div>
 
                <div>
-                  <ContactSoc text = "AA" type = "Twitch"/>
-                  <ContactSoc text = "AA" type = "Insta"/>
-                  <ContactSoc text = "AA" type = "Twitter"/>
+                  <ContactSoc text = "SAEComp" type = "Twitch"/>
+                  <ContactSoc text = "@saecomp.ec" type = "Insta"/>
+                  <ContactSoc text = "@saecompusp" type = "Twitter"/>
                </div>
             </DualGrid>
             <Centered><a href="https://wa.me/5516997381861" target="_blank"><Button>  Curtiu? Chama nossa presida no Zap!</Button></a></Centered>
@@ -69,7 +69,7 @@ const SAEcomp = ()=>{
             </div>
             <Extras 
             title = "EXTRACURRICULARES" 
-            text = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nam recusandae velit sapiente perferendis repudiandae eum provident aut! Nobis quas magnam reprehenderit accusantium dolorum quia eos necessitatibus fugit non fuga!"
+            text = "Umas das melhores oportunidades que se tem na universidade são as extras curriculares. Além de gerar muito aprendizado, também são ótimas para socializar. Dentre as diversas, estas foram responsáveis pelo desenvolvimento do site, mas você pode conferir as demais pelo seu manual!"
             />
             <Footer />
 
