@@ -37,14 +37,16 @@ const CardVendas:React.FC<Props> = ({url})=>{
     }
     return(
         <DivBlock>
-        <VendasTopic>
-            
-            <VendasImg style={{backgroundImage: `url("${img}")` }}/>
-            <a href={link} target= "_blank"><ComprarButtonDiv> 
-                <ComprarButton text = "COMPRAR"/>
-            </ComprarButtonDiv></a>
-            
-        </VendasTopic>
+            <VendasTopic>
+                <VendasImg>
+                    <img src={img}/>
+                </VendasImg>
+                <a href={link} target= "_blank">
+                <ComprarButtonDiv> 
+                    <ComprarButton text = "COMPRAR"/>
+                </ComprarButtonDiv></a>
+                
+            </VendasTopic>
         </DivBlock>
     );
 }
