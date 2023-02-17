@@ -5,11 +5,7 @@ export const VendasTopic = styled.div`
     flex-direction: column;
     align-items: center;
     width : 20vw;
-    height: 50vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+    height: 24vw;
     position: relative;
     scroll-snap-align: center;
     a: link {text-decoration: none;}
@@ -17,37 +13,42 @@ export const VendasTopic = styled.div`
 `;
 export const DivBlock = styled.div`
     display: inline-block;
-    margin: 1em;
+    margin: 1rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 10px;
+    border-radius: .5rem;
+    @media(max-width: 1080){
+        margin: .7em;
+    }
 `;
 
 export const VendasImg = styled.div`
-    margin-top: .8em;
+    margin-top: 1.3vw;
     border-radius: 10px;
-    width : 90%;
-    height: 42vh;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
     position: relative;
     scroll-snap-align: center;
+    @media (max-width: 1920px){
+        img{
+        width : 15vw;
+        height: 18vw;
+        }
+    }
+    
 `;
 
 export const ComprarButtonDiv = styled.div`
+    position: relative;
     display:flex;
     align-items:center;
     justify-content: flex-start;
-    margin-top: 0rem;
-
-    button{
-        width:10rem;
-        height:3rem;
-        font-size:1.55rem;
-        padding: 8px 10px;
+    margin-top: .5vw;
+    button{    
+        width: 10vw;
+        height: 2.5vw;
+        font-size: 1.55vw;
+        padding: .3vw .3vw;
         color:white;
         background:linear-gradient(45deg,#04b855,#05e090);
         border:none;
-        border-radius:20px;
+        border-radius: 1vw;
     }
 `;
