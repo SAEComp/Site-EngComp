@@ -8,7 +8,7 @@ import Projeto from "../../components/Projetos";
 import Footer from "../../components/Footer";
 import ContactDir from "../../components/Contact";
 import ContactSoc from "../../components/ContactSoc";
-
+import WhatWeDo from "../../components/WhatWeDo";
 
 const Titulos = {
    fontSize: "3rem",
@@ -31,12 +31,13 @@ const SAEcomp = ()=>{
             "
             url = "../../assets/img/background1.jpg"
             />
+
+            <WhatWeDo/>
             <ProdutosSaecomp/>
-            
             <div style={{padding: "3rem 0 3rem 0"}}>
             <p style={Titulos}> PROJETOS EM AÇÃO</p>
             <Centered>
-         
+
             <ProjetosEmAcao>
            
                <Projeto title = "Drive da Eng Comp" text = "Drive que reúne materiais, provas antigas e trabalhos disponibilizados pelos veteranos  das matérias que compõem a grade do curso."/>

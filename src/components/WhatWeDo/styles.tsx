@@ -17,6 +17,7 @@ export const Paragraph2 = styled.div`
   text-align: center;
 `;
 export const WhatWeDoDiv = styled.div`
+  margin: 10rem;
   width: 1119px;
   display: flex;
   flex-direction: row;
@@ -34,9 +35,9 @@ export const FlexColumn = styled.div`
 `;
 export const Text1 = styled.div`
   align-self: flex-start;
-  margin: 0px 0px 68px 0px;
+
   color: #1a6930;
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 700;
   font-family: Ubuntu;
   white-space: nowrap;
@@ -120,7 +121,7 @@ export const Paragraph3 = styled.div`
 export const FlexColumn2 = styled.div`
   width: 272px;
   height: 900px;
-  gap: 92px;
+  gap: 120px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -137,7 +138,7 @@ export const Block2 = styled.div`
 `;
 export const Block5 = styled.div`
   width: 272px;
-  gap: 14px;
+  gap: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
