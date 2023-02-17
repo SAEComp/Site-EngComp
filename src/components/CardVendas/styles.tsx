@@ -8,17 +8,17 @@ export const VendasTopic = styled.div`
     height: 24vw;
     position: relative;
     scroll-snap-align: center;
-    a: link {text-decoration: none;}
+    a{text-decoration: none;}
+    @media(max-width: 1080px){
+        height: 25vh;
+    }
     
 `;
 export const DivBlock = styled.div`
     display: inline-block;
     margin: 1rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: .5rem;
-    @media(max-width: 1080){
-        margin: .7em;
-    }
+    border-radius: 10px;
 `;
 
 export const VendasImg = styled.div`
