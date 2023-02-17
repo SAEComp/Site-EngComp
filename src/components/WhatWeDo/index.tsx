@@ -65,7 +65,7 @@ const WhatWeDo:React.FC = ()=> {
         <Block5>
           <Website src={img5} />
           <Paragraph5>
-            Fizemos parte do grupo que criou o site da Engenharia de Computação
+            Fazemos parte do grupo que criou o site da Engenharia de Computação
           </Paragraph5>
         </Block5>
       </FlexColumn2>
