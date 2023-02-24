@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/static/js/main.c8b638d9.chunk.js",
-    "main.js.map": "/static/js/main.c8b638d9.chunk.js.map",
+    "main.js": "/static/js/main.baf87eb9.chunk.js",
+    "main.js.map": "/static/js/main.baf87eb9.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0b13f7b4.js",
     "runtime-main.js.map": "/static/js/runtime-main.0b13f7b4.js.map",
     "static/js/2.05324f23.chunk.js": "/static/js/2.05324f23.chunk.js",
@@ -26,8 +26,12 @@
     "static/media/ada.cc717134.png": "/static/media/ada.cc717134.png",
     "static/media/background1.1de8af96.jpg": "/static/media/background1.1de8af96.jpg",
     "static/media/background2.c6c7e52f.jpg": "/static/media/background2.c6c7e52f.jpg",
+    "static/media/blusa.a5a5927b.png": "/static/media/blusa.a5a5927b.png",
+    "static/media/brain.c9df9277.png": "/static/media/brain.c9df9277.png",
     "static/media/cpu.00c5e058.svg": "/static/media/cpu.00c5e058.svg",
+    "static/media/festa.55dc3481.png": "/static/media/festa.55dc3481.png",
     "static/media/header_023.52f8d148.png": "/static/media/header_023.52f8d148.png",
+    "static/media/hug.a4c16efc.png": "/static/media/hug.a4c16efc.png",
     "static/media/img1.130b47d0.png": "/static/media/img1.130b47d0.png",
     "static/media/img10.5325c288.png": "/static/media/img10.5325c288.png",
     "static/media/img11.efa24fe4.png": "/static/media/img11.efa24fe4.png",
@@ -67,6 +71,6 @@
   "entrypoints": [
     "static/js/runtime-main.0b13f7b4.js",
     "static/js/2.05324f23.chunk.js",
-    "static/js/main.c8b638d9.chunk.js"
+    "static/js/main.baf87eb9.chunk.js"
   ]
 }
