@@ -4,6 +4,9 @@ export const SubtitleCont = styled.h1`
     font-weight: 700 !important;
     font-size: 3rem;
     margin-bottom: 4rem;
+    @media (max-width: 768px){
+        font-size: 2rem;
+    }
 `
 export const ContentSection = styled.section`
     display: flex;

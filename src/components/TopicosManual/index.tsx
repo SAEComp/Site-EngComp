@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from 'react';
+import styled from 'styled-components';
 import {ContentSection, ContentSection2, ContentSection3, Container, TitleCont, SubtitleCont,  TextCont, NumberCont, LinkSocial, TextSocial, LineThrough, TextFaded, DivApp, UlApp, ImgApp} from "./styles";
 import Logo from "../../assets/img/Logo.png"
 import Caaso from "../../assets/img/Caaso.png"
@@ -23,13 +24,28 @@ type SubtitleProps= {
     number: string;
 }
 
-const ulmapa = {
-    listStyleType: "none",
-    display: "flex",
-    justifyContent: "space-around",
-    paddingBottom: "2rem"
+const Ulmap = styled.div`
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+    .mapaMob{
+            display: none;
+        }
+   
 
-};
+    @media (max-width: 768px){
+        .mapas{
+            display: none;
+            
+        }
+        .mapaMob{
+            display: flex;
+        }
+    }
+`;
+
+
 
 const mapa ={
     boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
@@ -103,18 +119,29 @@ const TopicosManual:React.FC = ()=>{
                     <Title text = "O campus" number = "6"></Title>           
                     <Subtitle number = "6.1" text = "Campus 1 e 2"></Subtitle>
                     <Text>O campus de São Carlos é dividido em 2 áreas: a central apelidada de “campus 1” e <LineThrough>o novo Iraque</LineThrough> a nova área afastada do centro da cidade apelidada de “campus 2”. Nos seguintes mapas é possível localizar diversos prédios que você passará bastante tempo de sua vida sofrendo.<br></br><br></br> <b>Ao escolher sua moradia, SEMPRE escolha perto do Campus 1. É onde está localizado grande parte do comércio, bancos, hospitais e todo o resto! Como você poderá observar nos mapas o Campus 2 é um pouco deserto. A USP disponibiliza ônibus gratuito para o campus 2. </b></Text>
-                        <ul style={ulmapa}>
-                            <div style={mapa}>
-                                <li>
+                        <Ulmap>
+                      
+                            
+                            <li className="mapas" >
                                     <div className="gmap_canvas"><iframe width="400" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Av.%20Trab.%20S%C3%A3o%20Carlense,%20400%20-%20Parque%20Arnold%20Schimidt,%20S%C3%A3o%20Carlos%20-%20SP,%2013566-590&t=&z=17&ie=UTF8&iwloc=&output=embed"></iframe></div>
                                 </li>
-                            </div>
-                            <div style={mapa}>
-                                <li className="mapa" >
+                            
+                                <li className="mapas" >
                                     <div className="gmap_canvas"><iframe width="400" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Av.%20Jo%C3%A3o%20Dagnone,%201100%20-%20Santa%20Angelina,%20S%C3%A3o%20Carlos%20-%20SP,%2013563-120&t=&z=17&ie=UTF8&iwloc=&output=embed"></iframe> </div>
                                 </li>
-                            </div>
-                        </ul>
+
+
+                                <li className="mapaMob" >
+                                    <div className="gmap_canvas"><iframe width="150" height="150" id="gmap_canvas" src="https://maps.google.com/maps?q=Av.%20Trab.%20S%C3%A3o%20Carlense,%20400%20-%20Parque%20Arnold%20Schimidt,%20S%C3%A3o%20Carlos%20-%20SP,%2013566-590&t=&z=17&ie=UTF8&iwloc=&output=embed"></iframe></div>
+                                </li>
+                            
+                           
+                                <li className="mapaMob" >
+                                    <div className="gmap_canvas"><iframe width="150" height="150" id="gmap_canvas" src="https://maps.google.com/maps?q=Av.%20Jo%C3%A3o%20Dagnone,%201100%20-%20Santa%20Angelina,%20S%C3%A3o%20Carlos%20-%20SP,%2013563-120&t=&z=17&ie=UTF8&iwloc=&output=embed"></iframe> </div>
+                                </li>
+                           
+                        
+                        </Ulmap>
 
 
 

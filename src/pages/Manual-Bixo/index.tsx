@@ -19,7 +19,7 @@ const Manual = ()=>{
 
             <NavBar/>
             <HeaderBixo>
-               <img src={logo} style={{width: "30vw"}} alt="Perry 023"/>
+               <img src={logo} alt="Perry 023"/>
                <Button style={{padding: "2rem"}} onClick = {scrollbar}>O que fazer para não ser um bixo burro?</Button>
             </HeaderBixo>
             <TopicosManual />

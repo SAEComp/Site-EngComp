@@ -23,4 +23,15 @@ export const HeaderBixo = styled.div`
     justify-content: center;
     flex-direction: column;
     background-color: rgb(0,4,40);
+
+    img{
+        width: 400px;
+    }
+    @media (max-width: 768px) {
+        img{
+            width: 60vw;
+        }
+    };
+        
+    
 `;

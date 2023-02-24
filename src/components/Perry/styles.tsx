@@ -21,6 +21,9 @@ export const TitleCont = styled.h1`
     font-weight: 700 !important;
     font-size: 3rem;
     margin-bottom: 2rem;
+    @media (max-width: 768px){
+        font-size: 1.5rem;
+    }
 `
 export const SubtitleCont = styled.h2`
     font-weight: 500;
@@ -30,6 +33,10 @@ export const DivFlex = styled.div`
     display: inline-flex;
     align-items:center;
     justify-content: center;
+    @media (max-width: 768px){
+        display: flex;
+        flex-direction: column;
+    }
 `
 export const DivFlex2 = styled.div`
     flex-direction: column;
@@ -41,6 +48,9 @@ export const TextCont = styled.div`
     margin-top: 0;
     line-height: 1.5;
     font-family: -apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;
+    @media (max-width: 768px){
+        font-size: 1.1rem;
+    }
 `
 export const ImgPerry = styled.img`
     max-height: 350px !important;
@@ -53,10 +63,16 @@ export const LinkSocial = styled.a`
     font-weight: 600;
     text-decoration: none;
     font-size: 1.25rem;
+    @media (max-width: 768px){
+        font-size: .9rem;
+    }
     &:hover{
     color: #dc9c18;
     }
 `
 export const TextSocial = styled.b`
     font-size: 1.25rem;
+    @media (max-width: 768px){
+        font-size: 1.1rem;
+    }
 `

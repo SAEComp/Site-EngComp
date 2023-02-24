@@ -113,7 +113,7 @@ const CardExtras:React.FC<Props> = ({title, text, url}) =>{
     
     return(
         <DivFlex style = {{marginBottom: '2rem'}}>
-           <ImgExtra style = {{width:'100%'}} src = {img}/>
+           <ImgExtra src = {img}/>
            
             <DivText>
                 <div style= {{marginBottom: '1rem'}}><Title>{title}</Title></div>

@@ -34,7 +34,10 @@ export const Container = styled.div`
 export const TitleCont = styled.div`
     font-size: 3rem;
     margin-bottom: 1.5rem;
-    display: inline-block
+    display: inline-block;
+    @media (max-width: 768px){
+        font-size: 2rem;
+    }
 `
 export const SubtitleCont = styled.h2`
     font-weight: 500;
@@ -47,13 +50,19 @@ export const TextCont = styled.div`
     margin-top: 0;
     line-height: 1.5;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-`
+    @media (max-width: 768px){
+        font-size: 1.1rem;
+    }
+    `
 export const NumberCont = styled.div`
     color: #00a8b1;
     font-weight: 900;
     font-size: 3rem;
     margin-bottom: 1.5rem;
     display: inline;
+    @media (max-width: 768px){
+        font-size: 2rem;
+    }
 `
 export const LinkSocial = styled.a`
     color: #f7b120;
