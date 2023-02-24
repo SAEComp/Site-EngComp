@@ -35,7 +35,7 @@ const RightNav = ({ open }: RightNavProps) => {
     <Ul open={open}>
       <li><a href='/'>Home</a></li>
       <li><a href='/SAEComp'>SAEComp</a></li>
-      <li><a href='/Default'>Ênfases</a></li>
+      <li><a href='/Enfases'>Ênfases</a></li>
       <li><a href='/Default'>Notas</a></li>
       <li><a href='/Manual-bixo'>Manual</a></li>
     </Ul>
