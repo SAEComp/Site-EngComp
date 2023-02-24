@@ -32,6 +32,7 @@ const SAEcomp = ()=>{
             url = "../../assets/img/background1.jpg"
             />
 
+            <p style={Titulos}> O QUE FAZEMOS</p>
             <WhatWeDo/>
             <ProdutosSaecomp/>
             <div style={{padding: "3rem 0 3rem 0"}}>
