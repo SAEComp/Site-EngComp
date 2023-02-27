@@ -43,8 +43,10 @@ export const SubtitleCont = styled.h2`
     font-weight: 500;
     margin-bottom: .5rem;    
 `
+ 
 export const TextCont = styled.div`
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    color: #545454;
     font-weight: 300;
     margin-bottom: 3rem;
     margin-top: 0;

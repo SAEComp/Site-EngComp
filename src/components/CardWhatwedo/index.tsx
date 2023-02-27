@@ -1,5 +1,5 @@
 import React from "react";
-import { CardDiv, WhatImg, DivText, Text } from './styles';
+import { CardDiv, WhatImg, DivText, StandardText } from './styles';
 import img1 from '../../assets/img/brain.png';
 import img2 from '../../assets/img/blusa.png';
 import img3 from '../../assets/img/prancheta.png';
@@ -38,7 +38,7 @@ const CardWhatwedo:React.FC<Props> = ({text, url}) =>{
            <WhatImg src = {img}/>
            
             <DivText>
-                <div ><Text>{text}</Text></div>
+                <div ><StandardText>{text}</StandardText></div>
             </DivText>
         
         </CardDiv>

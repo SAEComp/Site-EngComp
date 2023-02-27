@@ -10,7 +10,7 @@ export const VendasTopic = styled.div`
     scroll-snap-align: center;
     a{text-decoration: none;}
     @media(max-width: 1080px){
-        height: 25vh;
+        height: 25vw;
     }
     
 `;

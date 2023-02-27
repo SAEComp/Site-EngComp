@@ -38,7 +38,7 @@ export const HeaderTextTitle = styled.div`
     }
 `;
 
-export const HeaderText = styled.div`
+export const StandardText = styled.div`
     max-width: 80vw;
     color: #545454;
     font-size: 1.5rem;

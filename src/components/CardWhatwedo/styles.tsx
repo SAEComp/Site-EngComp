@@ -10,21 +10,20 @@ export const WhatImg = styled.img`
     width: 240px;
     height: 240px;
     @media(max-width:1080px){
-        max-width: 20vw;
-        height: 20vw;
+        max-width: 15vw;
+        height: 15vw;
 
     }
 `
 export const DivText = styled.div`
     margin-top:1rem;
 `
-export const Text = styled.p`
-    color: #828282;
-    font-size: 1.3rem;
-    font-weight: 700;
-    font-family: Oxygen;
-    text-align: center;
-    @media(max-width: 1080px){
-        font-size: 70%;
-    }
-`
+export const StandardText = styled.div`
+    max-width: 80vw;
+    color: #545454;
+    font-size: 1.5rem;
+    font-family: "Oxygen";
+    @media (max-width: 1080px) {
+      font-size: 1rem;
+    }  
+`;

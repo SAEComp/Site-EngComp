@@ -1,5 +1,5 @@
 import React from "react";
-import { WhatIsDiv, Grid, Container } from "./styles";
+import { WhatIsDiv, Grid, Container, } from "./styles";
 
 import {ReactComponent as CPUSvg} from "../../assets/svg/cpu.svg";
 import OrangePinkButton from "../Button";
@@ -20,6 +20,7 @@ const WhatIs:React.FC = ()=>{
                     <p>
                     No caso da USP de São Carlos, o curso é uma parceria entre a Escola de Engenharia de São Carlos (EESC) e o Instituto de Ciências Matemáticas e de Computação (ICMC), com duração de cinco anos. 
                     </p>
+                    
                     <div> 
                         <a href="https://uspdigital.usp.br/jupiterweb/listarGradeCurricular?codcg=97&codcur=97001&codhab=0&tipo=N"><OrangePinkButton text="VEJA A GRADE DO CURSO"/> </a>
                     </div>
