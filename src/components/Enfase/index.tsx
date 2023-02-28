@@ -5,17 +5,18 @@ import Enfases_img from "../../assets/img/Enfases.png"
 
 
 type Props = {
-    title:string;
+    
     text: string;
   }  
 
-const Enfase:React.FC<Props> = ({title, text})=>{
+const Enfase:React.FC<Props> = ({ text})=>{
     return(
         <Container>
         <EnfDiv>
-            <h1>{title}</h1>
+            
             <Grid>
                 <div className="explanation">
+                    
                     <p>
                         {text}
                     </p>

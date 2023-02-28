@@ -12,10 +12,3 @@ export const VendasDiv = styled.div`
   }
 `;
 
-export const VendasText = styled.div`
-  margin-bottom: 4rem;
-  font-family: "Ubuntu";
-  font-size: 3rem;
-  font-weight: bold;
-  color: #238d41;
-`;

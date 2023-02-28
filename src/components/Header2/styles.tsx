@@ -28,11 +28,13 @@ export const TextDiv = styled.div`
 `;
 
 export const HeaderTextTitle = styled.div`
+    font-family: "Ubuntu";
+    font-weight: bold;
+    color: #238d41;
     margin-top: 28rem;
     max-width: 100vh;
     margin-bottom: 1rem;
     font-size: 3rem;
-    color: #1A6930;
     @media (max-width: 1080px) {
       font-size: 1rem;
     }

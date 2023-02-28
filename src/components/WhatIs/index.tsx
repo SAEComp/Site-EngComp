@@ -8,7 +8,7 @@ const WhatIs:React.FC = ()=>{
     return(
         <Container>
         <WhatIsDiv>
-            <h1>O QUE É {'\n'}ENGENHARIA DE COMPUTAÇÃO?</h1>
+            
             <Grid>
                 <div className="explanation">
                     <p>

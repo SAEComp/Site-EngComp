@@ -9,6 +9,7 @@ import Footer from "../../components/Footer";
 import ContactDir from "../../components/Contact";
 import ContactSoc from "../../components/ContactSoc";
 import WhatWeDo from "../../components/WhatWeDo";
+import {DefaultTitle} from "../Default/styles"
 
 const Titulos = {
    fontSize: "3rem",
@@ -32,11 +33,12 @@ const SAEcomp = ()=>{
             url = "../../assets/img/background1.jpg"
             />
 
-            <p style={Titulos}> O QUE FAZEMOS</p>
+            <DefaultTitle style = {{color: '#238d41'}}>O QUE FAZEMOS</DefaultTitle>              
             <WhatWeDo/>
+            <DefaultTitle style = {{color: '#238d41'}}>VENDAS</DefaultTitle>              
             <ProdutosSaecomp/>
             <div style={{padding: "3rem 0 3rem 0"}}>
-            <p style={Titulos}> PROJETOS EM AÇÃO</p>
+            <DefaultTitle style = {{color: '#238d41'}}>PROJETOS EM AÇÃO</DefaultTitle>
             <Centered>
 
             <ProjetosEmAcao>
@@ -51,7 +53,7 @@ const SAEcomp = ()=>{
 
             <div style={{padding: "3rem 0 3rem 0"}}>
 
-            <p style={Titulos}>Converse Com a Gente!</p>
+            <DefaultTitle style = {{color: '#238d41'}}>CONVERSE COM A GENTE</DefaultTitle>
             <DualGrid>
                
                <div>

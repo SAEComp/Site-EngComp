@@ -2,14 +2,14 @@ import React from "react";
 
 import { WhatEnfDiv, Grid, Container, Enf_img } from "./styles";
 import Enfases_img from "../../assets/img/Enfases.png"
-
+import { DefaultTitle } from "../../pages/Default/styles";
 
 
 const WhatEnf:React.FC = ()=>{
     return(
         <Container>
         <WhatEnfDiv>
-            <h1>TUDO SOBRE {'\n'}ÊNFASES</h1>
+            <DefaultTitle style = {{color: '#003CC5'}}>TUDO SOBRE ÊNFASES</DefaultTitle>
             <Grid>
                 <div className="explanation">
                     <p>

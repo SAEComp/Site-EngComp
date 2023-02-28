@@ -6,17 +6,8 @@ export const Container = styled.div`
     color:${dark.background};
     padding-top: 10vh;
     padding-bottom: 10vw;
-    h1{
-        margin-bottom:2.5rem;
-        color:#003CC5;
-
-        font-size:2rem;
-    }
 `;
 export const WhatIsDiv = styled.div`
-    
-   
-
     margin-left: 10rem;
     max-width: 100%;
     height: 100%;

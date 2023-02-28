@@ -38,3 +38,12 @@ export const SocialImg = styled.img`
     padding-top: 1rem;
     padding-left: 1rem;
 `
+export const DefaultTitle = styled.div`
+    margin-bottom: 1rem;
+    font-family: "Ubuntu";
+    font-size: 3rem;
+    font-weight: bold;
+    @media (max-width: 1080px) {
+    font-size: 1rem;
+}
+`;

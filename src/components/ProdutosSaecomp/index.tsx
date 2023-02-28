@@ -1,7 +1,7 @@
 import React from "react";
 //import{View, Image, Style} from "react-native"
 import CardVendas from "../../components/CardVendas";
-import {VendasDiv, VendasText} from "./styles";
+import {VendasDiv} from "./styles";
 
 
 
@@ -10,7 +10,6 @@ const ProdutosSaecomp = (props:any) =>{
 
     return(
         <VendasDiv>
-            <VendasText> VENDAS </VendasText>
             <CardVendas
             url = "img1">
             </CardVendas>
