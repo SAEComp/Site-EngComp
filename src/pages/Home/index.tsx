@@ -19,7 +19,6 @@ const Home:React.FC = ()=>{
             text="A Engenharia da Computação tem como objetivo principal o desenvolvimento de hardware, que é a parte física dos equipamentos e seus periféricos. No entanto, nessa profissão também existe a interface com o software, que são os sistemas, programas e redes computacionais. Neste site você conhecerá tudo sobre o curso na USP em São Carlos."
             url = "img2"
             />
-            <DefaultTitle style={{color: '#003CC5'}}>O QUE É A ENGENHARIA DE COMPUTAÇÃO?</DefaultTitle>
             <WhatIs />
             <Extras 
             title = "EXTRACURRICULARES" 

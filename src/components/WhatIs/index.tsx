@@ -3,6 +3,7 @@ import { WhatIsDiv, Grid, Container, } from "./styles";
 
 import {ReactComponent as CPUSvg} from "../../assets/svg/cpu.svg";
 import OrangePinkButton from "../Button";
+import { DefaultTitle } from "../../pages/Default/styles";
 
 const WhatIs:React.FC = ()=>{
     return(
@@ -11,6 +12,7 @@ const WhatIs:React.FC = ()=>{
             
             <Grid>
                 <div className="explanation">
+                    <DefaultTitle style={{color: '#003CC5'}}>O QUE É A ENGENHARIA DE COMPUTAÇÃO?</DefaultTitle>
                     <p>
                     Com este curso você se tornará um engenheiro capaz de projetar e desenvolver soluções computacionais complexas, incluindo o planejamento e construção de computadores, periféricos e sistemas que realizem a integração entre hardware e software.
                     </p>
