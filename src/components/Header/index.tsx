@@ -1,5 +1,6 @@
 import React from 'react';
 import {HeaderTopic, HeaderText, HeaderGradient, HeaderTextTitle, TextDiv, ArrowDiv} from "./styles"
+import {StandardText} from '../../pages/Default/styles'
 import {FaCaretDown} from 'react-icons/fa';
 import img1 from '../../assets/img/background1.jpg';
 import img2 from '../../assets/img/background2.jpg'
@@ -29,10 +30,11 @@ const Header:React.FC<Props> = ({title, text, url}) =>{
             <HeaderTextTitle>
                     {title}
             </HeaderTextTitle>
-
-                <HeaderText>
-                   {text}
-                </HeaderText>
+            <div style={{maxWidth: '60vw', color: '#ffffff'}}>
+              <StandardText>
+                {text}
+              </StandardText>
+            </div>
             </TextDiv>
         
         </HeaderGradient>

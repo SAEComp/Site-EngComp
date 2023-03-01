@@ -1,5 +1,6 @@
 import React from "react";
-import { CardDiv, WhatImg, DivText, StandardText } from './styles';
+import { CardDiv, WhatImg, DivText} from './styles';
+import {StandardText} from '../../pages/Default/styles'
 import img1 from '../../assets/img/brain.png';
 import img2 from '../../assets/img/blusa.png';
 import img3 from '../../assets/img/prancheta.png';
@@ -38,7 +39,11 @@ const CardWhatwedo:React.FC<Props> = ({text, url}) =>{
            <WhatImg src = {img}/>
            
             <DivText>
-                <div ><StandardText>{text}</StandardText></div>
+                <div style={{color:'#545454'}}>
+                    <StandardText>
+                        {text}
+                    </StandardText>
+                </div>
             </DivText>
         
         </CardDiv>

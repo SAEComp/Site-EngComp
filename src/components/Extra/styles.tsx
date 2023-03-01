@@ -24,17 +24,6 @@ export const TitleTex = styled.div`
     }
 `;
 
-export const NormalText = styled.div`
-
-    font-family: "Oxygen";  
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    color: white;
-    @media(max-width: 1080px){
-        font-size: 1.1rem;
-    }
-`;
-
 export const TextDiv = styled.div`
     
     max-width: 80vw;

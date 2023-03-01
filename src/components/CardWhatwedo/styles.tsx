@@ -18,12 +18,4 @@ export const WhatImg = styled.img`
 export const DivText = styled.div`
     margin-top:1rem;
 `
-export const StandardText = styled.div`
-    max-width: 80vw;
-    color: #545454;
-    font-size: 1.5rem;
-    font-family: "Oxygen";
-    @media (max-width: 1080px) {
-      font-size: 1rem;
-    }  
-`;
+

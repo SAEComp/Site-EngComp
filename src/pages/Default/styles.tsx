@@ -47,3 +47,11 @@ export const DefaultTitle = styled.div`
     font-size: 1rem;
 }
 `;
+
+export const StandardText = styled.div`
+    font-size: 1.5rem;
+    font-family: "Oxygen";
+    @media (max-width: 1080px) {
+      font-size: 1rem;
+    }  
+`

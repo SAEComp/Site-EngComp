@@ -41,17 +41,6 @@ export const Grid = styled.div`
 
     >div{
 
-        >p{    
-            max-width: 80vw;
-            color: #545454;
-            font-size: 1.5rem;
-            font-family: "Oxygen";
-            margin-bottom: 1.2vw;
-            @media (max-width: 1080px) {
-            font-size: 1rem;
-            }  
-        }
-
         >div {
             display:flex;
             justify-content:center;

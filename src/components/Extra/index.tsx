@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
-import {ArrowDiv, Container, TextDiv, TitleTex, NormalText, ExtrasLogos, LogoDiv,Button, Centered} from "./styles"
+import {ArrowDiv, Container, TextDiv, TitleTex, ExtrasLogos, LogoDiv,Button, Centered} from "./styles"
+import {StandardText} from '../../pages/Default/styles'
 import {FaCaretDown} from 'react-icons/fa';
 import saecomp from "../../assets/img/saecomp.png";
 import ada from "../../assets/img/ada.png";
@@ -17,9 +18,11 @@ const Extras:React.FC<Props> = ({title, text}) =>{
                 <TitleTex>
                     {title}
                 </TitleTex>
-                <NormalText>
-                    {text}
-                </NormalText>
+                <div style= {{color: '#ffffff', marginTop: '1.5rem'}}>
+                    <StandardText>
+                        {text}
+                    </StandardText>
+                </div>
                 <ExtrasLogos>
                     <LogoDiv href="https://www.instagram.com/ada_usp/" target="_blank" rel="noopener noreferrer">
                         <img src={ada} alt="saecomp" className='Ada'/>
@@ -32,7 +35,11 @@ const Extras:React.FC<Props> = ({title, text}) =>{
                     </LogoDiv>
                 </ExtrasLogos>
                 <ArrowDiv><FaCaretDown href = "#" className='arrow' />
-                <NormalText>Quer saber mais? Tem muitas outras!</NormalText>
+                <div style= {{color: '#ffffff'}}>
+                    <StandardText>
+                        Quer saber mais? Tem muitas outras!
+                    </StandardText>
+                </div>
                 </ArrowDiv>
                 <Centered>
                 <a href="/Manual-Bixo"><Button>Manual do Bixo</Button></a>
