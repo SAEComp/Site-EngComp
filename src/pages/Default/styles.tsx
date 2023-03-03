@@ -55,3 +55,12 @@ export const StandardText = styled.div`
       font-size: 1rem;
     }  
 `
+export const DefaultSubtitle = styled.div`
+    margin-bottom: 0.5rem;
+    font-family: "Ubuntu";
+    font-weight: 400;
+    font-size: 2rem;
+    @media (max-width: 1080px) {
+        font-size: 1rem;
+      }  
+`

@@ -12,6 +12,7 @@ export const ContentSection2 = styled.section`
     padding-top: 7.5rem;
     padding-bottom: 7.5rem;
     background-color: #f8f9fa;
+ 
 `
 export const ContentSection3 = styled.section`
     padding-top: 7.5rem;
@@ -26,9 +27,14 @@ export const Container = styled.div`
     margin-right: auto;
     margin-left: auto;
     padding-bottom:3rem;
-
     .textCenter{
         text-align: center;
+    }
+    @media(max-width: 1080px){
+        
+        >img{
+            max-width: 70%;
+        }
     }
 `
 export const TitleCont = styled.div`
