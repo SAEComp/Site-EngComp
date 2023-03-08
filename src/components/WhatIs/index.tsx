@@ -3,11 +3,12 @@ import { WhatIsDiv, Grid, Container, } from "./styles";
 import {StandardText} from '../../pages/Default/styles'
 import {ReactComponent as CPUSvg} from "../../assets/svg/cpu.svg";
 import OrangePinkButton from "../Button";
-import { DefaultTitle } from "../../pages/Default/styles";
+import { DefaultTitle, Defaultmargin } from "../../pages/Default/styles";
 
 const WhatIs:React.FC = ()=>{
     return(
         <Container>
+        <Defaultmargin>
         <WhatIsDiv>
             
             <Grid>
@@ -39,7 +40,9 @@ const WhatIs:React.FC = ()=>{
                 </div>
             </Grid> 
         </WhatIsDiv>
+        </Defaultmargin>
         </Container>
+        
     );
 }
 

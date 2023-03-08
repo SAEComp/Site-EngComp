@@ -14,7 +14,6 @@ export const HeaderTopic = styled.div`
 
 export const TextDiv = styled.div`
     margin-top: 10rem;
-    margin-left: 10rem;
     max-width: 100%;
     height: 50%;
     display: flex;

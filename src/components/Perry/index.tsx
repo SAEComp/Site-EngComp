@@ -1,6 +1,7 @@
 import React from "react";
 import { ContentSection, Container, TitleCont, SubtitleCont, DivFlex, DivFlex2, TextCont, ImgPerry, LinkSocial, TextSocial } from "./styles";
 import perry from "../../assets/img/perry.png"
+import { Defaultmargin, DefaultTitle } from "../../pages/Default/styles";
 
 const Text = ({children}: {children: React.ReactNode})=>{
     return <TextCont>{children}</TextCont>
@@ -11,6 +12,7 @@ const Perry:React.FC = () => {
         <div>
             <ContentSection>
                 <Container>
+                    <Defaultmargin>
                     <TitleCont>Perry Oliveira, o ornitorrinco</TitleCont>
                     <SubtitleCont>Mascote da Eng. Comp.</SubtitleCont>
                     <DivFlex>
@@ -21,6 +23,7 @@ const Perry:React.FC = () => {
                         <   TextSocial> Instagram: </TextSocial> <LinkSocial target = "_blank" href="https://www.instagram.com/perry.oliveira/" >@perry.oliveira</LinkSocial>
                         </DivFlex2>
                     </DivFlex>
+                    </Defaultmargin>
                 </Container>
             </ContentSection>
         </div>

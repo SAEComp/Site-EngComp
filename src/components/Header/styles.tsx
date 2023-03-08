@@ -67,7 +67,6 @@ export const HeaderGradient = styled.div`
 `;
 
 export const TextDiv = styled.div`
-    margin-left: 10rem;
     max-width: 100%;
     height: 100%;
     display: flex;

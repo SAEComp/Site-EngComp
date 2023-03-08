@@ -1,6 +1,6 @@
 import React from 'react';
 import {HeaderTopic, TextDiv, HeaderTextTitle} from './styles'
-import {StandardText} from '../../pages/Default/styles'
+import {Defaultmargin, StandardText} from '../../pages/Default/styles'
 import img1 from '../../assets/img/logo_saecomp_extenso_verde_transparente 1.jpg'
 
 interface Props{
@@ -14,6 +14,7 @@ const Header2:React.FC<Props> = ({title, text, url}) =>{
         <HeaderTopic style={{
             backgroundImage: `url("${img1}")` }}>
                 <TextDiv>
+                    <Defaultmargin>
                     <HeaderTextTitle>
                         {title}
                     </HeaderTextTitle>
@@ -22,6 +23,7 @@ const Header2:React.FC<Props> = ({title, text, url}) =>{
                             {text}
                         </StandardText>
                     </div>
+                    </Defaultmargin>
                 </TextDiv>
                 
         </HeaderTopic>

@@ -7,7 +7,7 @@ export const CardDiv = styled.div`
     width: 30vw;
     height: 10vh;
     padding: 1em;
-    margin: auto;
+    margin: 10rem;
     margin-top: 1em;
     background: linear-gradient(91.66deg, rgba(0, 4, 40, 0.99) -27.06%, #060E30 44.62%, rgb(0, 49, 185) 164.11%);
     border-radius: 1em;

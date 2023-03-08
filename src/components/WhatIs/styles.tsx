@@ -8,7 +8,6 @@ export const Container = styled.div`
     padding-bottom: 10vw;
 `;
 export const WhatIsDiv = styled.div`
-    margin-left: 10rem;
     max-width: 100%;
     height: 100%;
     display: flex;

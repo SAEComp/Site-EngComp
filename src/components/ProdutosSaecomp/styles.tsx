@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const VendasDiv = styled.div`
-  margin-left: 10rem;
   max-width: 100%;
   height: 100%;
   display: inline-block;

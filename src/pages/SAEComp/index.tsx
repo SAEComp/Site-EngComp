@@ -9,7 +9,7 @@ import Footer from "../../components/Footer";
 import ContactDir from "../../components/Contact";
 import ContactSoc from "../../components/ContactSoc";
 import WhatWeDo from "../../components/WhatWeDo";
-import {DefaultTitle} from "../Default/styles"
+import {Defaultmargin, DefaultTitle} from "../Default/styles"
 
 const Titulos = {
    fontSize: "3rem",
@@ -33,12 +33,12 @@ const SAEcomp = ()=>{
             url = "../../assets/img/background1.jpg"
             />
 
-            <DefaultTitle style = {{color: '#238d41'}}>O QUE FAZEMOS</DefaultTitle>              
+            <Defaultmargin><DefaultTitle style = {{color: '#238d41'}}>O QUE FAZEMOS</DefaultTitle></Defaultmargin>           
             <WhatWeDo/>
-            <DefaultTitle style = {{color: '#238d41'}}>VENDAS</DefaultTitle>              
+            <Defaultmargin><DefaultTitle style = {{color: '#238d41'}}>VENDAS</DefaultTitle></Defaultmargin>              
             <ProdutosSaecomp/>
             <div style={{padding: "3rem 0 3rem 0"}}>
-            <DefaultTitle style = {{color: '#238d41'}}>PROJETOS EM AÇÃO</DefaultTitle>
+            <Defaultmargin><DefaultTitle style = {{color: '#238d41'}}>PROJETOS EM AÇÃO</DefaultTitle></Defaultmargin>
             <Centered>
 
             <ProjetosEmAcao>
@@ -53,7 +53,7 @@ const SAEcomp = ()=>{
 
             <div style={{padding: "3rem 0 3rem 0"}}>
 
-            <DefaultTitle style = {{color: '#238d41'}}>CONVERSE COM A GENTE</DefaultTitle>
+            <Defaultmargin><DefaultTitle style = {{color: '#238d41'}}>CONVERSE COM A GENTE</DefaultTitle></Defaultmargin>
             <DualGrid>
                
                <div>

@@ -2,7 +2,7 @@ import React from "react";
 
 import { EnfDiv, Grid, Container } from "./styles";
 import Enfases_img from "../../assets/img/Enfases.png"
-import { DefaultTitle } from "../../pages/Default/styles";
+import { Defaultmargin, DefaultTitle } from "../../pages/Default/styles";
 
 type Props = {
     
@@ -12,6 +12,7 @@ type Props = {
 const Enfase:React.FC<Props> = ({ text})=>{
     return(
         <Container>
+        <Defaultmargin>
         <EnfDiv>
             
             <Grid>
@@ -23,7 +24,8 @@ const Enfase:React.FC<Props> = ({ text})=>{
                     <p> MATERÉRIAS NECESSÁRIAS </p>
                 </div>
             </Grid> 
-        </EnfDiv>               
+        </EnfDiv>
+        </Defaultmargin>               
         </Container>
     );
 }

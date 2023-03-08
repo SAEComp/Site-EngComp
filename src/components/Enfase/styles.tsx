@@ -14,10 +14,6 @@ export const Container = styled.div`
     }
 `;
 export const EnfDiv = styled.div`
-    
-   
-
-    margin-left: 10rem;
     margin-right: 10rem;
     max-width: 100%;
     height: 100%;

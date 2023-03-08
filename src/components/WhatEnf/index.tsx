@@ -2,12 +2,13 @@ import React from "react";
 
 import { WhatEnfDiv, Grid, Container, Enf_img } from "./styles";
 import Enfases_img from "../../assets/img/Enfases.png"
-import { DefaultTitle } from "../../pages/Default/styles";
+import {Defaultmargin, DefaultTitle } from "../../pages/Default/styles";
 
 
 const WhatEnf:React.FC = ()=>{
     return(
         <Container>
+        <Defaultmargin>
         <WhatEnfDiv>
             <DefaultTitle style = {{color: '#003CC5'}}>TUDO SOBRE ÊNFASES</DefaultTitle>
             <Grid>
@@ -21,7 +22,7 @@ const WhatEnf:React.FC = ()=>{
             </Grid> 
         </WhatEnfDiv>
         <Enf_img> <img src={Enfases_img}/> </Enf_img>
-               
+        </Defaultmargin>     
         </Container>
     );
 }

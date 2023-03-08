@@ -64,3 +64,7 @@ export const DefaultSubtitle = styled.div`
         font-size: 1rem;
       }  
 `
+
+export const Defaultmargin = styled.div`
+    margin-left: 10rem;
+`
