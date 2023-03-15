@@ -21,7 +21,6 @@ const WhatEnf:React.FC = ()=>{
                 </div>
             </Grid> 
         </WhatEnfDiv>
-        <Enf_img> <img src={Enfases_img}/> </Enf_img>
         </Defaultmargin>     
         </Container>
     );

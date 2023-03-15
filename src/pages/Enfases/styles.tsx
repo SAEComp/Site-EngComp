@@ -4,6 +4,10 @@ import dark from "../../themes/dark"
 export const Container = styled.div`
 `;
 
+export const Carrosseldiv = styled.div`
+    height: 100%;
+`;
+
 export const Wrapper = styled.div`
     //height:100vh;
     //scroll-snap-type: y mandatory;
