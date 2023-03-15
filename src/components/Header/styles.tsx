@@ -72,10 +72,7 @@ export const TextDiv = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
-    @media(max-width: 1080px){
-      margin: 0 auto;
-      max-width: 80%;
-    }
+  
 `;
 
 
