@@ -30,7 +30,6 @@ const ContactDir:React.FC<Props> = ({text, type})=>{
     
     return (
         <Container>
-            <Defaultmargin>
             <div style={{padding: "2rem"}}>
                 {img}
             </div>
@@ -40,7 +39,7 @@ const ContactDir:React.FC<Props> = ({text, type})=>{
                 {text}
             </Text>
             </div>
-            </Defaultmargin>
+            
         </Container>        
             
             

@@ -32,17 +32,14 @@ const SAEcomp = ()=>{
             "
             url = "../../assets/img/background1.jpg"
             />
-            <Container>
-            <Defaultmargin><DefaultTitle style = {{color: '#238d41'}}>O QUE FAZEMOS</DefaultTitle></Defaultmargin></Container>          
-            <WhatWeDo/>
-            <Container>
-            <Defaultmargin><DefaultTitle style = {{color: '#238d41'}}>VENDAS</DefaultTitle></Defaultmargin></Container>             
+         
+            <Defaultmargin><DefaultTitle style = {{color: '#238d41'}}>O QUE FAZEMOS</DefaultTitle></Defaultmargin>           
+            <Defaultmargin><WhatWeDo/></Defaultmargin>
+            <Defaultmargin><DefaultTitle style = {{color: '#238d41'}}>VENDAS</DefaultTitle></Defaultmargin>              
             <ProdutosSaecomp/>
             <div style={{padding: "3rem 0 3rem 0"}}>
-            <Container>
-            <Defaultmargin><DefaultTitle style = {{color: '#238d41'}}>PROJETOS EM AÇÃO</DefaultTitle></Defaultmargin></Container>
+            <Defaultmargin><DefaultTitle style = {{color: '#238d41'}}>PROJETOS EM AÇÃO</DefaultTitle></Defaultmargin>
             <Centered>
-            
             <ProjetosEmAcao>
            
                <Projeto title = "Drive da Eng Comp" text = "Drive que reúne materiais, provas antigas e trabalhos disponibilizados pelos veteranos  das matérias que compõem a grade do curso."/>
@@ -57,17 +54,17 @@ const SAEcomp = ()=>{
 
             <Defaultmargin><DefaultTitle style = {{color: '#238d41'}}>CONVERSE COM A GENTE</DefaultTitle></Defaultmargin>
             <DualGrid>
-               
+              
                <div>
-                  <ContactDir text = "saecomp.ec@gmail.com" type = "Email"/>
-                  <ContactDir text = "(16) 99738-1861" type = "Telefone"/>
-                  <ContactDir text = "Sala 8-001 | Prédio da Eng Comp - USP Campus 2. São Carlos, Brasil" type = "Endereço"/>
+                  <Defaultmargin><ContactDir text = "saecomp.ec@gmail.com" type = "Email"/></Defaultmargin>
+                  <Defaultmargin><ContactDir text = "(16) 99738-1861" type = "Telefone"/></Defaultmargin>
+                  <Defaultmargin><ContactDir text = "Sala 8-001 | Prédio da Eng Comp - USP Campus 2. São Carlos, Brasil" type = "Endereço"/></Defaultmargin>
                </div>
 
                <div>
-                  <ContactSoc text = "SAEComp" type = "Twitch"/>
-                  <ContactSoc text = "@saecomp.ec" type = "Insta"/>
-                  <ContactSoc text = "@saecompusp" type = "Twitter"/>
+                  <Defaultmargin><ContactSoc text = "SAEComp" type = "Twitch"/></Defaultmargin>
+                  <Defaultmargin><ContactSoc text = "@saecomp.ec" type = "Insta"/></Defaultmargin>
+                  <Defaultmargin><ContactSoc text = "@saecompusp" type = "Twitter"/></Defaultmargin>
                </div>
             </DualGrid>
             <Centered><a href="https://wa.me/5516997381861" target="_blank"><Button>  Curtiu? Chama nossa presida no Zap!</Button></a></Centered>
