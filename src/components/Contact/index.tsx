@@ -4,7 +4,7 @@ import { FaCaretDown, FaEnvelope, FaHome, FaPhone, FaSmile } from "react-icons/f
 import img1 from '../../assets/img/background1.jpg';
 import img2 from '../../assets/img/background2.jpg'
 import img3 from '../../assets/img/background2.jpg'
-import { DefaultSubtitle } from "../../pages/Default/styles";
+import { Defaultmargin, DefaultSubtitle } from "../../pages/Default/styles";
 
 interface  Props{
     type:string;
@@ -30,6 +30,7 @@ const ContactDir:React.FC<Props> = ({text, type})=>{
     
     return (
         <Container>
+            <Defaultmargin>
             <div style={{padding: "2rem"}}>
                 {img}
             </div>
@@ -39,6 +40,7 @@ const ContactDir:React.FC<Props> = ({text, type})=>{
                 {text}
             </Text>
             </div>
+            </Defaultmargin>
         </Container>        
             
             

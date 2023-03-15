@@ -32,15 +32,17 @@ const SAEcomp = ()=>{
             "
             url = "../../assets/img/background1.jpg"
             />
-
-            <Defaultmargin><DefaultTitle style = {{color: '#238d41'}}>O QUE FAZEMOS</DefaultTitle></Defaultmargin>           
+            <Container>
+            <Defaultmargin><DefaultTitle style = {{color: '#238d41'}}>O QUE FAZEMOS</DefaultTitle></Defaultmargin></Container>          
             <WhatWeDo/>
-            <Defaultmargin><DefaultTitle style = {{color: '#238d41'}}>VENDAS</DefaultTitle></Defaultmargin>              
+            <Container>
+            <Defaultmargin><DefaultTitle style = {{color: '#238d41'}}>VENDAS</DefaultTitle></Defaultmargin></Container>             
             <ProdutosSaecomp/>
             <div style={{padding: "3rem 0 3rem 0"}}>
-            <Defaultmargin><DefaultTitle style = {{color: '#238d41'}}>PROJETOS EM AÇÃO</DefaultTitle></Defaultmargin>
+            <Container>
+            <Defaultmargin><DefaultTitle style = {{color: '#238d41'}}>PROJETOS EM AÇÃO</DefaultTitle></Defaultmargin></Container>
             <Centered>
-
+            
             <ProjetosEmAcao>
            
                <Projeto title = "Drive da Eng Comp" text = "Drive que reúne materiais, provas antigas e trabalhos disponibilizados pelos veteranos  das matérias que compõem a grade do curso."/>

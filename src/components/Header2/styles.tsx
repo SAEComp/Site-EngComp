@@ -20,8 +20,6 @@ export const TextDiv = styled.div`
     justify-content: center;
     flex-direction: column;
     @media(max-width: 1080px){
-      margin: 0 auto;
-      max-width: 80%;
       justify-content: center;
     }
 `;

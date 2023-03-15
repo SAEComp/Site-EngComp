@@ -69,6 +69,8 @@ export const Defaultmargin = styled.div`
     margin-left: 10rem;
     @media (max-width: 1080px){
         margin: 0 auto;
+        max-width: 80%;
+
     }
     
 `

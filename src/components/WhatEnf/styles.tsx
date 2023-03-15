@@ -14,27 +14,25 @@ export const Container = styled.div`
     }
 `;
 export const WhatEnfDiv = styled.div`
+    margim-bottom: 5rem;
     max-width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     @media(max-width: 1080px){
-      margin: 0 auto;
       max-width: 80%;
     }
 `;
 
 export const Enf_img = styled.div`
     margin-left: 55rem;
-    margin-top: -35rem;
     max-width: 30%;
     height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     @media(max-width: 1080px){
-      margin: 0 auto;
       max-width: 80%;
     }
 `;

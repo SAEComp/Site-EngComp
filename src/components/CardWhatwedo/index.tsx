@@ -36,6 +36,7 @@ const CardWhatwedo:React.FC<Props> = ({text, url}) =>{
     }
     return(
         <CardDiv>
+            
            <WhatImg src = {img}/>
            
             <DivText>
