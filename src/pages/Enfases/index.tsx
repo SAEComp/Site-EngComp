@@ -8,7 +8,7 @@ import Footer from "../../components/Footer";
 import CardExtra from "../../components/Card";
 import WhatEnf from "../../components/WhatEnf";
 import Enfase from "../../components/Enfase";
-import { DefaultTitle } from "../Default/styles";
+import { Defaultmargin, DefaultTitle } from "../Default/styles";
 
 const Enfases = ()=>{
     return(
