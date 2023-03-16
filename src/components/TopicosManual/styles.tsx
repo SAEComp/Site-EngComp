@@ -7,6 +7,7 @@ export const ContentSection = styled.section`
     justify-content: center;
     padding-top: 7.5rem;
     padding-bottom: 7.5rem;
+
 `
 export const ContentSection2 = styled.section`
     padding-top: 7.5rem;

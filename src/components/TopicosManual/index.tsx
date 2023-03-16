@@ -76,7 +76,7 @@ const TopicosManual:React.FC = ()=>{
                 <Container id = "t2">
                     <Defaultmargin>
                     <Title text = "SAEComp" number = "2"></Title>
-                    <img style = {{ margin: 'auto', display: 'table', width: '380px', marginBottom: '3rem'}}src = {Logo}/>
+                    <img style = {{ margin: 'auto', display: 'table', width: '60vw', marginBottom: '3rem'}}src = {Logo}/>
                     <Text>A USP São Carlos oferece atualmente cerca de 20 cursos de graduação e inúmeros de pós-graduação, deixando a tarefa de auxiliar os alunos bem difícil para o <b>CAASO, o Centro Acadêmico Armando de Salles Oliveira. </b> Neste contexto, surgiram as secretarias acadêmicas, pequenos grupos de estudantes que auxiliam um ou mais cursos de graduação, para facilitar o diálogo entre os estudantes e o centro acadêmico, ajudando na fiscalização e manutenção do alto nível dos cursos desta unidade da USP. A Engenharia de Computação não poderia ficar de fora. Em 2006, surge a <b>SAEComp</b>, a <LineThrough>melhor</LineThrough> mais nova secretaria acadêmica que veio auxiliar a sua vida, bixão. Não se esconda nos livros: venha nos ajudar a manter esse curso como o melhor, participando das festas, palestras, cursos, saraus, campeonatos e é claro, a sua Semana de Recepção. Precisamos de você para tornar nossa atuação verdadeiramente eficaz. Por isso, participe das reuniões semanais da secretaria, fuce em nosso site <LinkSocial target= "_blank " href="https://saecomp.github.io/">saecomp.github.io</LinkSocial> , procure-nos para conversar, tirar dúvidas e o mais importante: opine!</Text>               
                     <Text> Já seguiu a SaeComp nas redes sociais? Não perca tempo!</Text>
                     <TextSocial> Facebook: </TextSocial> <LinkSocial target = "_blank" href="https://www.facebook.com/saecomp" >@saecomp</LinkSocial><br></br>
@@ -87,7 +87,7 @@ const TopicosManual:React.FC = ()=>{
                 <Container id = "t3">
                     <Defaultmargin>
                     <Title number = "3"text = "CAASO"/>
-                    <img style = {{margin : 'auto', display : 'table', width: '300px', marginBottom: '3rem'}} src = {Caaso}/>
+                    <img style = {{margin : 'auto', display : 'table', width: '40vw', marginBottom: '3rem'}} src = {Caaso}/>
                     <Text>O CAASO, <b>Centro Acadêmico Armando de Salles Oliveira</b>, é a entidade representativa de todos os estudantes de graduação do campus da USP de São Carlos. O seu nome é uma homenagem ao governador do Estado de São Paulo que criou a Universidade de São Paulo. É considerado um dos maiores centros acadêmicos da América Latina, temos a difícil tarefa de representar 22 cursos da graduação do campus da USP de São Carlos, organizando reivindicações e lutando por melhorias para todos! Durante seus 66 anos de História, o CAASO fez muito pelos estudantes da USP São Carlos. Desde lutar contra a ditadura militar de 1964, que perseguiu estudantes e professores da USP, até organizar eventos e criar um espaço de convivência e organização para os alunos, o prédio do CAASO. Atualmente, temas como a permanência estudantil, o apoio à luta dos funcionários por melhores condições de trabalho, defesa dos espaços estudantis, como o palquinho e o Colégio CAASO, a reestruturação financeira e administrativa do CAASO e o combate à liminar que proíbe a realização de eventos no campus têm sido algumas de nossas pautas. Mas não é só isso. Consideramos que é muito importante que os estudantes, de alguma forma, se relacionem mais com a sociedade ao seu redor, o CAASO, além de apoiar e realizar diversos eventos e atividades fora da USP, administra um Colégio de Ensino médio e pré-vestibular, que inicialmente surgiu como um cursinho onde os alunos da USP davam aula e, hoje, tem um prédio próprio com professores, funcionários e diretores contratados.</Text>    
                     </Defaultmargin>
                 </Container>
@@ -109,10 +109,10 @@ const TopicosManual:React.FC = ()=>{
                     <Title text = "O curso" number = "4"></Title>
                     <Text>O Curso de Engenharia de Computação é sediado pela EESC, juntamente com o ICMC. Ele é um dos poucos cursos interunidades dentro do campus de São Carlos. </Text>
                     <Subtitle text = "Escola de Engenharia de São Carlos (EESC)" number = "4.1"></Subtitle>
-                    <img style = {{margin : 'auto', display : 'table', width: '300px', marginBottom: '3rem', marginTop: '2.5rem'}} src = {Eesc}/>
+                    <img style = {{margin : 'auto', display : 'table', width: '40vw', marginBottom: '3rem', marginTop: '2.5rem'}} src = {Eesc}/>
                     <Text>Fundada em 1952, a EESC surgiu como uma alternativa à Escola Politécnica da USP, sendo a unidade responsável por ministrar cursos de engenharia no campus de São Carlos. Situa-se entre as melhores e mais qualificadas instituições de engenharia do Brasil e executa um dos maiores orçamentos destinados a unidades de ensino na USP.</Text>
                     <Subtitle text = "Instituto de Ciências Matemáticas e de Computação (ICMC) " number = "4.2"></Subtitle>
-                    <img style = {{margin : 'auto', display : 'table', width: '300px', marginBottom: '3rem', marginTop: '2.5rem'}} src = {Icmc}/>
+                    <img style = {{margin : 'auto', display : 'table', width: '40vw', marginBottom: '3rem', marginTop: '2.5rem'}} src = {Icmc}/>
                     <Text>O ICMC surgiu do antigo Departamento de Matemática da EESC, em 1953. Com o surgimento dos computadores, criou-se o Departamento de Ciências de Computação e Estatística, em 1970, também vinculado a EESC. No ano seguinte, cria-se o Instituto de Ciências Matemáticas de São Carlos, constituindo-se dos dois departamentos citados, agora desvinculados da EESC. Em 1996, então acrescentou-se o nome computação ao Instituto, dando a ele seu nome atual.</Text>
                     <Subtitle text = "O Prédio " number = "4.3"></Subtitle>
                     <Text>O Prédio da Engenharia de Computação está localizado na distante área 2 do campus de São Carlos. Nele, você encontrará vários laboratórios, a sala das secretárias Shirley e Cris e a sala da SAEComp.</Text>
@@ -122,7 +122,7 @@ const TopicosManual:React.FC = ()=>{
                 <Container id = "t5">
                     <Defaultmargin>
                     <Title text = "SEnC" number = "5"></Title>
-                    <img style={{margin: 'auto', display: 'table', width:'150px', marginBottom: '3rem'}} src = {Senc}/>
+                    <img style={{margin: 'auto', display: 'table', width:'15vw', marginBottom: '3rem'}} src = {Senc}/>
                     <Text>Criada em 2016, a <b>Semana da Engenharia de Computação (SEnC)</b> é um evento organizado pelos alunos de Engenharia de Computação da USP - São Carlos que visa fortalecer a identidade profissional do engenheiro de computação. A grade do evento conta com palestras, workshops, rodas de conversa, feira de mercado e projetos, viagens técnicas e várias outras atividades. A edição de 2020 ocorreu de forma online entre os dias 26 e 30 de outubro. A iniciativa surgiu da necessidade de uma semana acadêmica que representasse por completo o perfil do profissional em engenharia de computação. O principal objetivo do evento foi fortalecer a identidade do engenheiro de computação no mercado e no próprio curso. </Text>
                     <TextSocial> Facebook: </TextSocial> <LinkSocial target = "_blank" href= "https://www.facebook.com/senc.usp">@senc.usp</LinkSocial><br></br>
                     <TextSocial> Instagram: </TextSocial> <LinkSocial target = "_blank" href= "https://www.instagram.com/senc.usp/">@senc.usp</LinkSocial><br></br>
@@ -206,7 +206,7 @@ const TopicosManual:React.FC = ()=>{
                 <Container id = "t11"> 
                     <Defaultmargin>  
                     <Title text = "JúpiterWEB" number = "11"></Title>
-                    <img style = {{margin: 'auto', display: 'table', width: '300px', marginBottom: '3rem'}} src = {Jupiter}></img>               
+                    <img style = {{margin: 'auto', display: 'table', width: '30vw', marginBottom: '3rem'}} src = {Jupiter}></img>               
                     <Text>Então bixo, para evitar filas intermináveis e desperdício de papel, a USP criou um sistema para ajudar (e aliviar o serviço de graduação) professores, alunos e departamentos. O nome desse sistema é <LinkSocial target="_blank" href="https://uspdigital.usp.br/jupiterweb">JúpiterWeb</LinkSocial>, no caso da graduação (existem outros, mas para você ainda não são relevantes).<br></br>Quando você fez sua matrícula, além do papel que vendia um pedaço da sua alma para a USP, você colocou CPF, RG, quantos rins você ainda tem e outras milhares de informações. Todas elas serão colocadas no, comumente chamado, Júpiter para que você e professores possam ter contato com elas. Você encontrará todo o seu histórico acadêmico, notas, presença, e outras informações importantes sobre seu currículo acadêmico. Também é no Júpiter que você encontra a emissão de documentos, atestado de matrícula, declarações, etc...<br></br>É no Júpiter também que você fará matrícula nas disciplinas a partir do segundo semestre e também de onde alguns professores tiram informações para criação de sistemas de submissão online. <br></br>Desde já é bom avisar, TODA a USP faz matrícula no mesmo período, no mesmo sistema, então...Não se estresse com a lentidão do sistema nessa época. O JúpiterWeb é bem útil e é bom que você o frequente regularmente. Muitas das inscrições que dependem de rendimento acadêmico vão pedir uma cópia impressa do Júpiter (outras, mais rigorosas pedem um histórico emitido pela Secretaria de Graduação).<br></br></Text>
                     </Defaultmargin>
                 </Container>
@@ -214,7 +214,7 @@ const TopicosManual:React.FC = ()=>{
                 <Container id = "t12"> 
                     <Defaultmargin>  
                     <Title text = "G-Suite USP" number = "12"></Title>
-                    <img style = {{margin: 'auto', display: 'table', width: '300px', marginBottom: '3rem'}} src = {Suite}></img>               
+                    <img style = {{margin: 'auto', display: 'table', width: '30vw', marginBottom: '3rem'}} src = {Suite}></img>               
                     <Text>A USP e a Google firmaram um termo de cooperação que possibilita a alunos, docentes e servidores técnicos e administrativos da Universidade a utilização dos recursos que compõem a ferramenta G Suite for Education. Tais recursos incluem o uso <b>ILIMITADO</b> dos serviços de e-mail, com controle de spam, calendário, contato, comunicação digital, armazenamento e compartilhamento de documentos.<br></br>Para os membros da comunidade universitária, a cooperação possibilita armazenamento <b>ILIMITADO</b> do Google Drive e administração do <b>e-mail USP</b> por mecanismos iguais ao Gmail, customizados para o ambiente da Universidade.<br></br><br></br>Vale lembrar, que mesmo com armazenamento <a style={{textDecoration: 'none', color: '#212529'}} target="_blank" href="https://apod.nasa.gov/apod/astropix.html">ilimitado</a> <b>NUNCA</b> use para pirataria e arquivos pessoais. G-Suite é para assuntos acadêmicos!</Text>
                     </Defaultmargin>
                 </Container>
@@ -225,7 +225,7 @@ const TopicosManual:React.FC = ()=>{
                 <Container id = "t13">
                     <Defaultmargin>
                     <Title text = "Cartão USP" number = "13"></Title>
-                    <img style = {{margin: 'auto', display: 'table', width: '300px', marginBottom: '3rem'}} src = {Cartao}></img>
+                    <img style = {{margin: 'auto', display: 'table', width: '30vw', marginBottom: '3rem'}} src = {Cartao}></img>
                     <Text>O cartão USP é o cartão de identificação do aluno USP. Para solicitar o cartão USP definitivo, acesse o sistema Júpiter Web, clique em <b>Cartões USP</b> no menu lateral esquerdo, e depois clique em <b>Nova solicitação</b>. Na solicitação do primeiro cartão, o único motivo disponível é <b>Novo Cartão</b> e basta salvar para que seu pedido seja enviado para aprovação do Serviço de Graduação de sua Unidade.<br></br>Peça-o assim que possível, demora para chegar e a segunda remessa dos pedidos demora mais ainda. Com o cartão USP você consegue pegar livros nas bibliotecas USP, frequentar o bandejão, ter acesso aos prédios e laboratórios, pagar meia no cinema, dentre outros benefícios. Cuide bem dele, pois ele te acompanhará por pelo menos 5 anos de graduação!</Text>
                     </Defaultmargin>
                 </Container>
