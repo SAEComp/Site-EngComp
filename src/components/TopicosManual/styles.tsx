@@ -21,7 +21,8 @@ export const ContentSection3 = styled.section`
     color: #fff;
 `
 export const Container = styled.div`
-    width: 60%;
+    text-align: justify;
+    width: 100%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;

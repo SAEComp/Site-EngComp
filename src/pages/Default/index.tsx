@@ -5,7 +5,7 @@ import Insta from "../../assets/img/Insta.png"
 import Face from "../../assets/img/Face.png"
 import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
-import {ContentSection, Title, Text, Card, Row, SocialImg} from "./styles";
+import {ContentSection, DevTitle, DevText, Card, Row, SocialImg} from "./styles";
 const Default:React.FC =()=>{
     return(
         <div>
@@ -13,12 +13,12 @@ const Default:React.FC =()=>{
             <ContentSection>
                 
                 <Card>
-                    <Title>EM</Title>
-                    <Title>DESENVOLVIMENTO!</Title>
+                    <DevTitle>EM</DevTitle>
+                    <DevTitle>DESENVOLVIMENTO!</DevTitle>
                     <img style ={{margin:'auto', width:'450px' }}src ={manutencao}/>
                     <img style ={{margin:'auto', width:'450px' }}src ={barra}/>
-                    <Text>Essa página está quase pronta. Volte em breve!</Text>
-                    <Text>Enquanto isso, visite as redes sociais da SAEComp:</Text>
+                    <DevText>Essa página está quase pronta. Volte em breve!</DevText>
+                    <DevText>Enquanto isso, visite as redes sociais da SAEComp:</DevText>
                     <Row>
                         <a href = "https://www.instagram.com/saecomp.ec">
                             <SocialImg src = {Insta}/>
