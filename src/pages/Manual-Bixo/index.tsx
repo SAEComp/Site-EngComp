@@ -8,6 +8,7 @@ import Perry from "../../components/Perry";
 import Footer from "../../components/Footer";
 import logo from "../../assets/img/header_023.png";
 import { Card } from "../Default/styles";
+import BurgerBixo from "./BurgerBixo"
 
 const Manual = ()=>{
    let clientH = document.documentElement.clientHeight;
@@ -18,6 +19,7 @@ const Manual = ()=>{
        <Container>
 
             <NavBar/>
+            <BurgerBixo/>
             <HeaderBixo>
                <img src={logo} alt="Perry 023"/>
                <Button style={{padding: "2rem"}} onClick = {scrollbar}>O que fazer para não ser um bixo burro?</Button>
