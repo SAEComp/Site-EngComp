@@ -19,14 +19,14 @@ const StyledBurgerBixo = styled.div<{open: boolean}>`
   .start{
     color: white;
     z-index: 0;
-    margin-left: 1.15rem;
+    margin-left: 1.18rem;
     padding-bottom: .5rem;
     opacity: ${({open}) => open ? 0:1};
     
   };
   .x{
     margin-top: -3.5rem;
-    margin-left: .8rem;
+    margin-left: .83rem;
     z-index: 1;
     opacity: ${({open}) => open ? 1:0};
     color: white;

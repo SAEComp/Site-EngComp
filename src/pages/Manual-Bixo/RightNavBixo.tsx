@@ -26,6 +26,13 @@ const Ul = styled.ul<{open: boolean}>`
   a{
   color: #0c1f3b;
   }
+  @media (max-width: 760px){
+    width: 50vw;
+    margin-top: .5rem;
+    li{
+      margin-left: -1rem;
+    }
+  }
 `;
 
 interface RightNavBixoProps {
