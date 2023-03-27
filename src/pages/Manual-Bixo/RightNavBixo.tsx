@@ -14,7 +14,7 @@ const Ul = styled.ul<{open: boolean}>`
   flex-flow: column nowrap;
   background-color: #e7a72f;
   position: fixed;
-  transform: ${({ open }) => open ? 'translateY(-10%)' : 'translateY(110%)'};
+  transform: ${({ open }) => open ? 'translateY(-10%)' : 'translateY(120%)'};
   top: 17vh;
   right: 4vw;
   height: 75vh;
@@ -27,6 +27,8 @@ const Ul = styled.ul<{open: boolean}>`
   color: #0c1f3b;
   }
   @media (max-width: 760px){
+    margin-bottom: 13rem;
+    height: 70vh;
     width: 50vw;
     margin-top: .5rem;
     li{

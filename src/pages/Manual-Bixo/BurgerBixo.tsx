@@ -7,7 +7,7 @@ const StyledBurgerBixo = styled.div<{open: boolean}>`
   width: 3rem;
   height: 3rem;
   position: fixed;
-  top: 85vh;
+  top: 86vh;
   right: 4vw;
   transition: all .25s linear;
   background-color: ${({ open }) => open ? '#e7a72f' : '#e7a72f'};
