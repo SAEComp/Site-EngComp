@@ -8,6 +8,8 @@ import Extras from "../../components/Extra";
 import Footer from "../../components/Footer";
 import { DefaultTitle } from "../Default/styles";
 
+
+
 const Home:React.FC = ()=>{
  
     return(
