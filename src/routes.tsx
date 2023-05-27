@@ -34,6 +34,7 @@ const _Routes = () => {
                 <Route element = { <Login/> }  path="/Login"  />
                 <Route element = { <FAQ/> }  path="/FAQ"  />
                 <Route element = { <Default/> }  path="/Default"  />
+                <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
             
        </BrowserRouter>
