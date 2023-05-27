@@ -3,7 +3,7 @@ import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
 import { useEffect, useState } from "react";
 import jwtDecode from "jwt-decode"
-import { Container } from "./styles";
+import { Container, LoginCard } from "./styles";
 
 export interface userI {
     name: string | null;
@@ -51,6 +51,7 @@ const Login:React.FC =()=>{
         <div>
             <NavBar/>
             <Container>
+                <LoginCard>
                 <div id = "signInDiv"></div>
                 { Object.keys(user).length != 0
                 }
@@ -61,6 +62,7 @@ const Login:React.FC =()=>{
                         <h3>{user.name}</h3>
                     </div>
                 }
+                </LoginCard>
             </Container>
             <Footer/>
         </div>
