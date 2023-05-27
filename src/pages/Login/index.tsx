@@ -55,9 +55,10 @@ const Login:React.FC =()=>{
                 <div id = "signInDiv"></div>
                 { Object.keys(user).length != 0
                 }
-                <button onClick ={ () => handleSignout()}>Sign out</button>
+                
                 {user && 
                     <div>
+                        <button onClick ={ () => handleSignout()}>Sign out</button>
                         <img src = {user.picture}></img>
                         <h3>{user.name}</h3>
                     </div>
