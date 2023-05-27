@@ -5,14 +5,14 @@ import { useEffect, useState } from "react";
 import jwtDecode from "jwt-decode"
 import { Container } from "./styles";
 
-
+export interface userI {
+    name: string | null;
+    iat?: number;
+    iss?: string;
+    picture?: string;
+} 
 const Login:React.FC =()=>{
-    interface userI {
-        name: string | null;
-        iat?: number;
-        iss?: string;
-        picture?: string;
-    } 
+
     const [user, setUser] = useState<userI>({name: null});
 
     function handleCallbackResponse(response:any) {
@@ -22,10 +22,12 @@ const Login:React.FC =()=>{
 
         setUser(userObject as userI);
         document.getElementById("signInDiv")!.hidden = true;
+        localStorage.setItem("token", "userObject");
     }
     function handleSignout(){
         setUser({name: null});
         document.getElementById("signInDiv")!.hidden = false;
+        localStorage.removeItem("token");
     }
 
     useEffect(()=>{
@@ -38,7 +40,7 @@ const Login:React.FC =()=>{
         const docGetId = document.getElementById("signInDiv")!;
         google.accounts.id.renderButton(docGetId,{
             theme: "outline",
-            size: "large",
+            size: "medium",
             type: "standard",
         })
 

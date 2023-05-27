@@ -11,7 +11,14 @@ import FAQ from "./pages/Tutoriais-FAQ";
 import SAEcomp from "./pages/SAEComp";
 import Login from "./pages/Login";
 import Default from "./pages/Default";
+import { Navigate } from "react-router-dom";
 
+//@ts-ignore
+const PrivateRoute = ({children, redirectTo}) => {
+    const isAuthenticated = localStorage.getItem("token") !== null;
+    console.log("isAuth: ", isAuthenticated);
+    return isAuthenticated ? children : <Navigate to = {redirectTo}/>
+};
 
 const _Routes = () => {
    return(
@@ -22,12 +29,11 @@ const _Routes = () => {
                 <Route element = { <Enfases/> }  path="/Enfases"  />
                 <Route element = { <Equivalencias/> }  path="/Equivalencias"  />
                 <Route element = { <Extracurriculares/> }  path="/Extracurriculares"  />
-                <Route element = { <Manual/> }  path="/Manual-Bixo"  />
+                <Route element = { <PrivateRoute redirectTo = "/Login"><Manual /></PrivateRoute> }  path="/Manual-Bixo"  />
                 <Route element = { <SAEcomp/> }  path="/SAEComp"  />
                 <Route element = { <Login/> }  path="/Login"  />
                 <Route element = { <FAQ/> }  path="/FAQ"  />
                 <Route element = { <Default/> }  path="/Default"  />
-    
             </Routes>
             
        </BrowserRouter>
