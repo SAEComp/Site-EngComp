@@ -2,9 +2,8 @@ import React from "react";
 import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
 import { useEffect, useState } from "react";
-import jwtDecode from "jwt-decode"
+import jwtDecode from "jwt-decode";
 import { Container } from "./styles";
-
 
 const Login:React.FC =()=>{
     interface userI {
@@ -59,6 +58,7 @@ const Login:React.FC =()=>{
                         <h3>{user.name}</h3>
                     </div>
                 }
+                    
             </Container>
             <Footer/>
         </div>
