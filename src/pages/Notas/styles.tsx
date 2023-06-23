@@ -1,7 +1,5 @@
-import React from 'react';
 import styled from "styled-components";
 import dark from "../../themes/dark"
-import CanvasJSReact from '@canvasjs/react-charts';
 
 export const Container = styled.div`
 `;
