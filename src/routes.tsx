@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 import Home from "./pages/Home";
-import Notas from "./pages/Notas de Corte";
+import Notas from "./pages/Notas";
 import Enfases from "./pages/Enfases";
 import Equivalencias from "./pages/Equivalências";
 import Extracurriculares from "./pages/Extracurriculares";
@@ -25,7 +25,7 @@ const _Routes = () => {
        <BrowserRouter>
             <Routes>
                 <Route element = { <Home/> } path="/"  />
-                <Route element = { <Notas/> }  path="/Notas-Corte" />
+                <Route element = { <Notas/> }  path="/Notas" />
                 <Route element = { <Enfases/> }  path="/Enfases"  />
                 <Route element = { <Equivalencias/> }  path="/Equivalencias"  />
                 <Route element = { <Extracurriculares/> }  path="/Extracurriculares"  />
