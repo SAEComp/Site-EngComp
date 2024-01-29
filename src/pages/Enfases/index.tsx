@@ -18,7 +18,7 @@ const Enfases = ()=>{
           
           <Header 
             title="ÊNFASES"
-            text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nam recusandae velit sapiente perferendis repudiandae eum provident aut! Nobis quas magnam reprehenderit accusantium dolorum quia eos necessitatibus fugit non fuga!"
+            text="As ênfases são oportunidades dentro da Engenharia de Computação para mergulhar mais fundo em áreas específicas de interesse. Enquanto as disciplinas gerais oferecem uma visão ampla, as ênfases são uma oportunidade para um conhecimento mais especializado, mantendo sempre um vínculo essencial com os fundamentos do curso. Uma oportunidade de personalizar a jornada acadêmica, explorar e aprofundar-se em áreas específicas."
             url = "../../assets/img/background1.jpg"
             />
             <WhatEnf/>

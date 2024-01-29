@@ -1,6 +1,6 @@
 import React from "react";
 import {Container, Wrapper, HeaderNotas, HeaderGradient, HeaderNotasTitle} from './styles';
-import App from "./graficos";
+
 import NavBar from "../../components/NavBar";
 import Header from "../../components/Header";
 import WhatIs from "../../components/WhatIs";
@@ -26,7 +26,11 @@ const Notas = ()=>{
                   </Defaultmargin>
                </HeaderGradient>
             </HeaderNotas>
-            <App/>
+            <WhatIs />
+            <Extras 
+            title = "EXTRACURRICULARES" 
+            text = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nam recusandae velit sapiente perferendis repudiandae eum provident aut! Nobis quas magnam reprehenderit accusantium dolorum quia eos necessitatibus fugit non fuga!"
+            />
             <Footer />
           </Wrapper>
        </Container>

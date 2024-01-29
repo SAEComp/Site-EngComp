@@ -19,8 +19,13 @@ export const TitleTex = styled.div`
     font-family: "Ubuntu";
     font-size: 2.25rem;
     color: #EE0979;
-    @media(max-width: 1080px){
+
+    @media (max-width: 768px) {
         font-size: 2rem;
+    }
+    
+    @media (max-width: 576px) {
+        font-size: 1.5rem;
     }
 `;
 

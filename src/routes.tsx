@@ -16,6 +16,7 @@ import { Navigate } from "react-router-dom";
 //@ts-ignore
 const PrivateRoute = ({children, redirectTo}) => {
     const isAuthenticated = localStorage.getItem("token") !== null;
+    console.log("isAuth: ", isAuthenticated);
     return isAuthenticated ? children : <Navigate to = {redirectTo}/>
 };
 
@@ -33,7 +34,6 @@ const _Routes = () => {
                 <Route element = { <Login/> }  path="/Login"  />
                 <Route element = { <FAQ/> }  path="/FAQ"  />
                 <Route element = { <Default/> }  path="/Default"  />
-                <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
             
        </BrowserRouter>

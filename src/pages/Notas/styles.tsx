@@ -37,4 +37,3 @@ export const HeaderNotasTitle = styled.div`
     padding-top: 40vh;
     margin-bottom: 2rem;
 `;
-
