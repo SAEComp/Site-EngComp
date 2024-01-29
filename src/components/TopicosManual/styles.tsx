@@ -97,15 +97,22 @@ export const DivApp = styled.div`
     min-height: 1px;
     flex: 0 0 50%;
     width: 50%;
+    
 `
 export const UlApp = styled.ul`
     display: flex;
     list-style: none;
     justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0;
+
 `
 export const ImgApp = styled.img`
     margin-bottom: .5rem;
     margin: auto;
     display : table;
     width: 100px;
+    @media (max-width: 768px) {
+        max-width: 90%;
+    }
 `
