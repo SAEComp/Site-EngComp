@@ -21,13 +21,7 @@ const WhatEnf:React.FC = ()=>{
                     Além disso, as ênfases podem agregar valor ao currículo dos estudantes, destacando suas habilidades e conhecimentos especializados ao procurar oportunidades de estágio, emprego ou pós-graduação. Empresas e instituições acadêmicas muitas vezes valorizam candidatos que demonstram um compromisso sólido e uma expertise particular em um determinado domínio.
                     </StandardText>
                     </p>
-                    <p>
-                    <StandardText>
 
-                    Cada ênfase é uma oportunidade de aprofundar-se em áreas específicas. Ao escolher uma ênfase, os estudantes abrem portas para uma compreensão mais refinada e especializada, permitindo que moldem sua formação de acordo com suas aspirações profissionais.
-                    
-                    </StandardText>
-                    </p>
                 </div>
                 </div>
             </Grid> 
