@@ -6,7 +6,7 @@ import TopicosManual from "../../components/TopicosManual";
 import CardExtraScreen from "../../components/CardExtraScreen";
 import Perry from "../../components/Perry";
 import Footer from "../../components/Footer";
-import logo from "../../assets/img/header_023.png";
+import logo from "../../assets/img/header_024.png";
 import { Card } from "../Default/styles";
 import BurgerBixo from "./BurgerBixo"
 

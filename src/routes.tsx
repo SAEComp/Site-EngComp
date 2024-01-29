@@ -29,7 +29,7 @@ const _Routes = () => {
                 <Route element = { <Enfases/> }  path="/Enfases"  />
                 <Route element = { <Equivalencias/> }  path="/Equivalencias"  />
                 <Route element = { <Extracurriculares/> }  path="/Extracurriculares"  />
-                <Route element = { <PrivateRoute redirectTo = "/Login"><Manual /></PrivateRoute> }  path="/Manual-Bixo"  />
+                <Route element = { <Manual />}  path="/Manual-Bixo"  />
                 <Route element = { <SAEcomp/> }  path="/SAEComp"  />
                 <Route element = { <Login/> }  path="/Login"  />
                 <Route element = { <FAQ/> }  path="/FAQ"  />
