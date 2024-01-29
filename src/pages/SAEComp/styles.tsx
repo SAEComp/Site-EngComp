@@ -33,7 +33,9 @@ export const DualGrid = styled.div`
     padding: 2rem;
     display: flex;
     justify-content: space-around;
-
+    @media(max-width: 1080px){
+        flex-direction: column;
+    }
 
 
 `;

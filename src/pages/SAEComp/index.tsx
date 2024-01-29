@@ -57,7 +57,7 @@ const SAEcomp = ()=>{
               
                <div>
                   <Defaultmargin><ContactDir text = "saecomp.ec@gmail.com" type = "Email"/></Defaultmargin>
-                  <Defaultmargin><ContactDir text = "(16) 99738-1861" type = "Telefone"/></Defaultmargin>
+                  <Defaultmargin><ContactDir text = "(16) 99317-2251" type = "Telefone"/></Defaultmargin>
                   <Defaultmargin><ContactDir text = "Sala 8-001 | Prédio da Eng Comp - USP Campus 2. São Carlos, Brasil" type = "Endereço"/></Defaultmargin>
                </div>
 
@@ -67,7 +67,7 @@ const SAEcomp = ()=>{
                   <Defaultmargin><ContactSoc text = "@saecompusp" type = "Twitter"/></Defaultmargin>
                </div>
             </DualGrid>
-            <Centered><a href="https://wa.me/5516997381861" target="_blank"><Button>  Curtiu? Chama nossa presida no Zap!</Button></a></Centered>
+            <Centered><a href="https://wa.me/5516993172251" target="_blank"><Button>  Curtiu? Chama nosso presida no Zap!</Button></a></Centered>
             
             </div>
             <Extras 
