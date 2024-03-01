@@ -25,7 +25,7 @@ export default function Carrossel(){
                 <picture>
                   <source
                     media="(min-width: 768px)"
-                    srcSet="https://wallpapercave.com/uwp/uwp4232623.png"
+                    srcSet="https://wallpapercave.com/uwp/uwp4232620.png"
                   />
                   <img
                     className="d-block w-100"
@@ -82,7 +82,7 @@ export default function Carrossel(){
                   <picture>
                   <source
                     media="(min-width: 768px)"
-                    srcSet="https://wallpapercave.com/uwp/uwp4232623.png"
+                    srcSet="https://wallpapercave.com/uwp/uwp4232620.png"
                   />
                   <img
                     className="d-block w-100"
@@ -144,7 +144,7 @@ export default function Carrossel(){
                   <picture>
                   <source
                     media="(min-width: 768px)"
-                    srcSet="https://wallpapercave.com/uwp/uwp4232623.png"
+                    srcSet="https://wallpapercave.com/uwp/uwp4232620.png"
                   />
                   <img
                     className="d-block w-100"
@@ -201,7 +201,7 @@ export default function Carrossel(){
                   <picture>
                   <source
                     media="(min-width: 768px)"
-                    srcSet="https://wallpapercave.com/uwp/uwp4232623.png"
+                    srcSet="https://wallpapercave.com/uwp/uwp4232620.png"
                   />
                   <img
                     className="d-block w-100"
@@ -263,7 +263,7 @@ export default function Carrossel(){
                   <picture>
                   <source
                     media="(min-width: 768px)"
-                    srcSet="https://wallpapercave.com/uwp/uwp4232623.png"
+                    srcSet="https://wallpapercave.com/uwp/uwp4232620.png"
                   />
                   <img
                     className="d-block w-100"
@@ -322,7 +322,7 @@ export default function Carrossel(){
                   <picture>
                   <source
                     media="(min-width: 768px)"
-                    srcSet="https://wallpapercave.com/uwp/uwp4232623.png"
+                    srcSet="https://wallpapercave.com/uwp/uwp4232620.png"
                   />
                   <img
                     className="d-block w-100"
@@ -377,7 +377,7 @@ export default function Carrossel(){
                   <picture>
                   <source
                     media="(min-width: 768px)"
-                    srcSet="https://wallpapercave.com/uwp/uwp4232623.png"
+                    srcSet="https://wallpapercave.com/uwp/uwp4232620.png"
                   />
                   <img
                     className="d-block w-100"
