@@ -6,8 +6,6 @@ import Header from "../../components/Header";
 import WhatIs from "../../components/WhatIs";
 import Extras from "../../components/Extra";
 import Footer from "../../components/Footer";
-import { DefaultTitle } from "../Default/styles";
-
 
 
 const Home:React.FC = ()=>{
