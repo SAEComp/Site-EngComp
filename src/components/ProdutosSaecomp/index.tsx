@@ -1,7 +1,3 @@
-import React from "react";
-//import{View, Image, Style} from "react-native"
-import CardVendas from "../../components/CardVendas";
-import { Defaultmargin } from "../../pages/Default/styles";
 import { VendasDiv } from "./styles";
 import { Button, Card, Carousel } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
