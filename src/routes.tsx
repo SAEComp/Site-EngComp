@@ -10,33 +10,25 @@ import FAQ from "./pages/Tutoriais-FAQ";
 import SAEcomp from "./pages/SAEComp";
 import Login from "./pages/Login";
 import Default from "./pages/Default";
-import { Navigate } from "react-router-dom";
 
-//@ts-ignore
-const PrivateRoute = ({children, redirectTo}) => {
-    const isAuthenticated = localStorage.getItem("token") !== null;
-    console.log("isAuth: ", isAuthenticated);
-    return isAuthenticated ? children : <Navigate to = {redirectTo}/>
-};
-
-const _Routes = () => {
-   return(
-       <BrowserRouter>
+const AppRoutes = () => {
+    return (
+        <BrowserRouter>
             <Routes>
-                <Route element = { <Home/> } path="/"  />
-                <Route element = { <Notas/> }  path="/Notas" />
-                <Route element = { <Enfases/> }  path="/Enfases"  />
-                <Route element = { <Equivalencias/> }  path="/Equivalencias"  />
-                <Route element = { <Extracurriculares/> }  path="/Extracurriculares"  />
-                <Route element = { <Manual />}  path="/Manual-Bixo"  />
-                <Route element = { <SAEcomp/> }  path="/SAEComp"  />
-                <Route element = { <Login/> }  path="/Login"  />
-                <Route element = { <FAQ/> }  path="/FAQ"  />
-                <Route element = { <Default/> }  path="/Default"  />
+                <Route element={<Home />} path="/" />
+                <Route element={<Notas />} path="/Notas" />
+                <Route element={<Enfases />} path="/Enfases" />
+                <Route element={<Equivalencias />} path="/Equivalencias" />
+                <Route element={<Extracurriculares />} path="/Extracurriculares" />
+                <Route element={<Manual />} path="/Manual-Bixo" />
+                <Route element={<SAEcomp />} path="/SAEComp" />
+                <Route element={<Login />} path="/Login" />
+                <Route element={<FAQ />} path="/FAQ" />
+                <Route element={<Default />} path="/Default" />
             </Routes>
-            
-       </BrowserRouter>
-   )
+
+        </BrowserRouter>
+    )
 }
 
-export default _Routes;
+export default AppRoutes;
