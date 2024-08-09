@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    padding: 15rem;
-`
+  display: flex;
+  height: 100vh;
+`;
