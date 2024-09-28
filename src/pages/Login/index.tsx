@@ -265,7 +265,7 @@ const Login: React.FC = () => {
                 </AnimatedForm>
 
                 <AnimatedForm visible={showRegister}>
-                  <Title>Registre-se no Eng Comp!</Title>
+                  <Title>Registre-se na Eng Comp!</Title>
                   <Input type="text" placeholder="Nome completo" />
                   <Input type="email" placeholder="Seu Email" />
                   <Input type="password" placeholder="Sua senha" />
