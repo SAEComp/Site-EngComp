@@ -3,9 +3,7 @@ import styled from 'styled-components';
 import jwtDecode from "jwt-decode";
 import NavBar from "../../components/NavBar";
 import Footer from "../../components/Footer";
-
-// Substituir com a imagem de fundo
-import BackgroundLogin from "../../assets/img/background-login.jpg"
+import BackgroundLogin from "../../assets/img/background-login.jpg";
 
 const OuterContainer = styled.div`
   display: flex;
@@ -33,6 +31,19 @@ const LeftContainer = styled.div`
 const FormContainer = styled.div`
   width: 300px;
   text-align: center;
+  position: relative;
+`;
+
+const AnimatedForm = styled.div<{ visible: boolean }>`
+  position: absolute;
+  top: -150px;
+  left: 0;
+  width: 100%;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: ${({ visible }) => (visible ? 1 : 0)};
+  transform: ${({ visible }) =>
+    visible ? "translateX(0)" : "translateX(100px)"};
+  z-index: ${({ visible }) => (visible ? 1 : 0)};
 `;
 
 const Title = styled.h2`
@@ -160,7 +171,6 @@ const RightContainer = styled.div`
   }
 `;
 
-
 const RightBackground = styled.div`
   width: 100%;
   height: 100%;
@@ -176,6 +186,7 @@ export interface userI {
 
 const Login: React.FC = () => {
   const [user, setUser] = useState<userI>({ name: null });
+  const [showRegister, setShowRegister] = useState(false);
 
   function handleLoginSuccess(userObject: any) {
     setUser(userObject as userI);
@@ -206,12 +217,12 @@ const Login: React.FC = () => {
     google.accounts.id.renderButton(
       document.getElementById("signInDiv")!,
       {
-        theme: "outline",  // Botão com contorno claro
+        theme: "outline",
         size: "large",
-        text: "signin_with",  // Texto padrão "Sign up with Google"
+        text: "signin_with",
         shape: "rectangular",
-        logo_alignment: "left",  // Logo alinhado à esquerda
-        width: "100%",  // O botão ocupa toda a largura do contêiner
+        logo_alignment: "left",
+        width: "100%",
         type: "standard",
       }
     );
@@ -229,27 +240,41 @@ const Login: React.FC = () => {
               <Button onClick={handleSignout}>Sign out</Button>
             ) : (
               <>
-                <Title>Bem vindo à Eng Comp!</Title>
-                <Input type="email" placeholder="Seu Email" />
-                <Input type="password" placeholder="Sua senha" />
-                <RememberMeContainer>
-                  <RememberMe>
-                    <input type="checkbox" />
-                    <span>Lembre-se de mim</span>
-                  </RememberMe>
-                  <a href="/" style={{ fontSize: '14px', color: '#0066c0' }}>Esqueceu sua senha?</a>
-                </RememberMeContainer>
+                <AnimatedForm visible={!showRegister}>
+                  <Title>Bem vindo à Eng Comp!</Title>
+                  <Input type="email" placeholder="Seu Email" />
+                  <Input type="password" placeholder="Sua senha" />
+                  <RememberMeContainer>
+                    <RememberMe>
+                      <input type="checkbox" />
+                      <span>Lembre-se de mim</span>
+                    </RememberMe>
+                    <a href="/" style={{ fontSize: '14px', color: '#0066c0' }}>Esqueceu sua senha?</a>
+                  </RememberMeContainer>
 
-                <Divider><span>Ou, use seu Email USP</span></Divider>
+                  <Divider><span>Ou, use seu Email USP</span></Divider>
 
-                {/* Botão do Google estilizado */}
-                <GoogleButtonContainer>
-                  <div id="signInDiv"></div>
-                </GoogleButtonContainer>
+                  <GoogleButtonContainer>
+                    <div id="signInDiv"></div>
+                  </GoogleButtonContainer>
 
-                <p>
-                  Não tem uma conta? <a href="/">Registre-se aqui!</a>
-                </p>
+                  <p>
+                    Não tem uma conta?{' '}
+                    <a href="#" onClick={() => setShowRegister(true)}>Registre-se aqui!</a>
+                  </p>
+                </AnimatedForm>
+
+                <AnimatedForm visible={showRegister}>
+                  <Title>Registre-se no Eng Comp!</Title>
+                  <Input type="text" placeholder="Nome completo" />
+                  <Input type="email" placeholder="Seu Email" />
+                  <Input type="password" placeholder="Sua senha" />
+                  <Button>Registrar</Button>
+                  <p>
+                    Já tem uma conta?{' '}
+                    <a href="#" onClick={() => setShowRegister(false)}>Faça login aqui!</a>
+                  </p>
+                </AnimatedForm>
               </>
             )}
           </FormContainer>
