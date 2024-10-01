@@ -9,7 +9,7 @@ const CreateForms = ()=>{
     const[rating,setRating] = useState(0);
     const[text, setText] = useState("");
 
-    const handleSubmitFeedback = (e)=>{
+    const handleSubmitFeedback = (e: any)=>{
         e.preventDefault();
     //useEffect(()=>{
         api.post("/teacher/create", {
@@ -45,7 +45,7 @@ const CreateForms = ()=>{
                 <br/>
                 <label>
                     Nota:
-                    <input  type="number" value={rating} name="rating" onChange={(e)=>setRating(e.target.value)}/>
+                    {/* <input  type="number" value={rating} name="rating" onChange={(e)=>setRating(e.target.value)}/> */}
                 </label>
                 <br/>                
                 <label>
