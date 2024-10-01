@@ -9,6 +9,7 @@ import Manual from "./pages/Manual-Bixo";
 import FAQ from "./pages/Tutoriais-FAQ";
 import SAEcomp from "./pages/SAEComp";
 import Login from "./pages/Login";
+import TeacherFeedback from "./pages/TeacherFeedback";
 import Default from "./pages/Default";
 
 const AppRoutes = () => {
@@ -24,6 +25,7 @@ const AppRoutes = () => {
                 <Route element={<SAEcomp />} path="/SAEComp" />
                 <Route element={<Login />} path="/Login" />
                 <Route element={<FAQ />} path="/FAQ" />
+                <Route element={<TeacherFeedback />} path="/Avaliacao" />
                 <Route element={<Default />} path="/Default" />
             </Routes>
 

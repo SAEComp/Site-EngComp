@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 
 const Ul = styled.ul<{open: boolean}>`
@@ -35,6 +34,7 @@ const RightNav = ({ open }: RightNavProps) => {
     <Ul open={open}>
       <li><a href='/'>Home</a></li>
       <li><a href='/SAEComp'>SAEComp</a></li>
+      <li><a href='/Avaliacao'>Avaliação de professores</a></li> {/* depois colocar dentro dos links protegidos */}
       <li><a href='/Enfases'>Ênfases</a></li>
       <li><a href='/Default'>Notas</a></li>
       <li><a href='/Manual-bixo'>Manual</a></li>
