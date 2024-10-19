@@ -6,7 +6,9 @@ type Action =
     | { type: 'SET_TOTAL_QUESTIONS'; payload: number }
     | { type: 'UPDATE_QUESTION'; questionId: number; field: keyof IQuestion; value: any }
     | { type: 'ADD_QUESTION'; questionId: number }
+    | { type: 'ADD_N_QUESTIONS'; n: number }
     | { type: 'REMOVE_QUESTION'; questionId: number }
+    | { type: 'REMOVE_N_QUESTIONS'; n: number }
     | { type: 'ADD_ADDITIONAL_COMMENTS'; payload: string }
     | { type: 'RESET_FORM' };
 
@@ -62,6 +64,21 @@ export const formReducer = (state: IForm, action: Action): IForm => {
                     newQuestion
                 ]
             };
+        case 'ADD_N_QUESTIONS':
+            let newQuestions = [];
+            for (let i = 0; i < action.n; i++) {
+                newQuestions.push({
+                    ...questionInitialState,
+                    questionId: state.totalQuestions + i
+                });
+            }
+            return {
+                ...state,
+                questions: [
+                    ...state.questions,
+                    ...newQuestions
+                ]
+            };
 
         case 'REMOVE_QUESTION':
             return {
@@ -69,6 +86,12 @@ export const formReducer = (state: IForm, action: Action): IForm => {
                 questions: state.questions.filter(question =>
                     question.questionId !== action.questionId
                 ),
+            };
+
+        case 'REMOVE_N_QUESTIONS':
+            return {
+                ...state,
+                questions: state.questions.slice(0, action.n)
             };
 
         case 'ADD_ADDITIONAL_COMMENTS':

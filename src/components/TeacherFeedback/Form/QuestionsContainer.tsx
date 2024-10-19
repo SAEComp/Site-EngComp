@@ -7,7 +7,7 @@ import { useSprings, animated } from '@react-spring/web';
 import { useDrag } from 'react-use-gesture';
 
 
-const QuestionsContainer: React.FC<IQuestionProps> = ({ setCurrentQuestion, updateQuestion, formState }) => {
+const QuestionsContainer: React.FC<IQuestionProps> = ({ setCurrentQuestion, updateQuestion, formState, teachers, courses }) => {
     const [questionsHeight, setQuestionsHeight] = useState<number>(0);
     const questionsRef = useRef<HTMLDivElement | null>(null);
     const [width, setWidth] = useState<number>(window.innerWidth);
@@ -137,6 +137,8 @@ const QuestionsContainer: React.FC<IQuestionProps> = ({ setCurrentQuestion, upda
                                 updateQuestion={updateQuestion}
                                 questionIndex={i}
                                 formState={formState}
+                                teachers={teachers}
+                                courses={courses}
                             />
                         </Box>
                     </animated.div>

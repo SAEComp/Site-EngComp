@@ -119,10 +119,10 @@ const StyledStepperButton = styled('div')(
 );
 
 const CustomNumberInput = React.forwardRef(function CustomNumberInput(
-    props: UseNumberInputParameters & React.InputHTMLAttributes<HTMLInputElement> & { onChangeValue: (newValue: number | null) => void},
+    props: UseNumberInputParameters & React.InputHTMLAttributes<HTMLInputElement> & { onChangeValue?: (newValue: number | null) => void},
     ref: React.ForwardedRef<HTMLInputElement>,
 ) {
-    const { min = 1, max = 50, defaultValue = 1, ...other } = props;
+    const { min = 1, max = 50, defaultValue = 1, onChangeValue, ...other } = props;
 
     const [value, setValue] = React.useState<number>(defaultValue);
 
@@ -137,7 +137,7 @@ const CustomNumberInput = React.forwardRef(function CustomNumberInput(
         } else {
             setValue(newValue);
         }
-        props.onChangeValue && props.onChangeValue(newValue);
+        onChangeValue && onChangeValue(newValue);
     };
 
     const {

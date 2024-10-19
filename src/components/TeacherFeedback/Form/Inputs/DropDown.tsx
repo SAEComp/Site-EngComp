@@ -26,49 +26,58 @@ const DropDown = ({ options, label, search, value, onChange, sx }: IDropDown) =>
             value={value}
             onChange={(_, newValue) => {
                 onChange && onChange(newValue);
+                (document.activeElement as HTMLElement).blur();
             }}
             filterOptions={search ? filterOptions : undefined}
-            renderOption={(props, option) => (
-                <Box
-                    component="li"
-                    {...props}
-                    sx={{
-                        display: 'flex',
-                        flexDirection: 'column',
-                        alignItems: 'flex-start',
-                        justifyContent: 'flex-start',
-                        textAlign: 'left'
-                    }}
-                >
-                    {option.subtitle && (
+            renderOption={(props, option) => {
+                const { key, ...otherProps } = props;
+            
+                const optionKey = option.id || option.label;
+            
+                return (
+                    <Box
+                        component="li"
+                        key={optionKey}
+                        {...otherProps}
+                        sx={{
+                            display: 'flex',
+                            flexDirection: 'column',
+                            alignItems: 'flex-start',
+                            justifyContent: 'flex-start',
+                            textAlign: 'left'
+                        }}
+                    >
+                        {option.subtitle && (
+                            <Typography
+                                variant="caption"
+                                color="textSecondary"
+                                sx={{
+                                    alignSelf: 'flex-start',
+                                    marginLeft: 0,
+                                    textAlign: 'left',
+                                    fontFamily: 'Inter',
+                                    fontWeight: 400
+                                }}
+                            >
+                                {option.subtitle}
+                            </Typography>
+                        )}
                         <Typography
-                            variant="caption"
-                            color="textSecondary"
+                            variant="body1"
                             sx={{
                                 alignSelf: 'flex-start',
-                                marginLeft: 0,
+                                marginLeft: 1,
                                 textAlign: 'left',
                                 fontFamily: 'Inter',
                                 fontWeight: 400
                             }}
                         >
-                            {option.subtitle}
+                            {option.label}
                         </Typography>
-                    )}
-                    <Typography
-                        variant="body1"
-                        sx={{
-                            alignSelf: 'flex-start',
-                            marginLeft: 1,
-                            textAlign: 'left',
-                            fontFamily: 'Inter',
-                            fontWeight: 400
-                        }}
-                    >
-                        {option.label}
-                    </Typography>
-                </Box>
-            )}
+                    </Box>
+                );
+            }}
+            
 
             renderInput={(params) => (
                 <TextField

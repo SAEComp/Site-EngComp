@@ -10,6 +10,7 @@ import FAQ from "./pages/Tutoriais-FAQ";
 import SAEcomp from "./pages/SAEComp";
 import Login from "./pages/Login";
 import TeacherFeedback from "./pages/TeacherFeedback";
+import TeacherFeedbackResults from "./pages/TeacherFeedbackResults";
 import Default from "./pages/Default";
 
 const AppRoutes = () => {
@@ -26,6 +27,7 @@ const AppRoutes = () => {
                 <Route element={<Login />} path="/Login" />
                 <Route element={<FAQ />} path="/FAQ" />
                 <Route element={<TeacherFeedback />} path="/Avaliacao" />
+                <Route element={<TeacherFeedbackResults />} path="/Resultados" />
                 <Route element={<Default />} path="/Default" />
             </Routes>
 

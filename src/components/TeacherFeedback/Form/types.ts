@@ -1,13 +1,13 @@
 export type TAutocompleteOptions = {
     label: string;
-    id: number;
+    id: number | string;
     subtitle?: string;
 };
 
 export interface IQuestion {
     questionId: number;
-    teacherId: number | null;
-    subjectId: number | null;
+    teacherId: string | null;
+    subjectId: string | null;
     positiveAspects: string;
     negativeAspects: string;
     rating: number;
@@ -27,4 +27,6 @@ export interface IQuestionProps {
     setCurrentQuestion: (currentQuestion: number) => void;
     updateQuestion: (questionId: number, field: keyof IQuestion, value: any) => void;
     formState: IForm;
+    teachers: TAutocompleteOptions[];
+    courses: TAutocompleteOptions[];
 }

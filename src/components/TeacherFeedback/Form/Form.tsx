@@ -1,26 +1,79 @@
 import { Box, Typography, Button } from "@mui/material";
-import { useReducer } from "react";
+import { useEffect, useReducer, useRef, useState } from "react";
 import { IQuestion } from "./types";
 import QuestionsContainer from "./QuestionsContainer";
 import { formReducer, initialState } from "./reducer";
 import NumberInput from "./Inputs/NumberInput";
+import MobileNumberInput from "./Inputs/MobileNumberInput";
 import TextInput from "./Inputs/TextInput";
+import { TAutocompleteOptions } from "./types";
+import feedbackProvider from "../../../services/TeacherFeedback/feedback.provider";
 
+const useDebouncedFunction = (func: (...args: any[]) => void, delay: number) => {
+    const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
+    return (...args: any[]) => {
+        if (timeoutRef.current) {
+            clearTimeout(timeoutRef.current);
+        }
+        timeoutRef.current = setTimeout(() => {
+            func(...args);
+            timeoutRef.current = null;
+        }, delay);
+    };
+};
 
 const Form = () => {
     const [formState, dispatch] = useReducer(formReducer, initialState);
+    const [teachers, setTeachers] = useState<TAutocompleteOptions[]>([]);
+    const [courses, setCourses] = useState<TAutocompleteOptions[]>([]);
+
+    const fetchDropdownData = async () => {
+        const [teacherResult, courseResult] = await Promise.all([
+            feedbackProvider.getTeachers({ pageSize: -1 }),
+            feedbackProvider.getCourses({ pageSize: -1 })
+        ]);
+        if (teacherResult) setTeachers(teacherResult.data.map((teacher) => ({ id: teacher.teacherId, label: teacher.teacherName })));
+        if (courseResult) setCourses(courseResult.data.map((course) => ({ id: course.courseId, label: course.courseName, subtitle: course.courseCode })));
+        console.log(teacherResult, courseResult);
+    }
+
+    useEffect(() => {
+        fetchDropdownData();
+    }, []);
+
+    const createFeedback = async () => {
+        
+        for (const question of formState.questions) {
+            if (question.teacherId === null || question.subjectId === null) {
+                alert('Por favor, preencha todos os campos');
+                return;
+            }
+        }
+        for (const question of formState.questions) {
+            const response = await feedbackProvider.createFeedback({
+                userId: '1',
+                teacherId: question.teacherId as string,
+                courseId: question.subjectId as string,
+                positiveAspects: question.positiveAspects,
+                negativeAspects: question.negativeAspects,
+                rating: question.rating,
+                additionalComments: question.additionalComments
+            });
+            console.log(response);
+        }
+    };
 
     const updateQuestion = (questionId: number, field: keyof IQuestion, value: number | string) => {
         dispatch({ type: 'UPDATE_QUESTION', questionId, field, value });
     };
 
-    const addQuestion = (questionId: number) => {
-        dispatch({ type: 'ADD_QUESTION', questionId });
+    const addNQuestions = (n: number) => {
+        dispatch({ type: 'ADD_N_QUESTIONS', n });
     };
 
-    const removeQuestion = (questionId: number) => {
-        dispatch({ type: 'REMOVE_QUESTION', questionId });
+    const removeNQuestions = (n: number) => {
+        dispatch({ type: 'REMOVE_N_QUESTIONS', n });
     };
 
     const setCurrentQuestion = (currentQuestion: number) => {
@@ -34,6 +87,16 @@ const Form = () => {
     const addAdditionalComments = (comments: string) => {
         dispatch({ type: 'ADD_ADDITIONAL_COMMENTS', payload: comments });
     };
+
+    const changeFunction = (newValue: number | null) => {
+        if (newValue === null || newValue == formState.totalQuestions) return;
+        const newQuestions = newValue - formState.totalQuestions
+        if (newQuestions > 0) addNQuestions(newQuestions);
+        else removeNQuestions(newQuestions);
+        setTotalQuestions(newValue);
+    }
+
+    const debouncedChangeFunction = useDebouncedFunction(changeFunction, 50);
 
     return (
         <Box
@@ -68,28 +131,38 @@ const Form = () => {
                 >
                     Quantas disciplinas você cursou esse semestre?
                 </Typography>
+                <Box
+                sx={{
+                    display: {xs: 'none', md: 'flex'}
+                }}
+                >
                 <NumberInput
                     min={1}
                     max={50}
                     defaultValue={1}
-                    onChange={(newValue) => {
-                        console.log('.')
-                        if (newValue === null) return;
-                        const newQuestions = newValue - formState.totalQuestions
-                        console.log(newQuestions)
-                        for (let i = 0; i < Math.abs(newQuestions); i++) {
-                            console.log(i)
-                            newQuestions > 0 ? addQuestion(formState.totalQuestions + i) : removeQuestion(formState.totalQuestions - 1 - i);
-                        }
-                        if (formState.currentQuestion + 1 > newValue) setCurrentQuestion(newValue - 1);
-                        setTotalQuestions(newValue);
-                    }}
+                    onChange={changeFunction}
                 />
+                </Box>
+                <Box
+                sx={{
+                    display: {xs: 'flex', md: 'none'}
+                }}
+                >
+                <MobileNumberInput
+                    min={1}
+                    max={50}
+                    defaultValue={1}
+                    onChange={(newValue) => debouncedChangeFunction(newValue)}
+                />
+                </Box>
+                
             </Box>
             <QuestionsContainer
                 setCurrentQuestion={setCurrentQuestion}
                 updateQuestion={updateQuestion}
                 formState={formState}
+                teachers={teachers}
+                courses={courses}
             />
             <Box
                 sx={{
@@ -128,6 +201,7 @@ const Form = () => {
                 }}
                 onClick={() => {
                     console.log(formState);
+                    createFeedback();
                 }}
             >
                 Enviar

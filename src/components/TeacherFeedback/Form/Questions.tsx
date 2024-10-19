@@ -11,7 +11,7 @@ interface IQuestion extends Omit<IQuestionProps, 'setCurrentQuestion'> {
     questionIndex: number;
 }
 
-const Questions = ({ updateQuestion, formState, questionIndex }: IQuestion) => {
+const Questions = ({ updateQuestion, formState, questionIndex, teachers, courses }: IQuestion) => {
     return (
         <Box
             sx={{
@@ -32,11 +32,12 @@ const Questions = ({ updateQuestion, formState, questionIndex }: IQuestion) => {
                     label="Nome do Docente:"
                     component={DropDown}
                     componentProps={{
-                        options: docentes,
+                        options: teachers,
                         label: "Sua resposta",
                         search: true,
-                        value: docentes.find((obj) => obj.id === formState.questions[questionIndex].teacherId) ?? null,
+                        value: teachers.find((obj) => obj.id === formState.questions[questionIndex].teacherId) ?? null,
                         onChange: (newValue) => {
+                            console.log(newValue)
                             updateQuestion(questionIndex, 'teacherId', newValue?.id ?? null);
                         }
                     }}
@@ -48,10 +49,10 @@ const Questions = ({ updateQuestion, formState, questionIndex }: IQuestion) => {
                     label="Nome e/ou Código da Disciplina"
                     component={DropDown}
                     componentProps={{
-                        options: disciplinas,
+                        options: courses,
                         label: "Sua resposta",
                         search: true,
-                        value: disciplinas.find((obj) => obj.id === formState.questions[questionIndex].subjectId) ?? null,
+                        value: courses.find((obj) => obj.id === formState.questions[questionIndex].subjectId) ?? null,
                         onChange: (newValue) => {
                             updateQuestion(questionIndex, 'subjectId', newValue?.id ?? null);
                         }

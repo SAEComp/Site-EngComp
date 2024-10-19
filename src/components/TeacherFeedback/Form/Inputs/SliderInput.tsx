@@ -23,23 +23,40 @@ const marks: IMark[] = Array.from({ length: 11 }, (_, i) => ({
 const valuetext = (value: number): string => `${value}`;
 
 
-const StyledSlider = styled(Slider)(() => ({
+const StyledSlider = styled(Slider)(({theme}) => ({
     '& .MuiSlider-mark': {
         opacity: 1,
-        backgroundColor: '#F2F2F2', // Cor das marcas inativas
-        height: 40,
-        width: 40,
-        borderRadius: '50%',
-        marginLeft: -19,
-        border: '7px solid #D9D9D9'
+        backgroundColor: '#F2F2F2',
+        // height: 40,
+        // width: 30,
+        borderRadius: '100%',
+        // marginLeft: -15,
+        border: '7px solid #D9D9D9',
+        [theme.breakpoints.up('xs')]: {
+            width: 30,
+            height: 30,
+            marginLeft: -14,
+        },
+        [theme.breakpoints.up('md')]: {
+            width: 40,
+            height: 40,
+            marginLeft: -19,
+        },
     },
     '& .MuiSlider-markActive': {
         backgroundColor: '#F2F2F2',
         border: '7px solid #D9D9D9'
     },
     '& .MuiSlider-thumb': {
-        height: 20,
-        width: 20,
+        [theme.breakpoints.up('xs')]: {
+            width: 12,
+            height: 12,
+        },
+        [theme.breakpoints.up('md')]: {
+            width: 20,
+            height: 20,
+        },
+
         backgroundColor: '#03B04B',
         boxShadow: 'none',
         border: 'none',
