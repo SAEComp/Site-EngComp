@@ -1,12 +1,10 @@
-import { Box, Typography } from "@mui/material";
-import { SxProps, Theme } from "@mui/material";
 import { ComponentType } from "react";
 
 interface IQuestionContainer<ComponentProps> {
     label: string;
     component: ComponentType<ComponentProps>;
     componentProps: ComponentProps;
-    sx?: SxProps<Theme>;
+    sx?: React.CSSProperties;
 }
 
 
@@ -17,27 +15,18 @@ const QuestionComponent = <ComponentProps extends {}>({
     sx
 }: IQuestionContainer<ComponentProps>) => {
     return (
-        <Box
-            sx={{
-                bgcolor: '#F1F1F1',
-                borderRadius: '20px',
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '20px',
-                padding: '20px',
-                ...sx
-            }}
+        <div
+            className="bg-[#F1F1F1] rounded-3xl flex flex-col gap-5 p-5"
+            style={sx}
         >
-            <Typography
-                sx={{
-                    fontFamily: 'Inter'
-                }}
+            <span
+                className="font-inter"
             >
                 {label}
-            </Typography>
+            </span>
             <Component {...componentProps} />
 
-        </Box>
+        </div>
     )
 }
 

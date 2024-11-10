@@ -1,114 +1,51 @@
-import { Box, Typography } from "@mui/material"
 import logo from '../../../assets/svg/logo.svg'
 import facebook_icon from '../../../assets/svg/facebook_icon.svg'
 import instagram_icon from '../../../assets/svg/instagram_icon.svg'
 import youtube_icon from '../../../assets/svg/youtube_icon.svg'
 
-
 const Footer = () => {
     return (
-        <Box
-            sx={{
-                bgcolor: '#111111',
-                width: '100vw',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                paddingY: '20px',
-                gap: { xs: '40px', md: '20px' }
+        <div className="bg-[#111111] w-screen flex flex-col items-center py-5 gap-[20px] md:gap-[40px]">
+            <div className="w-[70%] h-[1px] bg-[#E6E6E6]"></div>
 
-            }}
-        >
-            <Box
-                sx={{
-                    width: '70%',
-                    height: '1px',
-                    bgcolor: '#E6E6E6',
+            <div className="w-[90%] flex justify-center md:justify-between">
+                <img src={logo} alt="logo SaeComp" className="h-[40px]" />
+            </div>
 
-                }}
-            />
-            <Box
-                sx={{
-                    width: '90%',
-                    display: 'flex',
-                    justifyContent: { xs: 'center', md: 'space-between' },
-
-                }}
-            >
-                <Box
-                    component='img'
-                    alt='logo SaeComp'
-                    src={logo}
-                    sx={{
-                        height: '40px',
-                    }}
-                />
-            </Box>
-            <Box
-                sx={{
-                    display: 'flex',
-                    justifyContent: { xs: 'center', md: 'end' },
-                    width: '90%'
-                }}
-            >
-                <Box
-                    sx={{
-                        display: 'flex',
-                        gap: '25px'
-                    }}
-                >
-                    <Box
-                        component='img'
-                        alt='facebook'
+            <div className="w-[90%] flex justify-center md:justify-end">
+                <div className="flex gap-[25px]">
+                    <img
                         src={facebook_icon}
-                        sx={{ cursor: 'pointer' }}
+                        alt="facebook"
+                        className="cursor-pointer"
                         onClick={() => window.open('https://www.facebook.com/saecomp')}
                     />
-                    <Box
-                        component='img'
-                        alt='youtube'
+                    <img
                         src={youtube_icon}
-                        sx={{ cursor: 'pointer' }}
+                        alt="youtube"
+                        className="cursor-pointer"
                         onClick={() => window.open('https://www.youtube.com/channel/UCF1pe-gtP0Z40pCJcmGSdxQ?sub_confirmation=1')}
                     />
-                    <Box
-                        component='img'
-                        alt='instagram'
+                    <img
                         src={instagram_icon}
-                        sx={{ cursor: 'pointer' }}
+                        alt="instagram"
+                        className="cursor-pointer"
                         onClick={() => window.open('https://www.instagram.com/saecomp.ec/')}
                     />
+                </div>
+            </div>
 
-                </Box>
-            </Box>
-            <Typography
-                sx={{
-                    color: '#757575',
-                    fontFamily: 'Inter',
-                    fontSize: { xs: '0.8rem', md: '0.85rem' },
-                    width: '90%',
-                    marginTop: '-20px',
-                    textAlign: { xs: 'center', md: 'start' }
-                }}
-            >
-            Nosso principal objetivo é representar os alunos perante a<br/>Universidade de São Paulo.
-            </Typography>
-            <Typography
-                sx={{
-                    color: '#757575',
-                    fontFamily: 'Inter',
-                    fontSize: { xs: '0.8rem', md: '0.85rem' },
-                    width: '90%',
-                    textAlign: 'center'
-                }}
-            >
-            {'© SAEComp <3'}
-            <br/>
-            Secretaria Acadêmica da Engenharia de Computação | USP São Carlos
-            </Typography>
+            <span className="text-[#757575] font-inter text-[0.8rem] md:text-[0.85rem] w-[90%] -mt-12 text-center md:text-start">
+                Nosso principal objetivo é representar os alunos perante a<br />Universidade de São Paulo.
+            </span>
 
-        </Box>
-    )
-}
+            <p className="text-[#757575] font-inter text-[0.8rem] md:text-[0.85rem] w-[90%] text-center">
+                {'© SAEComp <3'}
+                <br />
+                Secretaria Acadêmica da Engenharia de Computação | USP São Carlos
+            </p>
+        </div>
+    );
+};
 
 export default Footer;

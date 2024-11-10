@@ -1,9 +1,9 @@
 import { teacherFeedbackProvider } from "../../providers";
-import { IBaseQuery, IFeedbacksQuery, IUserFeedbacksQuery, IPagination, ITeacher, ICourse, IFeedbacksResponse, IFeedbackCreator, IFeedbackUpdater } from "../../interfaces/TeacherFeedback/feedback.interface";
+import { IFilterData, IBaseQuery, ITeacherQuery, IFeedbacksQuery, IUserFeedbacksQuery, IPagination, ITeacher, ICourse, IFeedbacksResponse, IFeedbackCreator, IFeedbackUpdater } from "../../interfaces/TeacherFeedback/feedback.interface";
 
 
 class FeedbackService {
-    async getTeachers(query: IBaseQuery): Promise<IPagination<ITeacher> | null> {
+    async getTeachers(query: ITeacherQuery): Promise<IPagination<ITeacher> | null> {
         try {
             const endpoint = `/teachers`;
             const response = await teacherFeedbackProvider.get<IPagination<ITeacher>>(endpoint, {params: query});
@@ -78,6 +78,17 @@ class FeedbackService {
         catch (error) {
             console.log(error);
             return false;
+        }
+    }
+    async getFilterData(): Promise<IFilterData[] | null> {
+        try {
+            const endpoint = `/filterData`;
+            const response = await teacherFeedbackProvider.get<IFilterData[]>(endpoint);
+            return response.data;
+        }
+        catch (error) {
+            console.log(error);
+            return null;
         }
     }
 }

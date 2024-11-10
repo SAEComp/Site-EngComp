@@ -1,4 +1,3 @@
-import { Box } from "@mui/material";
 import Counter from "./Counter";
 import { IQuestionProps } from "./types";
 import Questions from './Questions';
@@ -90,18 +89,8 @@ const QuestionsContainer: React.FC<IQuestionProps> = ({ setCurrentQuestion, upda
     );
 
     return (
-        <Box
-            sx={{
-                display: 'flex',
-                flexDirection: 'column',
-                bgcolor: 'white',
-                width: '100%',
-                borderRadius: '51px',
-                padding: { xs: '20px', md: '50px' },
-                gap: '20px',
-                position: 'relative',
-                overflow: 'hidden',
-            }}
+        <div
+            className="flex flex-col bg-white w-full rounded-xl p-5 md:p-12 gap-5 relative overflow-hidden"
         >
             <Counter
                 setCurrentQuestion={setCurrentQuestion}
@@ -109,13 +98,9 @@ const QuestionsContainer: React.FC<IQuestionProps> = ({ setCurrentQuestion, upda
                 currentQuestion={formState.currentQuestion}
             />
 
-            <Box
-                sx={{
-                    position: 'relative',
-                    width: '100%',
-                    height: `${questionsHeight}px`,
-                    overflow: 'hidden',
-                }}
+            <div
+                className="relative w-full overflow-hidden"
+                style={{ height: `${questionsHeight}px` }}
                 {...bind()}
             >
                 {springs.map(({ x, display }, i: number) => (
@@ -130,7 +115,7 @@ const QuestionsContainer: React.FC<IQuestionProps> = ({ setCurrentQuestion, upda
                             transform: x.to((x) => `translate3d(${x}px,0,0)`),
                         }}
                     >
-                        <Box
+                        <div
                             ref={i === formState.currentQuestion ? questionsRef : null}
                         >
                             <Questions
@@ -140,17 +125,17 @@ const QuestionsContainer: React.FC<IQuestionProps> = ({ setCurrentQuestion, upda
                                 teachers={teachers}
                                 courses={courses}
                             />
-                        </Box>
+                        </div>
                     </animated.div>
                 ))}
-            </Box>
+            </div>
 
             <Counter
                 setCurrentQuestion={setCurrentQuestion}
                 totalQuestions={formState.totalQuestions}
                 currentQuestion={formState.currentQuestion}
             />
-        </Box>
+        </div>
     );
 };
 

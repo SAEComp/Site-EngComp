@@ -1,32 +1,37 @@
-import { Box, Typography, Button } from "@mui/material";
-import { useEffect, useReducer, useRef, useState } from "react";
+import { useEffect, useReducer, useState } from "react";
 import { IQuestion } from "./types";
 import QuestionsContainer from "./QuestionsContainer";
 import { formReducer, initialState } from "./reducer";
-import NumberInput from "./Inputs/NumberInput";
-import MobileNumberInput from "./Inputs/MobileNumberInput";
-import TextInput from "./Inputs/TextInput";
+import NumberInput from "../../Inputs/NumberInput";
+import TextInput from "../../Inputs/TextInput";
 import { TAutocompleteOptions } from "./types";
 import feedbackProvider from "../../../services/TeacherFeedback/feedback.provider";
 
-const useDebouncedFunction = (func: (...args: any[]) => void, delay: number) => {
-    const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-    return (...args: any[]) => {
-        if (timeoutRef.current) {
-            clearTimeout(timeoutRef.current);
-        }
-        timeoutRef.current = setTimeout(() => {
-            func(...args);
-            timeoutRef.current = null;
-        }, delay);
-    };
-};
+
+
+const useIsMobile = () => {
+    const [isMobile, setIsMobile] = useState(false);
+  
+    useEffect(() => {
+      const mediaQuery = window.matchMedia('(max-width: 768px)');
+  
+      const handleMediaChange = () => setIsMobile(mediaQuery.matches);
+  
+      handleMediaChange();
+      mediaQuery.addEventListener('change', handleMediaChange);
+  
+      return () => mediaQuery.removeEventListener('change', handleMediaChange);
+    }, []);
+  
+    return isMobile;
+  }
 
 const Form = () => {
     const [formState, dispatch] = useReducer(formReducer, initialState);
     const [teachers, setTeachers] = useState<TAutocompleteOptions[]>([]);
     const [courses, setCourses] = useState<TAutocompleteOptions[]>([]);
+    const isMobile = useIsMobile();
 
     const fetchDropdownData = async () => {
         const [teacherResult, courseResult] = await Promise.all([
@@ -96,67 +101,27 @@ const Form = () => {
         setTotalQuestions(newValue);
     }
 
-    const debouncedChangeFunction = useDebouncedFunction(changeFunction, 50);
-
     return (
-        <Box
-            sx={{
-                bgcolor: '#03B04B',
-                width: '100%',
-                paddingY: '30px',
-                paddingX: { xs: '15px', sm: '30px', md: '40px' },
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
-                alignItems: 'center',
-                gap: '40px'
-            }}
-        >
-            <Box
-                sx={{
-                    display: 'flex',
-                    flexDirection: { xs: 'column', md: 'row' },
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    gap: { xs: '20px', md: '10%' },
-                    width: '100%'
+        <div
+        className="flex flex-col justify-center items-center gap-10 w-full bg-[#03B04B] py-8 sm:px-8 md:px-10 px-2"
 
-                }}
+        >
+            <div
+                className="flex flex-col justify-center items-center w-full gap-4 md:flex-row md:gap-[10%]"
             >
-                <Typography
-                    sx={{
-                        fontFamily: 'Inter',
-                        color: 'white'
-                    }}
+                <span
+                    className="font-inter text-white"
                 >
                     Quantas disciplinas você cursou esse semestre?
-                </Typography>
-                <Box
-                sx={{
-                    display: {xs: 'none', md: 'flex'}
-                }}
-                >
+                </span>
                 <NumberInput
                     min={1}
                     max={50}
                     defaultValue={1}
                     onChange={changeFunction}
+                    mobile={isMobile}
                 />
-                </Box>
-                <Box
-                sx={{
-                    display: {xs: 'flex', md: 'none'}
-                }}
-                >
-                <MobileNumberInput
-                    min={1}
-                    max={50}
-                    defaultValue={1}
-                    onChange={(newValue) => debouncedChangeFunction(newValue)}
-                />
-                </Box>
-                
-            </Box>
+            </div>
             <QuestionsContainer
                 setCurrentQuestion={setCurrentQuestion}
                 updateQuestion={updateQuestion}
@@ -164,23 +129,14 @@ const Form = () => {
                 teachers={teachers}
                 courses={courses}
             />
-            <Box
-                sx={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    gap: '15px',
-                    width: { xs: '100%', md: '50%'}
-
-                }}
+            <div
+                className="flex flex-col gap-4 p-3 w-full md:w-1/2"
             >
-                <Typography
-                    sx={{
-                        fontFamily: 'Inter',
-                        color: 'white'
-                    }}
+                <span
+                    className="font-inter text-white"
                 >
                     Comentários adicionais
-                </Typography>
+                </span>
                 <TextInput
                     label="Comente outras sugestões ou reclamações gerais, não específicas a um professor"
                     multiline
@@ -188,26 +144,17 @@ const Form = () => {
                     value={formState.additionalComments}
                     onChange={addAdditionalComments}
                 />
-            </Box>
-            <Button
-                sx={{
-                    bgcolor: '#101010',
-                    color: 'white',
-                    fontFamily: 'Inter',
-                    fontWeight: '500',
-                    height: '50px',
-                    width: { xs: '80%', md: '30%'},
-                    borderRadius: '8px'
-                }}
+            </div>
+            <button
+                className="bg-[#101010] text-white font-inter font-medium h-12 w-[80%] md:w-[30%] rounded-lg"
                 onClick={() => {
                     console.log(formState);
                     createFeedback();
                 }}
             >
                 Enviar
-            </Button>
-
-        </Box>
+            </button>
+        </div>
     )
 }
 

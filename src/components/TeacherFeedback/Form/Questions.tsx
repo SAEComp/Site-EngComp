@@ -1,10 +1,10 @@
-import { Box } from "@mui/material";
 import QuestionComponent from "./QuestionComponent";
-import DropDown from "./Inputs/DropDown";
-import TextInput from "./Inputs/TextInput";
-import SliderInput from "./Inputs/SliderInput";
+// import DropDown from "./Inputs/DropDown";
+import TextInput from "../../Inputs/TextInput";
+import SliderInput from "../../Inputs/SliderInput";
 import { disciplinas, docentes } from "./mock";
 import { IQuestionProps } from "./types";
+import DropDown from "../../Inputs/DropDown";
 
 
 interface IQuestion extends Omit<IQuestionProps, 'setCurrentQuestion'> {
@@ -13,28 +13,19 @@ interface IQuestion extends Omit<IQuestionProps, 'setCurrentQuestion'> {
 
 const Questions = ({ updateQuestion, formState, questionIndex, teachers, courses }: IQuestion) => {
     return (
-        <Box
-            sx={{
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '20px',
-            }}
+        <div
+            className="flex flex-col gap-5"
         >
-            <Box
-                sx={{
-                    display: 'flex',
-                    width: '100%',
-                    gap: { xs: '20px', md: '40px' },
-                    flexDirection: { xs: 'column', md: 'row' }
-                }}
+            <div
+                className="flex flex-col w-full gap-5 md:gap-10 md:flex-row"
             >
                 <QuestionComponent
                     label="Nome do Docente:"
                     component={DropDown}
                     componentProps={{
                         options: teachers,
-                        label: "Sua resposta",
-                        search: true,
+                        placeholder: "Sua resposta",
+                        searchable: true,
                         value: teachers.find((obj) => obj.id === formState.questions[questionIndex].teacherId) ?? null,
                         onChange: (newValue) => {
                             console.log(newValue)
@@ -50,9 +41,17 @@ const Questions = ({ updateQuestion, formState, questionIndex, teachers, courses
                     component={DropDown}
                     componentProps={{
                         options: courses,
-                        label: "Sua resposta",
-                        search: true,
+                        placeholder: "Sua resposta",
+                        searchable: true,
+                        showSubtitle: true,
                         value: courses.find((obj) => obj.id === formState.questions[questionIndex].subjectId) ?? null,
+                        searchFilter: (search, option) => {
+                            const normalizedSearch = search.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+                            return (
+                                option.label.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").includes(normalizedSearch.toLowerCase()) || 
+                                option.subtitle?.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").includes(normalizedSearch.toLowerCase())
+                            ) ?? false;
+                        },
                         onChange: (newValue) => {
                             updateQuestion(questionIndex, 'subjectId', newValue?.id ?? null);
                         }
@@ -61,7 +60,7 @@ const Questions = ({ updateQuestion, formState, questionIndex, teachers, courses
                         flexGrow: '2'
                     }}
                 />
-            </Box>
+            </div>
             <QuestionComponent
                 label="Quais foram os pontos positivos do professor nesse semestre?"
                 component={TextInput}
@@ -112,7 +111,7 @@ const Questions = ({ updateQuestion, formState, questionIndex, teachers, courses
                     }
                 }}
             />
-        </Box>
+        </div>
     )
 }
 

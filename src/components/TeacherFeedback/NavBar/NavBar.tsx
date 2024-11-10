@@ -1,4 +1,3 @@
-import { Box } from "@mui/material";
 import logo from '../../../assets/svg/logo.svg'
 import { useNavigate } from "react-router-dom";
 
@@ -6,30 +5,17 @@ import { useNavigate } from "react-router-dom";
 const NavBar = () => {
     const navigate = useNavigate();
     return (
-        <Box
-            sx={{
-                height: '100px',
-                width: '100vw',
-                bgcolor: '#03B04B',
-                display: 'flex',
-                alignItems: 'center',
-                paddingX: '5%'
-            }}
+        <div
+            className="h-[100px] w-screen bg-[#03B04B] flex items-center px-[5%]"
         >
-            <Box
-                component='img'
+            <img
                 alt="logo SaeComp"
                 src={logo}
-                sx={{
-                    height: '40%',
-                    cursor: 'pointer'
-                }}
+                className="h-[40%] cursor-pointer"
                 onClick={() => navigate('/')}
             />
-
-        </Box>
+        </div>
     )
-
 };
 
 export default NavBar;

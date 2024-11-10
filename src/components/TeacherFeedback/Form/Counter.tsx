@@ -1,4 +1,3 @@
-import { Box, Typography, Button } from "@mui/material";
 
 interface ICounterProps {
     setCurrentQuestion: (currentQuestion: number) => void;
@@ -14,72 +13,35 @@ const Arrow = (
 
 const Counter = ({ setCurrentQuestion, totalQuestions, currentQuestion }: ICounterProps) => {
     return (
-        <Box
-            sx={{
-                bgcolor: '#03B04B',
-                height: '50px',
-                width: { sm: '100%', md: '50%', lg: '30%' },
-                borderRadius: '23px',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                paddingX: '20px'
-            }}
+        <div
+            className="bg-[#03B04B] h-12 w-full md:w-1/2 lg:w-1/3 rounded-3xl flex justify-center items-center px-5"
         >
-            <Typography
-                sx={{
-                    fontFamily: 'Inter',
-                    fontWeight: '400',
-                    color: 'white',
-                    flexGrow: '1',
-                    paddingLeft: '5px'
-                }}
+            <span
+                className="font-inter font-normal text-white grow pl-1"
             >
                 Formulário
-            </Typography>
-            <Button
-                size="small"
-                sx={{
-                    borderRadius: '10px',
-                    color: 'white',
-                    minWidth: 'auto',
-                    scale: '0.9',
-                    transform: 'rotate(180deg)'
-                }}
+            </span>
+            <button
+                className="bg-transparent text-white rounded-[10px] min-w-auto transform scale-[0.9] rotate-180 disabled:opacity-50"
                 disabled={currentQuestion === 0}
-                onClick={() => {
-                    setCurrentQuestion(currentQuestion - 1)
-                }}
-                >
-                {Arrow}
-            </Button>
-            <Typography
-                sx={{
-                    fontFamily: 'Inter',
-                    fontWeight: '400',
-                    color: 'white',
-                    marginX: '3px'
-                }}
+                onClick={() => setCurrentQuestion(currentQuestion - 1)}
             >
-                { currentQuestion + 1 }/{ totalQuestions }
-            </Typography>
-            <Button
-                size="small"
-                sx={{
-                    borderRadius: '10px',
-                    color: 'white',
-                    minWidth: 'auto',
-                    scale: '0.9'
-                }}
-                disabled={currentQuestion + 1 === totalQuestions}
-                onClick={() => {
-                    setCurrentQuestion(currentQuestion + 1)
-                }}
-                >
-                
                 {Arrow}
-            </Button>
-        </Box>
+            </button>
+
+            <p className="font-inter font-normal text-white mx-[8px]">
+                {currentQuestion + 1}/{totalQuestions}
+            </p>
+
+            <button
+                className="bg-transparent text-white rounded-[10px] min-w-auto transform scale-[0.9] disabled:opacity-50"
+                disabled={currentQuestion + 1 === totalQuestions}
+                onClick={() => setCurrentQuestion(currentQuestion + 1)}
+            >
+                {Arrow}
+            </button>
+
+        </div>
     )
 }
 

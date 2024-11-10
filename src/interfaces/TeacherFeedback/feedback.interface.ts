@@ -3,6 +3,11 @@ export interface IBaseQuery {
     pageSize: number;
 };
 
+export interface ITeacherQuery extends IBaseQuery {
+    teacherId?: string;
+    courseCode?: string;
+};
+
 export interface IFeedbacksQuery extends IBaseQuery {
     courseName?: string;
     courseId?: string;
@@ -66,3 +71,12 @@ export interface IFeedbackUpdater {
     negativeAspects?: string;
     additionalComments?: string;
 };
+
+export interface IFilterData {
+    teacherNickname: string;
+    courseCode: string;
+    courseName: string;
+    teacherName: string;
+    teacherId: string;
+    courseId: string;
+}

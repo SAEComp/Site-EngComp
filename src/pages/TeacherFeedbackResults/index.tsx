@@ -1,4 +1,3 @@
-import { Box, Typography } from "@mui/material";
 import ResultsContainer from "../../components/TeacherFeedback/FeedbackResults/ResultsContainer";
 import NavBar from "../../components/TeacherFeedback/NavBar/NavBar";
 import Footer from "../../components/TeacherFeedback/NavBar/Footer";
@@ -6,57 +5,33 @@ import Footer from "../../components/TeacherFeedback/NavBar/Footer";
 const TeacherFeedbackResults = () => {
 
     return (
-        <Box
-            sx={{
-                height: '100vh',
-                width: '100vw',
-                fontFamily: 'Inter'
-            }}
+        <div
+        className="h-screen w-screen font-inter"
+    >
+        <NavBar/>
+        <div
+            className="pt-1"
         >
-            
-           
-            <NavBar/>
-            <Box
-                sx={{
-                    paddingTop: '5px'
-                }}
+            <div
+            className="flex flex-col gap-2 px-[5%] my-5"
             >
-                <Box
-                sx={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    gap: '10px',
-                    paddingX: '5%',
-                    marginY: '20px'
-                }}
+                <span
+                    className="text-3xl font-semibold font-inter"
                 >
-                    <Typography
-                        sx={{
-                            fontSize: '2rem',
-                            fontWeight: 600,
-                            fontFamily: 'Inter'
-
-                        }}
-                    >
-                        Resultado das avaliações
-                    </Typography>
-                    <Typography
-                    sx={{
-                        fontFamily: 'Inter',
-                        color: '#828282',
-                        fontWeight: 300,
-                        fontSize: '0.95rem',
-                    }}
-                    >
-                        Todo semestre, a SAEComp realiza a Avaliação de Professores, com o intuito de fiscalizar e fomentar uma maior comunicação dos discentes com a coordenação e a Secretaria.
-                        Para isso, avalie os professores e exponha pontos positivos e negativos de conviver com o professor na sala de aula, e dê uma nota final a cada um de 0 a 10. Os professores mais bem avaliados receberão um certificado pelo bom desempenho. Pegaremos o feedback escrito para dar um repasse para os professores.
-                    </Typography>
-                </Box>
-                <ResultsContainer/>
-            </Box>
-            <Footer/>
-        </Box>
-    )
+                    Avaliação de professores
+                </span>
+                <span
+                className="text-base font-light text-[#828282] font-inter"
+                >
+                    Todo semestre, a SAEComp realiza a Avaliação de Professores, com o intuito de fiscalizar e fomentar uma maior comunicação dos discentes com a coordenação e a Secretaria.
+                    Para isso, avalie os professores e exponha pontos positivos e negativos de conviver com o professor na sala de aula, e dê uma nota final a cada um de 0 a 10. Os professores mais bem avaliados receberão um certificado pelo bom desempenho. Pegaremos o feedback escrito para dar um repasse para os professores.
+                </span>
+            </div>
+            <ResultsContainer/>
+        </div>
+        <Footer/>
+    </div>
+    );
 }
 
 export default TeacherFeedbackResults;
